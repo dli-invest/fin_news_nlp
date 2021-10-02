@@ -16,6 +16,6 @@ RUN pip install -r requirements/base.txt
 # COPY .env /app/.env
 COPY ./app /app/app
 
-EXPOSE 8080 
+EXPOSE 8000 
 ENTRYPOINT [ "python" ] 
 CMD [ "main.py" ] 

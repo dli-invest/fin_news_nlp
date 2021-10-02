@@ -31,6 +31,7 @@ jobs:
         run: |
           python -m pip install -r nlp_api/requirements/base.txt
           python -m pip install -r nlp_api/requirements/spacy.txt
+          spacy download en_core_web_sm
 
       - name: Coverage Report
         run:  |

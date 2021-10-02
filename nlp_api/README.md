@@ -29,8 +29,3 @@ Open your browser to http://localhost:8000/docs to view the OpenAPI UI.
 For an alternate view of the docs navigate to http://localhost:8000/redoc
 
 ---
-
-## Deploy with Azure Pipelines
-Follow this guide to setup an Azure Resource Group with instances of Azure Kubernetes Service and Azure Container Registry and setup CI / CD with Azure Pipelines.
-
-https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/kubernetes/aks-template?view=azure-devops
