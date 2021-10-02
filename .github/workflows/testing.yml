@@ -29,8 +29,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          python -m pip -r nlp_api/requirements/base.txt
-          python -m pip -r nlp_api/requirements/spacy.txt
+          python -m pip install -r nlp_api/requirements/base.txt
+          python -m pip install -r nlp_api/requirements/spacy.txt
 
       - name: Coverage Report
         run:  |
