@@ -1,7 +1,7 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/stocks-272500/nlp-api:latest', '.']
+    args: ['build', '-t', 'gcr.io/stocks-272500/nlp-api:latest', 'nlp_api']
     # Push the image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/stocks-272500/nlp-api:latest']

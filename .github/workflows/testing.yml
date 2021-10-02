@@ -1,0 +1,46 @@
+name: Run Tests
+on:
+  push:
+    branches:
+      - '**'
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '30 13 * * 1-5'
+
+# Add cron job to ensure external webpages + apis have no changed
+jobs:
+  run_tests:
+    strategy:
+        fail-fast: false
+        matrix:
+          python-version: [3.8]
+          os: [ubuntu-20.04]
+    runs-on: ${{ matrix.os }}
+    name: coverage
+    env:
+      PYTHON: ${{ matrix.python-version }}
+      OS: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Dependencies
+        run: |
+          python -m pip -r nlp_api/requirements/base.txt
+          python -m pip -r nlp_api/requirements/spacy.txt
+
+      - name: Coverage Report
+        run:  |
+          cd nlp_api
+          python -m pytest --cov=./ --cov-report=xml
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          file: ./nlp_api/coverage.xml
+          flags: ga_ci
+          env_vars: PYTHON,OS
+          fail_ci_if_error: true
