@@ -1,12 +1,8 @@
 # nlp_api
 
- Pyto[18hon api that provides news access and nlp
+ Python api that provides news access and nlp
 
 ---
-
-## Azure Search Cognitive Skills
-For instructions on adding your API as a Custom Cognitive Skill in Azure Search see:
-https://docs.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface
 
 ## Resources
 This project has two key dependencies:
