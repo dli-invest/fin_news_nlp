@@ -1,0 +1,27 @@
+steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/stocks-272500/nlp-api:latest', '.']
+    # Push the image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/stocks-272500/nlp-api:latest']
+  # Deploy image to Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - 'run'
+    - 'deploy'
+    - 'nlp-api'
+    - '--image'
+    - 'gcr.io/stocks-272500/nlp-api:latest'
+    - '--region'
+    - 'us-west1'
+    - '--platform'
+    - 'managed'
+  # Delete old images
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - 'container'
+    - 'images'
+    - 'delete'
+    - 'gcr.io/stocks-272500/nlp-api'
+    - '--quiet'
