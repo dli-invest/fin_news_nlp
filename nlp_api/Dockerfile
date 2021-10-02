@@ -14,7 +14,7 @@ COPY ./requirements/base.txt ./requirements/base.txt
 RUN pip install -r requirements/base.txt
 
 # COPY .env /app/.env
-COPY ./app /app/app
+COPY ./app .
 
 EXPOSE 8000 
 ENTRYPOINT [ "python" ] 
