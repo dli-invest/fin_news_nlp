@@ -6,15 +6,12 @@ import os
 
 from dotenv import load_dotenv, find_dotenv
 from fastapi import Body, FastAPI
-from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
 
 import srsly
 
 from app.models import (
     ENT_PROP_MAP,
-    ArticleRequest,
-    RecordDataResponse,
     RecordsRequest,
     RecordsResponse,
     RecordsEntitiesByTypeResponse,
@@ -91,11 +88,11 @@ async def extract_entities_by_type(body: RecordsRequest = Body(..., example=exam
 
     return {"values": res}
 
-@app.post("/article_nlp", response_model=RecordDataResponse, tags=["NER"])
-async def get_entities(body: ArticleRequest = Body(..., example=example_article)):
-    """Extract Named Entities from a record using custom stock matcher."""
+# @app.post("/article_nlp", response_model=RecordDataResponse, tags=["NER"])
+# async def get_entities(body: ArticleRequest = Body(..., example=example_article)):
+#     """Extract Named Entities from a record using custom stock matcher."""
 
 
-    doc = nlp(body.article)
+#     doc = nlp(body.article)
 
-    return {"entities": doc.ents}
+#     return {"entities": doc.ents}
