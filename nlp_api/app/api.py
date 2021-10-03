@@ -6,19 +6,24 @@ import os
 
 from dotenv import load_dotenv, find_dotenv
 from fastapi import Body, FastAPI
+from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
-
+import spacy
 import srsly
+import uvicorn
 
+from app.spacy_extractor import SpacyExtractor
 from app.models import (
     ENT_PROP_MAP,
+    ArticleRequest,
+    RecordDataResponse,
     RecordsRequest,
     RecordsResponse,
     RecordsEntitiesByTypeResponse,
 )
 
-from app.nlp import extractor
-
+nlp = spacy.load("en_core_web_sm")
+extractor = SpacyExtractor(nlp)
 
 load_dotenv(find_dotenv())
 prefix = os.getenv("CLUSTER_ROUTE_PREFIX", "").rstrip("/")

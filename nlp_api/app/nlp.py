@@ -1,9 +1,7 @@
 import spacy
-from app.spacy_extractor import SpacyExtractor
 import pandas as pd
 
 nlp = spacy.load("en_core_web_sm")
-extractor = SpacyExtractor(nlp)
 
 import pandas as pd
 
@@ -19,13 +17,13 @@ ticker_df = ticker_df[~ticker_df['Name'].isin(['Wall Street'])]
 symbols = ticker_df.Code.tolist()
 companies = ticker_df.Name.tolist()
 
-ex_df = pd.read_csv("app/data/exchanges.tsv", sep="\t")
+ex_df = pd.read_csv("../assets/data/exchanges.tsv", sep="\t")
 
-ind_df = pd.read_csv("app/data/indicies.tsv", sep="\t")
+ind_df = pd.read_csv("../assets/data/indicies.tsv", sep="\t")
 indexes = ind_df.IndexName.tolist()
 index_symbols = ind_df.IndexSymbol.tolist()
 
-exchanges = ex_df.ISOMIC.tolist()+ex_df["Google Prefix"].tolist()
+exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
 descriptions = ex_df.Description.tolist()
 
 stops = ["two"]
