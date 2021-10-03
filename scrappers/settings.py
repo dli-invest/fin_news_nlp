@@ -9,10 +9,10 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-import sys
-import os.path
-# Import from sibling directory ..\api
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/..")
+# import sys
+# import os.path
+# # Import from sibling directory ..\api
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/..")
 
 BOT_NAME = 'crawl'
 
