@@ -2,7 +2,7 @@ projects:
   default: 559300
   prod: 559300
 
-stack: scrapy:2.5-py3
+stack: scrapy:2.5
 
 requirements:
   file: nlp_api/requirements/spacy.txt
