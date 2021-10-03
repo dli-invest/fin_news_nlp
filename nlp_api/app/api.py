@@ -8,9 +8,8 @@ from dotenv import load_dotenv, find_dotenv
 from fastapi import Body, FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
-import spacy
+
 import srsly
-import uvicorn
 
 from app.models import (
     ENT_PROP_MAP,
@@ -18,7 +17,7 @@ from app.models import (
     RecordsResponse,
     RecordsEntitiesByTypeResponse,
 )
-from app.spacy_extractor import SpacyExtractor
+from app.nlp import extractor
 
 
 load_dotenv(find_dotenv())
@@ -34,8 +33,7 @@ app = FastAPI(
 
 example_request = srsly.read_json("app/data/example_request.json")
 
-nlp = spacy.load("en_core_web_sm")
-extractor = SpacyExtractor(nlp)
+
 
 
 @app.get("/", include_in_schema=False)
