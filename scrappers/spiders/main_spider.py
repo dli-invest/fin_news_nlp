@@ -1,41 +1,39 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
 import urllib
-
+import sys
+import os.path
+# # Import from sibling directory ..\api
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../nlp_api")
+from nlp_api.app.nlp import nlp
 settings = {}
 
-
-class ScraperWithDuplicateRequests(scrapy.Spider):
+print(nlp)
+class ScraperForSeekingAlpha(scrapy.Spider):
     name = "ScraperWithDuplicateRequests"
     start_urls = [
-        "https://friendlyuser.github.io",
-        "https://david-li.me",
-        "https://investing.david-li.me",
-        "http://tex-diagrams.david-li.me",
-        "https://dli-invest.github.io"
+        "https://seekingalpha.com/market-news"
     ]
 
     custom_settings = {"DEPTH_LIMIT": 2}
 
     allowed_domains = [
-        "https://friendlyuser.github.io",
-        "https://david-li.me",
-        "https://investing.david-li.me",
-        "https://dli-invest.github.io",
-        "http://tex-diagrams.david-li.me",
-        "https://tex-diagrams.david-li.me",
+        "https://seekingalpha.com/"
     ]
 
     def parse(self, response):
-        for next_page in response.css("a::attr(href)").extract():
-            if next_page is not None:
+        for link_tag in response.xpath('//a'):
+            sasource = link_tag.xpath('./sasource').get()
+            if sasource not in ["market_news_all_1", "market_news_headlines_1"]:
+                continue
+            href= link_tag.xpath('./@href').get()
+            print(link_tag)
+            if href is not None:
                 # ignore mailto and tel links
                 if next_page[0:3] == "tel":
                     continue
                 elif next_page[0:6] == "mailto":
                     continue
                 next_page = response.urljoin(next_page)
+                # parse news page here, dont use parse?
                 yield scrapy.Request(next_page, callback=self.parse, dont_filter=True)
-
-        for quote in response.css("p"):
-            yield {"quote": quote.extract()}
