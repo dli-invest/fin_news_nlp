@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 from starlette.testclient import TestClient
-from app.api import app
+from nlp_articles.app.api import app
 
 
 def test_docs_redirect():

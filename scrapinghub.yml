@@ -1,4 +1,4 @@
 stack: scrapy:2.5
 
 requirements:
-  file: nlp_api/requirements/spacy.txt
+  file: nlp_articles/requirements/spacy.txt

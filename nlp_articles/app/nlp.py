@@ -1,11 +1,8 @@
 import spacy
 import pandas as pd
 
-nlp = spacy.load("en_core_web_sm")
-
-import pandas as pd
-
 def init_nlp(exchange_data_path: str, indicies_data_path: str):
+    nlp = spacy.load("en_core_web_sm")
     ticker_df = pd.read_csv(
                 "https://raw.githubusercontent.com/dli-invest/eod_tickers/main/data/us.csv"
             )
@@ -75,3 +72,4 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         
 
     ruler.add_patterns(patterns)
+    return nlp

@@ -1,16 +1,9 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
-import sys
-import os.path
-# # Import from sibling directory ..\api
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../nlp_api")
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../nlp_api/app")
 
-from nlp_api.app.nlp import nlp, init_nlp
-init_nlp("assets/data/exchanges.tsv","assets/data/indicies.tsv")
+from nlp_articles.app.nlp import init_nlp
 settings = {}
 
-print(nlp)
 class ScraperForSeekingAlpha(scrapy.Spider):
     name = "ScraperWithDuplicateRequests"
     start_urls = [
@@ -22,6 +15,9 @@ class ScraperForSeekingAlpha(scrapy.Spider):
     allowed_domains = [
         "https://seekingalpha.com/"
     ]
+    
+    nlp = init_nlp("nlp_articles/core/data/exchanges.tsv","nlp_articles/core/data/indicies.tsv")
+    print(nlp)
 
     def parse(self, response):
         for link_tag in response.xpath('//a'):

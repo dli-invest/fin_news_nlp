@@ -1,7 +1,7 @@
-from app.nlp import nlp, init_nlp
+from nlp_articles.app.nlp import init_nlp
 
 def test_parsing_article():
-    init_nlp("../assets/data/exchanges.tsv","../assets/data/indicies.tsv")
+    nlp = init_nlp("core/data/exchanges.tsv","core/data/indicies.tsv")
     text = '''
     Sept 10 (Reuters) - Wall Street's main indexes were subdued on Friday as signs of higher inflation and a drop in Apple shares following an unfavorable court ruling offset expectations of an easing in U.S.-China tensions.
 
