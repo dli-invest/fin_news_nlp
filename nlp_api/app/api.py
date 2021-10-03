@@ -25,6 +25,7 @@ from app.models import (
 nlp = spacy.load("en_core_web_sm")
 extractor = SpacyExtractor(nlp)
 
+
 load_dotenv(find_dotenv())
 prefix = os.getenv("CLUSTER_ROUTE_PREFIX", "").rstrip("/")
 

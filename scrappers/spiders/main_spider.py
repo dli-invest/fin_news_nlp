@@ -6,7 +6,8 @@ import os.path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../nlp_api")
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../nlp_api/app")
 
-from nlp_api.app.nlp import nlp
+from nlp_api.app.nlp import nlp, init_nlp
+init_nlp("assets/data/exchanges.tsv","assets/data/indicies.tsv")
 settings = {}
 
 print(nlp)
