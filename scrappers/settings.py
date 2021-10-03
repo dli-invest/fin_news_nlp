@@ -16,8 +16,8 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/..")
 
 BOT_NAME = 'crawl'
 
-SPIDER_MODULES = ['crawl.spiders']
-NEWSPIDER_MODULE = 'crawl.spiders'
+SPIDER_MODULES = ['crawl.main_spider']
+NEWSPIDER_MODULE = 'crawl.main_spider'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
