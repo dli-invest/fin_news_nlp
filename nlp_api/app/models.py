@@ -40,6 +40,8 @@ class RecordRequest(BaseModel):
 class RecordsRequest(BaseModel):
     values: List[RecordRequest]
 
+class ArticleRequest(BaseModel):
+    article: str 
 
 class RecordDataResponse(BaseModel):
     entities: List

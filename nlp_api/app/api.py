@@ -13,11 +13,14 @@ import srsly
 
 from app.models import (
     ENT_PROP_MAP,
+    ArticleRequest,
+    RecordDataResponse,
     RecordsRequest,
     RecordsResponse,
     RecordsEntitiesByTypeResponse,
 )
-from app.nlp import extractor
+
+from app.nlp import extractor, nlp
 
 
 load_dotenv(find_dotenv())
@@ -32,7 +35,7 @@ app = FastAPI(
 )
 
 example_request = srsly.read_json("app/data/example_request.json")
-
+example_article = srsly.read_json("app/data/example_article.json")
 
 
 
@@ -42,7 +45,7 @@ def docs_redirect():
 
 
 @app.post("/entities", response_model=RecordsResponse, tags=["NER"])
-async def extract_entities(body: RecordsRequest = Body(..., example=example_request)):
+async def extract_entities(body: RecordsRequest = Body(..., example=example_article)):
     """Extract Named Entities from a batch of Records."""
 
     res = []
@@ -87,3 +90,12 @@ async def extract_entities_by_type(body: RecordsRequest = Body(..., example=exam
         res.append(record)
 
     return {"values": res}
+
+@app.post("/article_nlp", response_model=RecordDataResponse, tags=["NER"])
+async def get_entities(body: ArticleRequest = Body(..., example=example_article)):
+    """Extract Named Entities from a record using custom stock matcher."""
+
+
+    doc = nlp(body.article)
+
+    return {"entities": doc.ents}
