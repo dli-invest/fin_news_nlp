@@ -17,7 +17,7 @@ from app.models import (
     RecordsEntitiesByTypeResponse,
 )
 
-from app.nlp import extractor, nlp
+from app.nlp import extractor
 
 
 load_dotenv(find_dotenv())
