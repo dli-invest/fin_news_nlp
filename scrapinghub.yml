@@ -1,4 +1,7 @@
 stack: scrapy:2.5
 
+projects:
+  default: 559300
+
 requirements:
   file: nlp_articles/requirements/spacy.txt
