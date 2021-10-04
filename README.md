@@ -9,3 +9,6 @@ Use spacy to analyze financial articles
 ## Scrapy
 
 scan websites for articles in real time, this repo contains the scraper
+
+
+scrap crawl yahoo_finance
