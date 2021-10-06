@@ -11,6 +11,8 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     ticker_df = ticker_df[~ticker_df.Name.str.contains("Wall Street", na=False)]
     # remove exact matches
     ticker_df = ticker_df[~ticker_df['Name'].isin(['Wall Street'])]
+    # remove bad symbols
+    ticker_df = ticker_df[~ticker_df['Code'].isin(['ET'])]
     symbols = ticker_df.Code.tolist()
     companies = ticker_df.Name.tolist()
 
@@ -27,12 +29,12 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []
-    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    endings = [".TO", ".V", ".CN", ".HK"]
     #List of Entities and Patterns
     for symbol in symbols:
         patterns.append({"label": "STOCK", "pattern": symbol})
-        for l in letters:
-            patterns.append({"label": "STOCK", "pattern": symbol+f".{l}"})
+        for ending in endings:
+            patterns.append({"label": "STOCK", "pattern": symbol+f".{ending}"})
                     
         
         
@@ -71,5 +73,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         patterns.append({"label": "STOCK_EXCHANGE", "pattern": e})
         
 
+    for crit in ["evergrande", "china"]:
+         patterns.append({"label": "CRITICAL", "pattern": crit})
     ruler.add_patterns(patterns)
     return nlp

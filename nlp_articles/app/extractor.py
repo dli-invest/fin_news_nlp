@@ -1,1 +1,0 @@
-/workspaces/fin_news_nlp/nlp_api
