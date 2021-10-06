@@ -44,7 +44,6 @@ class ScraperForYahoo(scrapy.Spider):
                 print(href)
                 href_merged = response.urljoin(href)
                 yield scrapy.Request(href_merged, callback=self.handle_article, dont_filter=True)
-                break
 
     def handle_article(self, response):
         url = response.url
@@ -79,7 +78,7 @@ class ScraperForYahoo(scrapy.Spider):
         embeds = []
         fields = []
         data = {}
-        if diff_date.seconds // 3600 < 24:
+        if diff_date.seconds // 3600 < 1.1:
             # send article to discord
             # map data to embeds
             for ent in entities[:24]:
