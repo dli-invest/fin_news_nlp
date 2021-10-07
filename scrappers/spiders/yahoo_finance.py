@@ -91,7 +91,7 @@ class ScraperForYahoo(scrapy.Spider):
         embeds = []
         fields = []
         data = {}
-        if diff_date.seconds // 3600 < 1.1:
+        if diff_date.seconds // 3600 < 24:
             # send article to discord
             # map data to embeds
             for ent in entities[:24]:
