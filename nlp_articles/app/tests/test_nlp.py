@@ -45,9 +45,10 @@ def test_parsing_article():
 
     doc = nlp(text)
 
-    entity_text = ["Apple Inc", "AAPL.O", "Nasdaq", "S&P 500"]
-    entity_label = ["COMPANY", "STOCK", "INDEX", "INDEX"]
+    entity_text = ["Apple Inc", "Nasdaq", "S&P 500", "S&P 500"]
+    entity_label = ["COMPANY", "INDEX", "INDEX", "INDEX"]
 
     for x in range(4):
+        print(x)
         assert doc.ents[x].text == entity_text[x]
         assert doc.ents[x].label_ == entity_label[x]
