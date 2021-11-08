@@ -67,7 +67,7 @@ def cnbc_article_to_embed(cnbc_article: dict):
         "title": cnbc_article['title'],
         "description": cnbc_article['description'],
         "url": cnbc_article['link'],
-        "timestamp": cnbc_article['pub_date']
+        # "timestamp": cnbc_article['pub_date']
     }
     return embed
 

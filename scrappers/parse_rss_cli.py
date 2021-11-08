@@ -61,7 +61,7 @@ if __name__ == '__main__':
                     embeds = [cnbc_data]
                     data["embeds"] = embeds
                     post_webhook_content(data)
-                    cnbc_read_articles.append(cnbc_article)
+                    cnbc_read_articles.append(cnbc_article['link'])
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api
         elif feed_url.startswith("https://www.theguardian.com"):
