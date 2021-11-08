@@ -2,7 +2,7 @@
 import requests
 import json
 import os
-from scrappers.parse_rss_feeds import get_feed_data, parse_cnbc_feed, parse_the_guardian_feed
+from scrappers.parse_rss_feeds import get_feed_data, cnbc_article_to_embed, parse_cnbc_feed, parse_the_guardian_feed
 
 
 def parse_output_file(output_file = "cnbc_urls.txt"):
@@ -51,14 +51,18 @@ if __name__ == '__main__':
     cnbc_read_articles = parse_output_file(cnbc_output)
     # accumulate all the cnbc and the guardian feeds
     for feed_url in stock_feed_list:
+        rss_feed = get_feed_data(feed_url)
         if feed_url.startswith("https://www.cnbc.com"):
             if feed_url not in cnbc_read_articles:
-                cnbc_article = parse_cnbc_feed(feed_url)
-                cnbc_read_articles.append(cnbc_article)
+                cnbc_feed = parse_cnbc_feed(rss_feed)
+                for cnbc_article in cnbc_feed:
+                    cnbc_data = cnbc_article_to_embed(cnbc_article)
+                    post_webhook_content(cnbc_data)
+                    cnbc_read_articles.append(cnbc_article)
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api
         elif feed_url.startswith("https://www.theguardian.com"):
-            guardian_article = parse_the_guardian_feed(feed_url)
+            guardian_article = parse_the_guardian_feed(rss_feed)
             continue
 
     save_list_of_strs_to_file(cnbc_read_articles)

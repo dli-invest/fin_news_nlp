@@ -32,7 +32,7 @@ jobs:
 
       - name: Crawl
         run:  |
-         python scrappers.parse_rss_cli.py
+         python -m scrappers.parse_rss_cli
 
       - name: Commit files
         run: |

@@ -60,6 +60,17 @@ def parse_the_guardian_feed(feed_items: List[dict]):
         })
     return parsed_feed_data
 
+def cnbc_article_to_embed(cnbc_article: dict):
+    """ converts cnbc rss article to discord object
+    """
+    embed = {
+        "title": cnbc_article['title'],
+        "description": cnbc_article['description'],
+        "url": cnbc_article['link'],
+        "timestamp": cnbc_article['pub_date']
+    }
+    return embed
+
 
 # links = get_feed_data()
 
