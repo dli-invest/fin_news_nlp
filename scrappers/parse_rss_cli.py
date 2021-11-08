@@ -2,6 +2,7 @@
 import requests
 import json
 import os
+import time
 from scrappers.parse_rss_feeds import get_feed_data, cnbc_article_to_embed, parse_cnbc_feed, parse_the_guardian_feed
 
 
@@ -61,6 +62,7 @@ if __name__ == '__main__':
                     embeds = [cnbc_data]
                     data["embeds"] = embeds
                     post_webhook_content(data)
+                    time.sleep(2)
                     cnbc_read_articles.append(cnbc_article['link'])
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api

@@ -1,4 +1,4 @@
-name: ScrapyData
+name: CNBC Data
 on:
   push:
     branches:
