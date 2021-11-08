@@ -56,8 +56,11 @@ if __name__ == '__main__':
             if feed_url not in cnbc_read_articles:
                 cnbc_feed = parse_cnbc_feed(rss_feed)
                 for cnbc_article in cnbc_feed:
+                    data = {}
                     cnbc_data = cnbc_article_to_embed(cnbc_article)
-                    post_webhook_content(cnbc_data)
+                    embeds = [cnbc_data]
+                    data["embeds"] = embeds
+                    post_webhook_content(data)
                     cnbc_read_articles.append(cnbc_article)
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api
