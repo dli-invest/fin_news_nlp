@@ -41,7 +41,7 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
-          file: ./nlp_api/coverage.xml
+          file: ./nlp_articles/coverage.xml
           flags: ga_ci
           env_vars: PYTHON,OS
           fail_ci_if_error: true
