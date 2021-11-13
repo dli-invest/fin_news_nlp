@@ -18,14 +18,17 @@ def parse_cnbc_feed(feed_items: List[dict]):
     """
     parsed_feed_data = []
     for item in feed_items:
-        parsed_feed_data.append({
-            'title': item.title.text,
-            'link': item.link.text,
-            'description': item.description.text,
-            'pub_date': item.pubDate.text,
-            'guid': item.guid.text
+        try:
+            parsed_feed_data.append({
+                'title': item.title.text,
+                'link': item.link.text,
+                'description': item.description.text,
+                'pub_date': item.pubDate.text,
+                'guid': item.guid.text
 
-        })
+            })
+        except AttributeError as e:
+            print(e)
     return parsed_feed_data
 
 

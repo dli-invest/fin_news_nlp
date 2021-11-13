@@ -4,6 +4,7 @@ import json
 import os
 import time
 from scrappers.parse_rss_feeds import get_feed_data, cnbc_article_to_embed, parse_cnbc_feed, parse_the_guardian_feed
+from nlp_articles.app.nlp import init_nlp
 
 
 def parse_output_file(output_file = "cnbc_urls.txt"):
@@ -43,7 +44,8 @@ def post_webhook_content(data: dict):
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
 if __name__ == '__main__':
-
+    # init nlp 
+    nlp = init_nlp("core/data/exchanges.tsv","core/data/indicies.tsv")
     cnbc_feed_urls = ["https://www.cnbc.com/id/100003114/device/rss/rss.html"]
     the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
     stock_feed_list = [*cnbc_feed_urls, *the_guardian_feed_urls]
@@ -59,11 +61,27 @@ if __name__ == '__main__':
                 for cnbc_article in cnbc_feed:
                     data = {}
                     cnbc_data = cnbc_article_to_embed(cnbc_article)
-                    embeds = [cnbc_data]
-                    data["embeds"] = embeds
-                    post_webhook_content(data)
-                    time.sleep(2)
-                    cnbc_read_articles.append(cnbc_article['link'])
+                    try:
+                        description_doc = nlp(cnbc_article["description"])
+                        title_doc = nlp(cnbc_article["title"])
+                        # count number of entities in the description and title
+                        total_hits = len(description_doc.ents) + len(title_doc.ents)
+                        if total_hits >= 4:
+                            embeds = [cnbc_data]
+                            data["embeds"] = embeds
+                            post_webhook_content(data)
+                            time.sleep(2)
+                            cnbc_read_articles.append(cnbc_article['link'])
+                            try:
+                                dev_data = {
+                                    "content": f"```{json.dumps(description_doc.ents + title_doc.ents)}```"
+                                }
+                                post_webhook_content(dev_data)
+                            except Exception as e:
+                                pass
+                    except Exception as e:
+                        print(e)
+                        continue
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api
         elif feed_url.startswith("https://www.theguardian.com"):
