@@ -45,7 +45,7 @@ def post_webhook_content(data: dict):
 
 if __name__ == '__main__':
     # init nlp 
-    nlp = init_nlp("core/data/exchanges.tsv","core/data/indicies.tsv")
+    nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
     cnbc_feed_urls = ["https://www.cnbc.com/id/100003114/device/rss/rss.html"]
     the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
     stock_feed_list = [*cnbc_feed_urls, *the_guardian_feed_urls]
