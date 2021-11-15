@@ -53,6 +53,7 @@ if __name__ == '__main__':
     cnbc_output = "cnbc_urls.txt"
     cnbc_read_articles = parse_output_file(cnbc_output)
     # accumulate all the cnbc and the guardian feeds
+    discord_embeds = []
     for feed_url in stock_feed_list:
         rss_feed = get_feed_data(feed_url)
         if feed_url.startswith("https://www.cnbc.com"):
@@ -67,10 +68,11 @@ if __name__ == '__main__':
                         # count number of entities in the description and title
                         total_hits = len(description_doc.ents) + len(title_doc.ents)
                         if total_hits >= 1:
-                            embeds = [cnbc_data]
-                            data["embeds"] = embeds
-                            post_webhook_content(data)
-                            time.sleep(2)
+                            discord_embeds.append(cnbc_data)
+                            if len(discord_embeds) >= 9:
+                                post_webhook_content({"embeds": discord_embeds})
+                                discord_embeds = []
+                                time.sleep(2)
                             cnbc_read_articles.append(cnbc_article['link'])
                             try:
                                 dev_data = {
@@ -87,5 +89,9 @@ if __name__ == '__main__':
         elif feed_url.startswith("https://www.theguardian.com"):
             guardian_article = parse_the_guardian_feed(rss_feed)
             continue
+
+        if len(discord_embeds) >= 9:
+            post_webhook_content({"embeds": discord_embeds})
+            discord_embeds = []
 
     save_list_of_strs_to_file(cnbc_read_articles)
