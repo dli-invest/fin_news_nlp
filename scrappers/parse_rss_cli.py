@@ -66,7 +66,7 @@ if __name__ == '__main__':
                         title_doc = nlp(cnbc_article["title"])
                         # count number of entities in the description and title
                         total_hits = len(description_doc.ents) + len(title_doc.ents)
-                        if total_hits >= 4:
+                        if total_hits >= 1:
                             embeds = [cnbc_data]
                             data["embeds"] = embeds
                             post_webhook_content(data)
