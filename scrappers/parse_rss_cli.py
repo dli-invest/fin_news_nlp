@@ -65,8 +65,14 @@ if __name__ == '__main__':
                     try:
                         description_doc = nlp(cnbc_article["description"])
                         title_doc = nlp(cnbc_article["title"])
+                        entities = description_doc.ents + title_doc.ents
                         # count number of entities in the description and title
-                        total_hits = len(description_doc.ents) + len(title_doc.ents)
+                        total_hits = len(entities)
+                        # make fields for the embed from ents
+                        fields = [description_doc.ents, title_doc.ents]
+                        # make a list of all the entities
+                        fields = [ {entity.label_: entity.text} for entity in entities]
+                        cnbc_data["fields"] = fields[0:3]
                         if total_hits >= 1:
                             discord_embeds.append(cnbc_data)
                             if len(discord_embeds) >= 9:
