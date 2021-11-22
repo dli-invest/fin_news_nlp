@@ -15,7 +15,7 @@ settings = {}
 nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
 
 
-output_file = "yahoo_urls.txt"
+output_file = "data/yahoo_urls.txt"
 class ScraperForYahoo(scrapy.Spider):
     name = "yahoo_finance"
     start_urls = [

@@ -46,11 +46,11 @@ def post_webhook_content(data: dict):
 if __name__ == '__main__':
     # init nlp 
     nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
-    cnbc_feed_urls = ["https://www.cnbc.com/id/100003114/device/rss/rss.html"]
+    cnbc_feed_urls = ["https://www.cnbc.com/id/100003114/device/rss/rss.html", "https://www.cnbc.com/id/15837362/device/rss/rss.html"]
     the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
     stock_feed_list = [*cnbc_feed_urls, *the_guardian_feed_urls]
 
-    cnbc_output = "cnbc_urls.txt"
+    cnbc_output = "data/cnbc_urls.txt"
     cnbc_read_articles = parse_output_file(cnbc_output)
     # accumulate all the cnbc and the guardian feeds
     discord_embeds = []
@@ -80,13 +80,6 @@ if __name__ == '__main__':
                                 discord_embeds = []
                                 time.sleep(2)
                             cnbc_read_articles.append(cnbc_article['link'])
-                            try:
-                                dev_data = {
-                                    "content": f"```{json.dumps(description_doc.ents + title_doc.ents)}```"
-                                }
-                                post_webhook_content(dev_data)
-                            except Exception as e:
-                                pass
                     except Exception as e:
                         print(e)
                         continue
