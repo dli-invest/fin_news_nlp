@@ -43,46 +43,52 @@ def post_webhook_content(data: dict):
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
-if __name__ == '__main__':
+def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles):
+    for cnbc_article in cnbc_feed:
+        data = {}
+        cnbc_data = cnbc_article_to_embed(cnbc_article)
+        try:
+            description_doc = nlp(cnbc_article["description"])
+            title_doc = nlp(cnbc_article["title"])
+            entities = description_doc.ents + title_doc.ents
+            # count number of entities in the description and title
+            total_hits = len(entities)
+            # make fields for the embed from ents
+            fields = [description_doc.ents, title_doc.ents]
+            # make a list of all the entities
+            fields = [ {entity.label_: entity.text} for entity in entities]
+            cnbc_data["fields"] = fields[0:3]
+            if total_hits >= 1:
+                discord_embeds.append(cnbc_data)
+                if len(discord_embeds) >= 9:
+                    post_webhook_content({"embeds": discord_embeds})
+                    discord_embeds = []
+                    time.sleep(2)
+                cnbc_read_articles.append(cnbc_article['link'])
+        except Exception as e:
+            print(e)
+            continue
+def main():
     # init nlp 
     nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
-    cnbc_feed_urls = ["https://www.cnbc.com/id/100003114/device/rss/rss.html", "https://www.cnbc.com/id/15837362/device/rss/rss.html"]
-    the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
-    stock_feed_list = [*cnbc_feed_urls, *the_guardian_feed_urls]
+    # read json from file "data/cnbc_feeds.json"
+    with open("data/cnbc_feeds.json") as feeds_file:
+        cnbc_feeds = json.load(feeds_file)
+    the_guardian_feed_urls = []
+    # the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
+    stock_feed_list = [*cnbc_feeds, *the_guardian_feed_urls]
 
     cnbc_output = "data/cnbc_urls.txt"
     cnbc_read_articles = parse_output_file(cnbc_output)
     # accumulate all the cnbc and the guardian feeds
     discord_embeds = []
-    for feed_url in stock_feed_list:
+    for feed_data in stock_feed_list:
+        feed_url = feed_data["feedUri"]
         rss_feed = get_feed_data(feed_url)
         if feed_url.startswith("https://www.cnbc.com"):
             if feed_url not in cnbc_read_articles:
                 cnbc_feed = parse_cnbc_feed(rss_feed)
-                for cnbc_article in cnbc_feed:
-                    data = {}
-                    cnbc_data = cnbc_article_to_embed(cnbc_article)
-                    try:
-                        description_doc = nlp(cnbc_article["description"])
-                        title_doc = nlp(cnbc_article["title"])
-                        entities = description_doc.ents + title_doc.ents
-                        # count number of entities in the description and title
-                        total_hits = len(entities)
-                        # make fields for the embed from ents
-                        fields = [description_doc.ents, title_doc.ents]
-                        # make a list of all the entities
-                        fields = [ {entity.label_: entity.text} for entity in entities]
-                        cnbc_data["fields"] = fields[0:3]
-                        if total_hits >= 1:
-                            discord_embeds.append(cnbc_data)
-                            if len(discord_embeds) >= 9:
-                                post_webhook_content({"embeds": discord_embeds})
-                                discord_embeds = []
-                                time.sleep(2)
-                            cnbc_read_articles.append(cnbc_article['link'])
-                    except Exception as e:
-                        print(e)
-                        continue
+                iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles)
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api
         elif feed_url.startswith("https://www.theguardian.com"):
@@ -94,3 +100,6 @@ if __name__ == '__main__':
             discord_embeds = []
 
     save_list_of_strs_to_file(cnbc_read_articles)
+
+if __name__ == '__main__':
+    main()
