@@ -1,0 +1,17 @@
+{
+    "name": "CNBC RSS Feeds",
+    "feeds": [
+        {
+            "feed": "World News",
+            "feedUri": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+            "sendWithoutMatch": false,
+            "entityThreshold": 1
+        },
+        {
+            "feed": "USA News",
+            "feedUri": "https://www.cnbc.com/id/15837362/device/rss/rss.html",
+            "sendWithoutMatch": false,
+            "entityThreshold": 1
+        }
+    ]
+}
