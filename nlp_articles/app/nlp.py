@@ -40,11 +40,13 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         
     for company in companies:
         if company not in stops:
-            patterns.append({"label": "COMPANY", "pattern": company})
-            words = company.split()
-            if len(words) > 1:
-                new = " ".join(words[:2])
-                patterns.append({"label": "COMPANY", "pattern": new})
+            # make sure company is more than a single letter
+            if len(company) > 1:
+                patterns.append({"label": "COMPANY", "pattern": company})
+                words = company.split()
+                if len(words) > 1:
+                    new = " ".join(words[:2])
+                    patterns.append({"label": "COMPANY", "pattern": new})
         
     for index in indexes:
         patterns.append({"label": "INDEX", "pattern": index})
