@@ -30,6 +30,7 @@ def save_list_of_strs_to_file(read_articles, file_name = "cnbc_urls.txt"):
                 txt_file.write(article_url +"\n")
 
 def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
+        print("SENDING DATA")
         url = os.environ.get(webhook_env)
 
         result = requests.post(
@@ -57,11 +58,10 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             # make a list of all the entities
             fields = [ {entity.label_: entity.text} for entity in entities]
             cnbc_data["fields"] = fields[0:3]
-            print(cnbc_data)
             if total_hits >= 1:
                 discord_embeds.append(cnbc_data)
                 if len(discord_embeds) >= 9:
-                    post_webhook_content({"embeds": discord_embeds})
+                    post_webhook_content({"embeds": discord_embeds}, "DISCORD_STATS_WEBHOOK")
                     discord_embeds = []
                     time.sleep(2)
                 cnbc_read_articles.append(cnbc_article['link'])
