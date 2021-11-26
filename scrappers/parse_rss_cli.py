@@ -84,7 +84,7 @@ def main():
     discord_embeds = []
     total_hits = 0
     for feed_data in stock_feed_list:
-        feed_url = feed_data["feedUri"]
+        feed_url = feed_data.get("feedUri")
         rss_feed = get_feed_data(feed_url)
         if feed_url.startswith("https://www.cnbc.com"):
             if feed_url not in cnbc_read_articles:
