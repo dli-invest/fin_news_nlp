@@ -45,7 +45,6 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
 
 def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
     for cnbc_article in cnbc_feed:
-        data = {}
         cnbc_data = cnbc_article_to_embed(cnbc_article)
         try:
             description_doc = nlp(cnbc_article["description"])
@@ -58,6 +57,7 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             # make a list of all the entities
             fields = [ {entity.label_: entity.text} for entity in entities]
             cnbc_data["fields"] = fields[0:3]
+            print(cnbc_data)
             if total_hits >= 1:
                 discord_embeds.append(cnbc_data)
                 if len(discord_embeds) >= 9:
