@@ -45,6 +45,7 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
 def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
+    global total_hits
     for cnbc_article in cnbc_feed:
         cnbc_data = cnbc_article_to_embed(cnbc_article)
         try:
