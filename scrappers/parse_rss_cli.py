@@ -61,7 +61,8 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             if total_hits >= 1:
                 discord_embeds.append(cnbc_data)
                 if len(discord_embeds) >= 9:
-                    post_webhook_content({"embeds": discord_embeds}, "DISCORD_STATS_WEBHOOK")
+                    print(discord_embeds)
+                    post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
                     time.sleep(2)
                 cnbc_read_articles.append(cnbc_article['link'])
