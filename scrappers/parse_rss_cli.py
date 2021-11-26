@@ -72,6 +72,7 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             print(e)
             continue
 def main():
+    global total_hits
     # init nlp 
     nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
     # read json from file "data/cnbc_feeds.json"
