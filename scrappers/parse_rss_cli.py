@@ -5,7 +5,7 @@ import os
 import time
 from scrappers.parse_rss_feeds import get_feed_data, cnbc_article_to_embed, parse_cnbc_feed, parse_the_guardian_feed
 from nlp_articles.app.nlp import init_nlp
-
+total_hits = 0
 
 def parse_output_file(output_file = "cnbc_urls.txt"):
     """parse an output files and read the files"""
@@ -56,7 +56,7 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             # make fields for the embed from ents
             fields = [description_doc.ents, title_doc.ents]
             # make a list of all the entities
-            fields = [ {entity.label_: entity.text} for entity in entities]
+            fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
             cnbc_data["fields"] = fields[0:3]
             if total_hits >= 1:
                 discord_embeds.append(cnbc_data)
@@ -64,6 +64,7 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
                     print(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
+                    total_hits = total_hits + len(discord_embeds)
                     time.sleep(2)
                 cnbc_read_articles.append(cnbc_article['link'])
         except Exception as e:
@@ -83,7 +84,6 @@ def main():
     cnbc_read_articles = parse_output_file(cnbc_output)
     # accumulate all the cnbc and the guardian feeds
     discord_embeds = []
-    total_hits = 0
     for feed_data in stock_feed_list:
         feed_url = feed_data.get("feedUri")
         rss_feed = get_feed_data(feed_url)
