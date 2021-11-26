@@ -402,10 +402,8 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2021/11/26/stock-futures-open-to-close-market-news.html
-https://www.cnbc.com/2021/11/26/covid-variant-emerges-in-south-africa-heres-what-we-know-so-far.html
 https://www.cnbc.com/2021/11/26/boeing-airline-stocks-tumble-as-new-covid-variant-spurs-travel-curbs.html
 https://www.cnbc.com/2021/11/26/49percent-of-consumers-will-shop-small-business-saturday-these-tips-can-help.html
-https://www.cnbc.com/2021/11/26/novembers-best-performing-sp-500-stock-still-has-room-to-run-trader.html
 https://www.cnbc.com/2021/11/26/stocks-making-the-biggest-moves-midday-moderna-united-airlines-zoom-and-more.html
 https://www.cnbc.com/2021/11/25/uk-suspends-flights-to-six-african-countries-as-new-covid-variant-raises-alarms.html
 https://www.cnbc.com/2021/11/26/black-friday-how-shoppers-feel-about-prices-supply-chain-inventory.html
@@ -417,4 +415,3 @@ https://www.cnbc.com/2021/11/24/california-docks-see-significant-progress-with-s
 https://www.cnbc.com/2021/11/24/us-jobless-claims-fall-to-just-199000-the-lowest-level-since-1969.html
 https://www.cnbc.com/2021/11/23/rocket-lab-ceo-not-reusing-rockets-is-a-dead-end-product.html
 https://www.cnbc.com/2021/11/23/gm-bidens-test-drive-of-electric-hummer-helped-increase-reservations.html
-https://www.cnbc.com/2021/11/23/detroit-automakers-ask-union-workers-to-submit-covid-vaccine-status.html
