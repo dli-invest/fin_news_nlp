@@ -76,7 +76,7 @@ def main():
         cnbc_feeds = json.load(feeds_file)
     the_guardian_feed_urls = []
     # the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
-    stock_feed_list = [*cnbc_feeds, *the_guardian_feed_urls]
+    stock_feed_list = [*cnbc_feeds.get("feeds"), *the_guardian_feed_urls]
 
     cnbc_output = "data/cnbc_urls.txt"
     cnbc_read_articles = parse_output_file(cnbc_output)
