@@ -35,19 +35,17 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         patterns.append({"label": "STOCK", "pattern": symbol})
         for ending in endings:
             patterns.append({"label": "STOCK", "pattern": symbol+f".{ending}"})
-                    
-        
-        
+
+
+
     for company in companies:
-        if company not in stops:
-            # make sure company is more than a single letter
-            if len(company) > 1:
-                patterns.append({"label": "COMPANY", "pattern": company})
-                words = company.split()
-                if len(words) > 1:
-                    new = " ".join(words[:2])
-                    patterns.append({"label": "COMPANY", "pattern": new})
-        
+        if company not in stops and len(company) > 1:
+            patterns.append({"label": "COMPANY", "pattern": company})
+            words = company.split()
+            if len(words) > 1:
+                new = " ".join(words[:2])
+                patterns.append({"label": "COMPANY", "pattern": new})
+
     for index in indexes:
         patterns.append({"label": "INDEX", "pattern": index})
         versions = []
@@ -64,11 +62,11 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         for version in versions:
             if version != "NYSE":
                 patterns.append({"label": "INDEX", "pattern": version})
-        
+
     for symbol in index_symbols:
         patterns.append({"label": "INDEX", "pattern": symbol})    
-        
-        
+
+
     for d in descriptions:
         patterns.append({"label": "STOCK_EXCHANGE", "pattern": d})
     for e in exchanges:

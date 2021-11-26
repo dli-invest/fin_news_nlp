@@ -24,7 +24,7 @@ def save_list_of_strs_to_file(read_articles, file_name = "cnbc_urls.txt"):
     """save list of strings to file"""
 
     clean_list = list( dict.fromkeys(read_articles) )
-    if len(clean_list) > 0:
+    if clean_list:
         with open(file_name, 'w') as txt_file:
             for article_url in clean_list:
                 txt_file.write(article_url +"\n")
@@ -65,7 +65,7 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
                     print(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
-                    total_hits = total_hits + len(discord_embeds)
+                    total_hits += len(discord_embeds)
                     time.sleep(2)
                 cnbc_read_articles.append(cnbc_article['link'])
         except Exception as e:
