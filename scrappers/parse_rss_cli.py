@@ -5,7 +5,7 @@ import os
 import time
 from scrappers.parse_rss_feeds import get_feed_data, cnbc_article_to_embed, parse_cnbc_feed, parse_the_guardian_feed
 from nlp_articles.app.nlp import init_nlp
-total_hits = 0
+total_send_docs = 0
 
 def parse_output_file(output_file = "cnbc_urls.txt"):
     """parse an output files and read the files"""
@@ -45,7 +45,7 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
 def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
-    global total_hits
+    global total_send_docs
     for cnbc_article in cnbc_feed:
         cnbc_data = cnbc_article_to_embed(cnbc_article)
         try:
@@ -65,14 +65,14 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
                     print(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
-                    total_hits = total_hits + len(discord_embeds)
+                    total_send_docs = total_send_docs + len(discord_embeds)
                     time.sleep(2)
                 cnbc_read_articles.append(cnbc_article['link'])
         except Exception as e:
             print(e)
             continue
 def main():
-    global total_hits
+    global total_send_docs
     # init nlp 
     nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
     # read json from file "data/cnbc_feeds.json"
@@ -101,10 +101,10 @@ def main():
 
         if len(discord_embeds) >= 9:
             post_webhook_content({"embeds": discord_embeds})
-            total_hits = total_hits + len(discord_embeds)
+            total_send_docs = total_send_docs + len(discord_embeds)
             discord_embeds = []
 
     save_list_of_strs_to_file(cnbc_read_articles)
-    post_webhook_content({"content": f"Total Hits {total_hits}"}, "DISCORD_STATS_WEBHOOK")
+    post_webhook_content({"content": f"Total Hits {total_send_docs}"}, "DISCORD_STATS_WEBHOOK")
 if __name__ == '__main__':
     main()
