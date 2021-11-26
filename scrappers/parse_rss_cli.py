@@ -29,8 +29,8 @@ def save_list_of_strs_to_file(read_articles, file_name = "cnbc_urls.txt"):
             for article_url in clean_list:
                 txt_file.write(article_url +"\n")
 
-def post_webhook_content(data: dict):
-        url = os.environ.get('DISCORD_WEBHOOK')
+def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
+        url = os.environ.get(webhook_env)
 
         result = requests.post(
             url, data=json.dumps(data), headers={"Content-Type": "application/json"}
@@ -43,7 +43,7 @@ def post_webhook_content(data: dict):
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
-def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles):
+def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
     for cnbc_article in cnbc_feed:
         data = {}
         cnbc_data = cnbc_article_to_embed(cnbc_article)
@@ -82,13 +82,14 @@ def main():
     cnbc_read_articles = parse_output_file(cnbc_output)
     # accumulate all the cnbc and the guardian feeds
     discord_embeds = []
+    total_hits = 0
     for feed_data in stock_feed_list:
         feed_url = feed_data["feedUri"]
         rss_feed = get_feed_data(feed_url)
         if feed_url.startswith("https://www.cnbc.com"):
             if feed_url not in cnbc_read_articles:
                 cnbc_feed = parse_cnbc_feed(rss_feed)
-                iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles)
+                iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds)
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api
         elif feed_url.startswith("https://www.theguardian.com"):
@@ -97,9 +98,10 @@ def main():
 
         if len(discord_embeds) >= 9:
             post_webhook_content({"embeds": discord_embeds})
+            total_hits = total_hits + len(discord_embeds)
             discord_embeds = []
 
     save_list_of_strs_to_file(cnbc_read_articles)
-
+    post_webhook_content({"content": f"Total Hits {total_hits}"}, "DISCORD_STATS_WEBHOOK")
 if __name__ == '__main__':
     main()
