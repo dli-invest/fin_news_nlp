@@ -32,9 +32,10 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     endings = [".TO", ".V", ".CN", ".HK"]
     #List of Entities and Patterns
     for symbol in symbols:
-        patterns.append({"label": "STOCK", "pattern": symbol})
-        for ending in endings:
-            patterns.append({"label": "STOCK", "pattern": symbol+f".{ending}"})
+        if len(symbol) > 1:
+            patterns.append({"label": "STOCK", "pattern": symbol})
+            for ending in endings:
+                patterns.append({"label": "STOCK", "pattern": symbol+f".{ending}"})
 
 
 
