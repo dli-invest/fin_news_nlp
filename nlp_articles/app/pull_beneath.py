@@ -48,10 +48,9 @@ async def main():
                 }
                 discord_embeds.append(embed)
                 if len(discord_embeds) >= 9:
-                    print(discord_embeds)
+                    beneath_hits += len(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
-                    beneath_hits += len(discord_embeds)
                     time.sleep(2)
             # if len(discord_embeds) >= 9:
             #     print(discord_embeds)
