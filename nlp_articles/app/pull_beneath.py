@@ -62,7 +62,7 @@ async def main():
             beneath_hits += len(discord_embeds)
             time.sleep(2)
 
-        embeds = {"embeds": [{"title": "fin_news_nlp | Beneath /r/wsb", "description": f"Total Reddit Posts: {beneath_hits}", "color": 0x00ff00}]}
+        embeds = {"embeds": [{"title": "fin_news_nlp | Beneath /r/wsb", "description": f"Total Reddit Posts: {beneath_hits}", "color": 0x0000ff}]}
         post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
             
             
