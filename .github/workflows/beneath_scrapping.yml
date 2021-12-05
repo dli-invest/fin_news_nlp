@@ -1,4 +1,4 @@
-name: CNBC Data
+name: Beneath Scrapping
 on:
   push:
     branches:
@@ -36,7 +36,7 @@ jobs:
 
       - name: Crawl
         run:  |
-         python -m scrappers.parse_rss_cli
+         python -m nlp_articles.app.pull_beneath
 
       - name: Commit files
         run: |
