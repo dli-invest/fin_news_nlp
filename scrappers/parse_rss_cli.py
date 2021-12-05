@@ -105,7 +105,7 @@ def main():
             discord_embeds = []
 
     save_list_of_strs_to_file(cnbc_read_articles)
-    embeds = {"embeds": [{"title": "fin_news_nlp", "description": f"Total Hits {total_hits}", "color": 0x00ff00}]}
+    embeds = {"embeds": [{"title": "fin_news_nlp | parse_rss_cli - cnbc", "description": f"Total Hits {total_hits}", "color": 0x00ff00}]}
     post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
 if __name__ == '__main__':
     main()
