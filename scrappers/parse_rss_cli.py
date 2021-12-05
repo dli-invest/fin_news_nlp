@@ -53,13 +53,13 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             title_doc = nlp(cnbc_article["title"])
             entities = description_doc.ents + title_doc.ents
             # count number of entities in the description and title
-            total_hits = len(entities)
+            entity_hits = len(entities)
             # make fields for the embed from ents
             fields = [description_doc.ents, title_doc.ents]
             # make a list of all the entities
             fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
             cnbc_data["fields"] = fields[0:3]
-            if total_hits >= 1:
+            if entity_hits >= 1:
                 discord_embeds.append(cnbc_data)
                 if len(discord_embeds) >= 9:
                     print(discord_embeds)
@@ -105,7 +105,7 @@ def main():
             discord_embeds = []
 
     save_list_of_strs_to_file(cnbc_read_articles)
-    embeds = {"embeds": [{"title": "fin_news_nlp", "description": f"Total Hits {total_hits}", "color": 0x00ff00}]}
+    embeds = {"embeds": [{"title": "fin_news_nlp | parse_rss_cli - cnbc", "description": f"Total Hits {total_hits}", "color": 0x00ff00}]}
     post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
 if __name__ == '__main__':
     main()
