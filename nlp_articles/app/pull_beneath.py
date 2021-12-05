@@ -41,7 +41,7 @@ async def main():
             fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in comment_doc.ents]
             if entity_hits >= 1:
                 embed = {
-                    "title": author,
+                    "title": f"wsb | {author}",
                     "description": text,
                     "url": f"https://reddit.com/{permalink}",
                     "fields": fields[0:3]
