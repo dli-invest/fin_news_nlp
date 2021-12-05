@@ -6,4 +6,3 @@ pytest==6.2.5
 pytest-cov==2.12.1
 black==19.3b0
 urllib3==1.26.7
-beneath
