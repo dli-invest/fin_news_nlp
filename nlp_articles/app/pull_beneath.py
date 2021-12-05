@@ -44,8 +44,7 @@ async def main():
                     "title": author,
                     "description": text,
                     "url": f"https://reddit.com/{permalink}",
-                    "fields": fields[0:19],
-                    "timestamp": created_on
+                    "fields": fields[0:3]
                 }
                 discord_embeds.append(embed)
                 if len(discord_embeds) >= 9:
