@@ -30,6 +30,7 @@ jobs:
         run: |
           python -m pip install -r nlp_articles/requirements/scrapy.txt
           python -m pip install -r nlp_articles/requirements/spacy.txt
+          python -m textblob.download_corpora
           spacy download en_core_web_sm
 
       - name: Crawl

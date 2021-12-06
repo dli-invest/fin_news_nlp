@@ -1,8 +1,10 @@
 import spacy
 import pandas as pd
+from spacytextblob.spacytextblob import SpacyTextBlob
 
 def init_nlp(exchange_data_path: str, indicies_data_path: str):
     nlp = spacy.load("en_core_web_sm")
+    nlp.add_pipe("spacytextblob")
     ticker_df = pd.read_csv(
                 "https://raw.githubusercontent.com/dli-invest/eod_tickers/main/data/us.csv"
             )

@@ -39,7 +39,9 @@ async def main():
             comment_doc = nlp(text)
             entity_hits = len(comment_doc.ents)
             fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in comment_doc.ents]
-            if entity_hits >= 1:
+            fields.append({"name": "Polarity", "value": comment_doc._.polarity, "inline": True})
+            fields.append({"name": "Subjectivity", "value": comment_doc._.subjectivity, "inline": True})
+            if entity_hits >= 1 or abs(comment_doc._.polarity) >= 0.7 or abs(comment_doc._.subjectivity) >= 0.7:
                 embed = {
                     "title": f"wsb | {author}",
                     "description": text,
