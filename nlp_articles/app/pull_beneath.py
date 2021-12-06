@@ -3,6 +3,7 @@ import os
 import beneath
 import json
 import time
+import re
 from datetime import datetime, timedelta
 from nlp_articles.app.nlp import init_nlp
 # move post_webhook_content to a separate file inside nlp_articles.core
@@ -19,7 +20,7 @@ async def main():
     table_instance = await table.find_instances()
     first_instance = table_instance[0]
 
-    start_date = datetime.today() - timedelta(hours=0, minutes=50)
+    start_date = datetime.today() - timedelta(hours=0, minutes=60)
     start_time_str = start_date.strftime('%Y-%m-%dT%H:%M:%S')
     end_time_str = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
     filter = json.dumps({"created_on": { "_gte": start_time_str, "_lt": end_time_str}})
@@ -27,6 +28,7 @@ async def main():
     records = await cursor.read_all()
     if len(records) > 0:
         nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
+        nlp.add_pipe("spacytextblob")
         # iterate through records
         # create spacy documents using records
         discord_embeds = []
@@ -39,17 +41,18 @@ async def main():
             comment_doc = nlp(text)
             entity_hits = len(comment_doc.ents)
             fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in comment_doc.ents]
-            fields.append({"name": "Polarity", "value": comment_doc._.polarity, "inline": True})
-            fields.append({"name": "Subjectivity", "value": comment_doc._.subjectivity, "inline": True})
-            if entity_hits >= 1 or abs(comment_doc._.polarity) >= 0.7 or abs(comment_doc._.subjectivity) >= 0.7:
+            if comment_doc._.polarity and comment_doc._.subjectivity:
+                fields.append({"name": "Polarity", "value": str(comment_doc._.polarity), "inline": True})
+                fields.append({"name": "Subjectivity", "value": str(comment_doc._.subjectivity), "inline": True})
+            if entity_hits >= 1:
                 embed = {
                     "title": f"wsb | {author}",
-                    "description": text,
+                    "description": text[0:1999],
                     "url": f"https://reddit.com/{permalink}",
-                    "fields": fields[0:3]
+                    "fields": fields[0:19]
                 }
                 discord_embeds.append(embed)
-                if len(discord_embeds) >= 9:
+                if len(discord_embeds) >= 3:
                     beneath_hits += len(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
@@ -58,7 +61,7 @@ async def main():
             #     print(discord_embeds)
             #     post_webhook_content({"embeds": discord_embeds})
             # send if any hits are available
-        if len(discord_embeds) >= 0:
+        if len(discord_embeds) > 0:
             post_webhook_content({"embeds": discord_embeds})
             discord_embeds = []
             beneath_hits += len(discord_embeds)

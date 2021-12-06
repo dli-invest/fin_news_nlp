@@ -41,6 +41,7 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
             result.raise_for_status()
         except requests.exceptions.HTTPError as err:
             print(err)
+            print(data)
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
@@ -58,11 +59,13 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             fields = [description_doc.ents, title_doc.ents]
             # make a list of all the entities
             fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
+            if title_doc._.polarity and title_doc._.subjectivity:
+                fields.append({"name": "Polarity", "value": title_doc._.polarity, "inline": True})
+                fields.append({"name": "Subjectivity", "value": title_doc._.subjectivity, "inline": True})
             cnbc_data["fields"] = fields[0:3]
             if entity_hits >= 1:
                 discord_embeds.append(cnbc_data)
                 if len(discord_embeds) >= 9:
-                    print(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
                     total_hits += len(discord_embeds)

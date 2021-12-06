@@ -6,10 +6,10 @@ on:
       - "feature/*"
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '10 8-20 * * 1-5'
+    - cron:  '10 8-20 * * *'
 
 env:
-  DISCORD_WEBHOOK: ${{ secrets.DISCORD_NEWS_WEBHOOK }}
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_SOCIAL_WEBHOOK }}
   DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
   BENEATH_SECRET: ${{ secrets.BENEATH_SECRET }}
 # Add cron job to ensure external webpages + apis have no changed
