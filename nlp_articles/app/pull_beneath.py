@@ -48,7 +48,7 @@ async def main():
                 embed = {
                     "title": f"wsb | {author}",
                     "description": text[0:1999],
-                    "url": f"https://reddit.com/{permalink}",
+                    "url": f"https://reddit.com{permalink}",
                     "fields": fields[0:19]
                 }
                 discord_embeds.append(embed)
@@ -57,10 +57,7 @@ async def main():
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
                     time.sleep(2)
-            # if len(discord_embeds) >= 9:
-            #     print(discord_embeds)
-            #     post_webhook_content({"embeds": discord_embeds})
-            # send if any hits are available
+
         if len(discord_embeds) > 0:
             post_webhook_content({"embeds": discord_embeds})
             discord_embeds = []
@@ -70,10 +67,6 @@ async def main():
         embeds = {"embeds": [{"title": "fin_news_nlp | Beneath /r/wsb", "description": f"Total Reddit Posts: {beneath_hits}", "color": 0x0000ff}]}
         post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
             
-            
-
-    
-
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
