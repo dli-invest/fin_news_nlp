@@ -13,7 +13,6 @@ async def callback(record):
     print(record)
 
 async def main():
-    beneath_hits = 0
     beneathKey = os.getenv("BENEATH_SECRET")
     client = beneath.Client(secret=beneathKey)
     table = await client.find_table("examples/reddit/r-wallstreetbets-posts")
@@ -32,6 +31,7 @@ async def main():
         # iterate through records
         # create spacy documents using records
         discord_embeds = []
+        beneath_hits = 0
         for record in records:
             text = record.get("text")
             author = record.get("author")
@@ -47,10 +47,11 @@ async def main():
             if entity_hits >= 1:
                 embed = {
                     "title": f"wsb | {author}",
-                    "description": text[0:1999],
+                    "description": text[:1999],
                     "url": f"https://reddit.com{permalink}",
-                    "fields": fields[0:19]
+                    "fields": fields[:19],
                 }
+
                 discord_embeds.append(embed)
                 if len(discord_embeds) >= 3:
                     beneath_hits += len(discord_embeds)
@@ -58,7 +59,7 @@ async def main():
                     discord_embeds = []
                     time.sleep(2)
 
-        if len(discord_embeds) > 0:
+        if discord_embeds:
             post_webhook_content({"embeds": discord_embeds})
             discord_embeds = []
             beneath_hits += len(discord_embeds)

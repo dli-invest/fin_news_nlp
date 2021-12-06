@@ -62,7 +62,7 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             if title_doc._.polarity and title_doc._.subjectivity:
                 fields.append({"name": "Polarity", "value": title_doc._.polarity, "inline": True})
                 fields.append({"name": "Subjectivity", "value": title_doc._.subjectivity, "inline": True})
-            cnbc_data["fields"] = fields[0:3]
+            cnbc_data["fields"] = fields[:3]
             if entity_hits >= 1:
                 discord_embeds.append(cnbc_data)
                 if len(discord_embeds) >= 9:
