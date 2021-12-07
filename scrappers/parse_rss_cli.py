@@ -58,14 +58,13 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             fields = [description_doc.ents, title_doc.ents]
             # make a list of all the entities
             fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
-            cnbc_data["fields"] = fields[0:3]
+            cnbc_data["fields"] = fields[0:10]
             if entity_hits >= 1:
                 discord_embeds.append(cnbc_data)
-                if len(discord_embeds) >= 9:
-                    print(discord_embeds)
+                if len(discord_embeds) >= 4:
+                    total_hits += len(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
-                    total_hits += len(discord_embeds)
                     time.sleep(2)
                 cnbc_read_articles.append(cnbc_article['link'])
         except Exception as e:
@@ -99,7 +98,7 @@ def main():
             guardian_article = parse_the_guardian_feed(rss_feed)
             continue
 
-        if len(discord_embeds) >= 9:
+        if len(discord_embeds) >= 4:
             post_webhook_content({"embeds": discord_embeds})
             total_hits = total_hits + len(discord_embeds)
             discord_embeds = []

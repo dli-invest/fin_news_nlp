@@ -25,10 +25,12 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
     descriptions = ex_df.Description.tolist()
 
-    stops = ["two"]
+    stops = ["two", "the", "u.s.", "wall", "data"]
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []
+
+    first_words_added = []
     endings = [".TO", ".V", ".CN", ".HK"]
     #List of Entities and Patterns
     for symbol in symbols:
@@ -43,9 +45,15 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         if company not in stops and len(company) > 1:
             patterns.append({"label": "COMPANY", "pattern": company})
             words = company.split()
-            if len(words) > 1:
+            if len(words) >= 1:
                 new = " ".join(words[:2])
                 patterns.append({"label": "COMPANY", "pattern": new})
+                # add first word to list as well
+                first_word = words[0]
+                if first_word.lower() not in stops:
+                    if first_word not in first_words_added:
+                        first_words_added.append(first_word)
+                        patterns.append({"label": "COMPANY", "pattern": words[0]})
 
     for index in indexes:
         patterns.append({"label": "INDEX", "pattern": index})
@@ -73,12 +81,14 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     for e in exchanges:
         patterns.append({"label": "STOCK_EXCHANGE", "pattern": e})
 
-    for crit in ["evergrande", "china", "climate", "recession", "depression", "FED"]:
+    for crit in ["evergrande", "climate", "recession", "depression", "FED"]:
          patterns.append({"label": "CRITICAL", "pattern": crit})
 
     for term in ["COP", "BIDEN"]:
         patterns.append({"label": "EVENT", "pattern": term})
 
+    for country in ["USA", "US", "United States", "U.S.", "U.S.A.", "CANADA", "CHINA"]:
+        patterns.append({"label": "COUNTRY", "pattern": country})
     # might be of interest 
 
     for ec in ["ENVIRONMENT", "INTEREST", "RATES", "TAXPAYERS", "TRUMP", "SUPPLY"]:
