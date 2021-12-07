@@ -50,10 +50,12 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
                 patterns.append({"label": "COMPANY", "pattern": new})
                 # add first word to list as well
                 first_word = words[0]
-                if first_word.lower() not in stops:
-                    if first_word not in first_words_added:
-                        first_words_added.append(first_word)
-                        patterns.append({"label": "COMPANY", "pattern": words[0]})
+                if (
+                    first_word.lower() not in stops
+                    and first_word not in first_words_added
+                ):
+                    first_words_added.append(first_word)
+                    patterns.append({"label": "COMPANY", "pattern": words[0]})
 
     for index in indexes:
         patterns.append({"label": "INDEX", "pattern": index})
