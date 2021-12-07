@@ -12,8 +12,8 @@ import spacy
 import srsly
 import uvicorn
 
-from app.spacy_extractor import SpacyExtractor
-from app.models import (
+from nlp_articles.app.spacy_extractor import SpacyExtractor
+from nlp_articles.app.models import (
     ENT_PROP_MAP,
     ArticleRequest,
     RecordDataResponse,

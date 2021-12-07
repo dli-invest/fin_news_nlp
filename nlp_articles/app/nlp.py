@@ -25,7 +25,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
     descriptions = ex_df.Description.tolist()
 
-    stops = ["two", "the", "u.s.", "wall", "data"]
+    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north"]
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []
@@ -50,7 +50,8 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
                 patterns.append({"label": "COMPANY", "pattern": new})
                 # add first word to list as well
                 first_word = words[0]
-                if first_word.lower() not in stops:
+                # ignore the numbers
+                if first_word.isnumeric() == False and first_word.lower() not in stops:
                     if first_word not in first_words_added:
                         first_words_added.append(first_word)
                         patterns.append({"label": "COMPANY", "pattern": words[0]})

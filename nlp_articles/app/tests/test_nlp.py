@@ -58,6 +58,6 @@ def test_parsing_article():
             labels_hit += 1
 
     assert ents_hit == 9
-    assert labels_hit == 32
+    assert labels_hit > 30
 
         
