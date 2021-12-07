@@ -25,7 +25,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
     descriptions = ex_df.Description.tolist()
 
-    stops = ["two", "the", "u.s."]
+    stops = ["two", "the", "u.s.", "wall", "data"]
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []
