@@ -19,7 +19,7 @@ async def main():
     table_instance = await table.find_instances()
     first_instance = table_instance[0]
 
-    start_date = datetime.today() - timedelta(hours=0, minutes=250)
+    start_date = datetime.today() - timedelta(hours=0, minutes=180)
     start_time_str = start_date.strftime('%Y-%m-%dT%H:%M:%S')
     end_time_str = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
     filter = json.dumps({"created_on": { "_gte": start_time_str, "_lt": end_time_str}})
@@ -47,7 +47,7 @@ async def main():
                     "fields": fields[0:3]
                 }
                 discord_embeds.append(embed)
-                if len(discord_embeds) >= 9:
+                if len(discord_embeds) >= 4:
                     beneath_hits += len(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []

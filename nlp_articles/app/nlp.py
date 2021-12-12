@@ -1,6 +1,8 @@
 import spacy
 import pandas as pd
 
+# rewrite this to load based on patternl files.
+# https://spacy.io/usage/rule-based-matching#entityruler-files
 def init_nlp(exchange_data_path: str, indicies_data_path: str):
     nlp = spacy.load("en_core_web_sm")
     ticker_df = pd.read_csv(
@@ -25,7 +27,8 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
     descriptions = ex_df.Description.tolist()
 
-    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north", "canadian", "chinese", "communist", "new", "can", "good", "in", "here", "all", "social media", "hope", "party", "america", "president", "hot", "white", "house", "tuesday", "web", "us", "sense", "glen", "san", "texas", "Louisiana", "georgia", "exchange", "fox", "crazy", "gen", "x", "labor", "that", "city", "no", "z", "project", "network"]
+    # split stops into other arrays
+    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north", "canadian", "chinese", "communist", "new", "can", "good", "in", "here", "all", "social media", "hope", "party", "america", "president", "hot", "white", "house", "tuesday", "web", "us", "sense", "glen", "san", "texas", "Louisiana", "georgia", "exchange", "fox", "crazy", "gen", "x", "labor", "that", "city", "no", "z", "project", "network", "health", "doctor", "technology"]
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []

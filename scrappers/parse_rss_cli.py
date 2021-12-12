@@ -41,6 +41,12 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
             result.raise_for_status()
         except requests.exceptions.HTTPError as err:
             print(err)
+            print(data)
+            result = requests.post(
+                url, data={
+                    "content": f"Error: {err}"
+                }, headers={"Content-Type": "application/json"}
+            )
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
