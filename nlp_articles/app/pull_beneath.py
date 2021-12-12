@@ -12,14 +12,13 @@ async def callback(record):
     print(record)
 
 async def main():
-    beneath_hits = 0
     beneathKey = os.getenv("BENEATH_SECRET")
     client = beneath.Client(secret=beneathKey)
     table = await client.find_table("examples/reddit/r-wallstreetbets-posts")
     table_instance = await table.find_instances()
     first_instance = table_instance[0]
 
-    start_date = datetime.today() - timedelta(hours=0, minutes=50)
+    start_date = datetime.today() - timedelta(hours=0, minutes=400)
     start_time_str = start_date.strftime('%Y-%m-%dT%H:%M:%S')
     end_time_str = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
     filter = json.dumps({"created_on": { "_gte": start_time_str, "_lt": end_time_str}})
@@ -30,6 +29,7 @@ async def main():
         # iterate through records
         # create spacy documents using records
         discord_embeds = []
+        beneath_hits = 0
         for record in records:
             text = record.get("text")
             author = record.get("author")
@@ -42,20 +42,21 @@ async def main():
             if entity_hits >= 1:
                 embed = {
                     "title": f"wsb | {author}",
-                    "description": text,
+                    "description": text[:1900],
                     "url": f"https://reddit.com/{permalink}",
-                    "fields": fields[0:3]
+                    "fields": fields[:3],
                 }
+
                 discord_embeds.append(embed)
-                if len(discord_embeds) >= 9:
+                if len(discord_embeds) >= 3:
                     beneath_hits += len(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
                     time.sleep(2)
-            # if len(discord_embeds) >= 9:
-            #     print(discord_embeds)
-            #     post_webhook_content({"embeds": discord_embeds})
-            # send if any hits are available
+                    # if len(discord_embeds) >= 9:
+                    #     print(discord_embeds)
+                    #     post_webhook_content({"embeds": discord_embeds})
+                    # send if any hits are available
         if len(discord_embeds) >= 0:
             post_webhook_content({"embeds": discord_embeds})
             discord_embeds = []
@@ -64,6 +65,9 @@ async def main():
 
         embeds = {"embeds": [{"title": "fin_news_nlp | Beneath /r/wsb", "description": f"Total Reddit Posts: {beneath_hits}", "color": 0x0000ff}]}
         post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
+        # exit on error based on environment variable EXIT_ON_ERROR
+        if os.getenv("EXIT_ON_ERROR") == "true":
+            exit(1)
             
             
 

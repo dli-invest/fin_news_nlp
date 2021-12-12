@@ -1,6 +1,8 @@
 import spacy
 import pandas as pd
 
+# rewrite this to load based on patternl files.
+# https://spacy.io/usage/rule-based-matching#entityruler-files
 def init_nlp(exchange_data_path: str, indicies_data_path: str):
     nlp = spacy.load("en_core_web_sm")
     ticker_df = pd.read_csv(
@@ -25,7 +27,10 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
     descriptions = ex_df.Description.tolist()
 
-    stops = ["two", "the", "u.s.", "wall", "data"]
+    # split stops into other arrays
+    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north", "canadian", "chinese", "communist", "new", "can", "good", "in", "here", "all", "social media", "hope", "party", "america", "president", "hot", "white", "house", "tuesday", "web", "us", "sense", "glen", "san", "texas", "Louisiana", "georgia", "exchange", "fox", "crazy", "gen", "x", "labor", "that", "city", "no", "z", "project", "network", "health", "doctor", "technology", "family", "funding", "free", "contact  "]
+
+    terms_to_add = ["b2b", "venture", "growth"]
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []
@@ -36,6 +41,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     for symbol in symbols:
         if len(symbol) > 1:
             patterns.append({"label": "STOCK", "pattern": symbol})
+            patterns.append({"label": "STOCK", "pattern": f"${symbol}"})
             for ending in endings:
                 patterns.append({"label": "STOCK", "pattern": symbol+f".{ending}"})
 
@@ -46,14 +52,19 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
             patterns.append({"label": "COMPANY", "pattern": company})
             words = company.split()
             if len(words) >= 1:
-                new = " ".join(words[:2])
-                patterns.append({"label": "COMPANY", "pattern": new})
+                new = " ".join(words)
+                if new not in first_words_added and new.isnumeric() == False:
+                    patterns.append({"label": "COMPANY", "pattern": new})
                 # add first word to list as well
                 first_word = words[0]
-                if first_word.lower() not in stops:
-                    if first_word not in first_words_added:
-                        first_words_added.append(first_word)
-                        patterns.append({"label": "COMPANY", "pattern": words[0]})
+                # ignore the numbers
+                if (
+                    first_word.isnumeric() == False
+                    and first_word.lower() not in stops
+                    and first_word not in first_words_added
+                ):
+                    first_words_added.append(first_word)
+                    patterns.append({"label": "COMPANY", "pattern": words[0]})
 
     for index in indexes:
         patterns.append({"label": "INDEX", "pattern": index})
