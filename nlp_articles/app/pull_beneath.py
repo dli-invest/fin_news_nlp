@@ -42,12 +42,12 @@ async def main():
             if entity_hits >= 1:
                 embed = {
                     "title": f"wsb | {author}",
-                    "description": text[:2200],
+                    "description": text[:1900],
                     "url": f"https://reddit.com/{permalink}",
                     "fields": fields[0:3]
                 }
                 discord_embeds.append(embed)
-                if len(discord_embeds) >= 8:
+                if len(discord_embeds) >= 3:
                     beneath_hits += len(discord_embeds)
                     post_webhook_content({"embeds": discord_embeds})
                     discord_embeds = []
