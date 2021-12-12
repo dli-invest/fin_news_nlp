@@ -52,10 +52,10 @@ async def extract_entities(body: RecordsRequest = Body(..., example=example_arti
     """Extract Named Entities from a batch of Records."""
 
     res = []
-    documents = []
+    documents = [
+        {"id": val.recordId, "text": val.data.text} for val in body.values
+    ]
 
-    for val in body.values:
-        documents.append({"id": val.recordId, "text": val.data.text})
 
     entities_res = extractor.extract_entities(documents)
     res = [
@@ -76,10 +76,10 @@ async def extract_entities_by_type(body: RecordsRequest = Body(..., example=exam
         https://docs.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface"""
 
     res = []
-    documents = []
+    documents = [
+        {"id": val.recordId, "text": val.data.text} for val in body.values
+    ]
 
-    for val in body.values:
-        documents.append({"id": val.recordId, "text": val.data.text})
 
     entities_res = extractor.extract_entities(documents)
     res = []
