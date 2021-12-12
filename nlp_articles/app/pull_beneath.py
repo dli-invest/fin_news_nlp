@@ -42,7 +42,7 @@ async def main():
             if entity_hits >= 1:
                 embed = {
                     "title": f"wsb | {author}",
-                    "description": text[:4000],
+                    "description": text[:5000],
                     "url": f"https://reddit.com/{permalink}",
                     "fields": fields[0:3]
                 }
