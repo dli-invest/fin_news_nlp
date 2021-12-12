@@ -41,8 +41,8 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
             result.raise_for_status()
         except requests.exceptions.HTTPError as err:
             print(err)
-            print(data)
             dumps = json.dumps(data)
+            print(dumps)
             # raise error and end of excecution
             os.environ["EXIT_ON_ERROR"] = "true"
         else:
