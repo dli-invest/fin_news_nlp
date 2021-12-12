@@ -43,12 +43,8 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
             print(err)
             print(data)
             dumps = json.dumps(data)
-            print(dumps)
-            result = requests.post(
-                url, data={
-                    "content": f"Error"
-                }, headers={"Content-Type": "application/json"}
-            )
+            # raise error and end of excecution
+            os.environ["EXIT_ON_ERROR"] = "true"
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
 

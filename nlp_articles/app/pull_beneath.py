@@ -64,6 +64,9 @@ async def main():
 
         embeds = {"embeds": [{"title": "fin_news_nlp | Beneath /r/wsb", "description": f"Total Reddit Posts: {beneath_hits}", "color": 0x0000ff}]}
         post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
+        # exit on error based on environment variable EXIT_ON_ERROR
+        if os.getenv("EXIT_ON_ERROR") == "true":
+            exit(1)
             
             
 
