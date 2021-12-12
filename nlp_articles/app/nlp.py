@@ -25,7 +25,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
     descriptions = ex_df.Description.tolist()
 
-    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north", "canadian", "chinese", "communist", "new", "can", "good", "in", "here", "all", "social media", "hope", "party", "america", "president", "hot", "white", "house", "tuesday", "web"]
+    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north", "canadian", "chinese", "communist", "new", "can", "good", "in", "here", "all", "social media", "hope", "party", "america", "president", "hot", "white", "house", "tuesday", "web", "us"]
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []
@@ -36,6 +36,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     for symbol in symbols:
         if len(symbol) > 1:
             patterns.append({"label": "STOCK", "pattern": symbol})
+            patterns.append({"label": "STOCK", "pattern": f"${symbol}"})
             for ending in endings:
                 patterns.append({"label": "STOCK", "pattern": symbol+f".{ending}"})
 
@@ -46,8 +47,10 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
             patterns.append({"label": "COMPANY", "pattern": company})
             words = company.split()
             if len(words) >= 1:
-                new = " ".join(words[:2])
-                patterns.append({"label": "COMPANY", "pattern": new})
+                new = " ".join(words)
+                if new not in first_words_added:
+                    if new.isnumeric() == False:
+                        patterns.append({"label": "COMPANY", "pattern": new})
                 # add first word to list as well
                 first_word = words[0]
                 # ignore the numbers
