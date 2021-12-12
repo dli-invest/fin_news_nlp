@@ -19,7 +19,7 @@ async def main():
     table_instance = await table.find_instances()
     first_instance = table_instance[0]
 
-    start_date = datetime.today() - timedelta(hours=0, minutes=180)
+    start_date = datetime.today() - timedelta(hours=0, minutes=60)
     start_time_str = start_date.strftime('%Y-%m-%dT%H:%M:%S')
     end_time_str = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
     filter = json.dumps({"created_on": { "_gte": start_time_str, "_lt": end_time_str}})

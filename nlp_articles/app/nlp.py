@@ -28,7 +28,9 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     descriptions = ex_df.Description.tolist()
 
     # split stops into other arrays
-    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north", "canadian", "chinese", "communist", "new", "can", "good", "in", "here", "all", "social media", "hope", "party", "america", "president", "hot", "white", "house", "tuesday", "web", "us", "sense", "glen", "san", "texas", "Louisiana", "georgia", "exchange", "fox", "crazy", "gen", "x", "labor", "that", "city", "no", "z", "project", "network", "health", "doctor", "technology"]
+    stops = ["two", "the", "u.s.", "wall", "data", "ceo", "build", "better", "office", "service", "north", "canadian", "chinese", "communist", "new", "can", "good", "in", "here", "all", "social media", "hope", "party", "america", "president", "hot", "white", "house", "tuesday", "web", "us", "sense", "glen", "san", "texas", "Louisiana", "georgia", "exchange", "fox", "crazy", "gen", "x", "labor", "that", "city", "no", "z", "project", "network", "health", "doctor", "technology", "family", "funding", "free", "contact  "]
+
+    terms_to_add = ["b2b", "venture", "growth"]
     nlp = spacy.blank("en")
     ruler = nlp.add_pipe("entity_ruler")
     patterns = []
