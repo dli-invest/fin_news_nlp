@@ -403,17 +403,19 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2021/12/14/elon-musks-stock-sales-could-total-18-billion-by-the-end-of-year-.html
 https://www.cnbc.com/2021/12/14/debt-ceiling-democrats-to-vote-to-avoid-default-on-us-debt.html
+https://www.cnbc.com/2021/12/14/the-federal-reserve-is-expected-to-take-a-very-big-step-toward-its-first-rate-hike.html
 https://www.cnbc.com/2021/12/14/apple-will-require-masks-at-all-us-stores-because-of-rising-covid-cases.html
-https://www.cnbc.com/2021/12/14/american-airlines-plans-to-hire-18000-people-next-year-for-travel-rebound.html
 https://www.cnbc.com/2021/12/14/spider-man-no-way-home-heads-for-highest-pandemic-box-office-opening.html
+https://www.cnbc.com/2021/12/14/andrew-cuomo-ordered-to-repay-covid-book-money-by-new-york-ethics-panel.html
+https://www.cnbc.com/2021/12/14/american-airlines-plans-to-hire-18000-people-next-year-for-travel-rebound.html
 https://www.cnbc.com/2021/12/14/sen-joe-manchin-cheers-move-to-.html
-https://www.cnbc.com/2021/12/14/stocks-making-the-biggest-moves-midday-beyond-meat-amc-tesla-and-more.html
 https://www.cnbc.com/2021/12/14/what-its-like-to-get-your-student-loans-forgiven-.html
+https://www.cnbc.com/2021/12/14/stocks-making-the-biggest-moves-midday-beyond-meat-amc-tesla-and-more.html
 https://www.cnbc.com/2021/12/14/peloton-ceo-john-foley-touts-product-pipeline-amid-report-its-halting-development.html
 https://www.cnbc.com/2021/12/14/golden-era-of-robotics-adoption-kicks-off-in-2022-strategist-says.html
+https://www.cnbc.com/2021/12/13/rent-is-going-up-again-heres-why.html
 https://www.cnbc.com/2021/12/14/5-ways-managers-can-discuss-mental-health-at-work-without-overstepping.html
 https://www.cnbc.com/2021/12/14/common-defi-crypto-related-scams-and-how-to-protect-your-wallet.html
-https://www.cnbc.com/2021/12/13/rent-is-going-up-again-heres-why.html
 https://www.cnbc.com/2021/12/14/jan-6-capitol-riot-probe-house-votes-on-mark-meadows-criminal-contempt.html
 https://www.cnbc.com/2021/12/14/kentucky-tornado-death-toll-expected-to-rise-gov-andy-beshear-says.html
 https://www.cnbc.com/2021/12/14/investing-club-were-trimming-our-walmart-position-to-gain-more-exposure-to-this-energy-giant.html
@@ -421,8 +423,6 @@ https://www.cnbc.com/2021/12/14/capitol-riot-fox-hosts-donald-trump-jr-texted-me
 https://www.cnbc.com/2021/12/14/despite-omicron-invesco-lists-emerging-markets-china-as-top-picks.html
 https://www.cnbc.com/2021/12/14/uber-shares-jump-after-ceo-says-company-just-had-its-best-week-ever.html
 https://www.cnbc.com/2021/12/14/wholesale-prices-measure-rises-9point6percent-in-november-from-a-year-ago-the-fastest-pace-on-record.html
-https://www.cnbc.com/2021/12/14/oil-markets-polarized-as-opec-brushes-off-omicron-fears.html
-https://www.cnbc.com/2021/12/14/investment-from-united-to-purchase-hydrogen-electric-engines-.html
 https://www.cnbc.com/2021/12/14/united-airlines-expects-year-end-travel-to-top-thanksgiving-despite-omicron-variant.html
 https://www.cnbc.com/2021/12/14/omicron-now-makes-up-almost-3percent-of-us-covid-cases-according-to-the-cdc.html
 https://www.cnbc.com/2021/12/14/starbucks-workers-at-two-boston-cafes-file-for-union-election-after-win-in-buffalo.html
@@ -435,4 +435,3 @@ https://www.cnbc.com/2021/12/13/morgan-stanley-ceo-gorman-calls-for-the-fed-to-r
 https://www.cnbc.com/2021/12/13/derek-chauvin-will-plead-guilty-in-george-floyd-killing-federal-case.html
 https://www.cnbc.com/2021/12/13/us-will-not-punish-military-over-afghanistan-drone-killing-of-civilians.html
 https://www.cnbc.com/2021/12/13/vox-media-in-talks-to-acquire-group-nine-according-to-company-memos.html
-https://www.cnbc.com/2021/12/13/omerta-capital-boss-peter-miller-accused-of-natural-gas-insider-trading.html
