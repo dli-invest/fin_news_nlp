@@ -57,7 +57,7 @@ async def main():
                     #     print(discord_embeds)
                     #     post_webhook_content({"embeds": discord_embeds})
                     # send if any hits are available
-        if len(discord_embeds) >= 0:
+        if len(discord_embeds) >= 1:
             post_webhook_content({"embeds": discord_embeds})
             discord_embeds = []
             beneath_hits += len(discord_embeds)
