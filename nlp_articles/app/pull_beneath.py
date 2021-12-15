@@ -42,11 +42,11 @@ async def main():
             if entity_hits >= 1:
                 embed = {
                     "title": f"wsb | {author}",
-                    "description": text[:1900],
+                    "description": text[:1800],
                     "url": f"https://reddit.com/{permalink}",
                     "fields": fields[:3],
                 }
-
+                # Additionally, the characters in all title, description, field.name, field.value, footer.text, and author.name fields must not exceed 6000 characters in total. Violating any of these constraints will result in a Bad Request response.
                 discord_embeds.append(embed)
                 if len(discord_embeds) >= 3:
                     beneath_hits += len(discord_embeds)
@@ -57,7 +57,7 @@ async def main():
                     #     print(discord_embeds)
                     #     post_webhook_content({"embeds": discord_embeds})
                     # send if any hits are available
-        if len(discord_embeds) >= 0:
+        if discord_embeds:
             post_webhook_content({"embeds": discord_embeds})
             discord_embeds = []
             beneath_hits += len(discord_embeds)
