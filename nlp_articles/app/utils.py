@@ -22,7 +22,7 @@ geolocation_words = ["america", "u.s", "canadian", "chinese",
 political_terms = ["communist", "white", "house", "president", "party"]
 business_terms = ["wall", "ceo", "techology", "labor"]
 mishits = ["z", "x", "tuesday", "family", "funding",
-           "free", "contact", "health", "doctor", "web", "crazy"]
+           "free", "contact", "health", "doctor", "web", "crazy", "for", "help"]
 
 stop_terms = [
     *common_words,
