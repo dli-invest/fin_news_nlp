@@ -17,7 +17,7 @@ common_words = ["the", "two", "free", "family", "no", "z",
                 ]
 
 geolocation_words = ["america", "u.s", "canadian", "chinese",
-                     "white", "house", "city", "louisiana", "georgia", "us"]
+                     "white", "house", "city", "louisiana", "georgia", "us", "u.s."]
 
 political_terms = ["communist", "white", "house", "president", "party"]
 business_terms = ["wall", "ceo", "techology", "labor"]
