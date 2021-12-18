@@ -13,21 +13,32 @@ common_words = ["the", "two", "free", "family", "no", "z",
                 "now", "help", "work", "may", "part", "year", "such",
                 "give", "me", "find", "call", "good", "very", "still",
                 "am", "here", "work", "last", "own", "too",
-                "even", "back", "any", "good", "gen", "all"
+                "even", "back", "any", "good", "gen", "all",
+                "hi"
                 ]
 
 geolocation_words = ["america", "u.s", "canadian", "chinese",
-                     "white", "house", "city", "louisiana", "georgia", "us", "u.s."]
+                     "white", "house", "city", "louisiana", "georgia", "us", "u.s.", 
+                     "american"]
 
 political_terms = ["communist", "white", "house", "president", "party"]
 business_terms = ["wall", "ceo", "techology", "labor"]
 mishits = ["z", "x", "tuesday", "family", "funding",
-           "free", "contact", "health", "doctor", "web", "crazy", "for", "help"]
-
+           "free", "contact", "health", "doctor", "web", "crazy",
+           "for", "help", "card", "financial",
+           "consensus", "critical",
+           "Partners"
+        ]
+# search for S3 partners
 stop_terms = [
     *common_words,
     *geolocation_words,
     *political_terms,
     *business_terms,
     *mishits
+]
+
+S3_PARTNERS = [
+    {"LOWER": "s3"},
+    {"TEXT": {"REGEX": "^[Pp](\.?|artner)?"}}
 ]
