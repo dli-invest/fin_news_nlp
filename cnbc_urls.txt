@@ -403,7 +403,7 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2021/12/21/joe-manchin-pac-saw-surge-of-corporate-donations-as-he-fought-biden-agenda.html
 https://www.cnbc.com/2021/12/22/chinas-property-developers-have-more-than-big-bond-payments-coming-up.html
-https://www.cnbc.com/2021/12/22/singapore-to-suspend-new-ticket-sales-for-quarantine-free-travel.html
+https://www.cnbc.com/2021/12/22/germanys-vice-adm-kay-achim-schonbach-on-chinas-naval-buildup.html
 https://www.cnbc.com/2021/12/21/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2021/12/22/us-doctor-says-testing-boosters-key-to-fighting-covid-surge.html
 https://www.cnbc.com/2021/12/21/disney-chairman-bob-iger-explains-why-hes-leaving-the-company.html
@@ -420,6 +420,7 @@ https://www.cnbc.com/2021/12/21/there-are-no-plans-to-shut-down-broadway-even-as
 https://www.cnbc.com/2021/12/21/walgreens-limits-at-home-covid-tests-to-four-per-customer-due-to-demand-surge-amid-omicron-fears.html
 https://www.cnbc.com/2021/12/21/ghislaine-maxwell-jury-requests-transcripts-at-jeffrey-epstein-crime-trial.html
 https://www.cnbc.com/2021/12/21/oracles-larry-ellison-chooses-profit-over-growth-in-cerner-deal.html
+https://www.cnbc.com/2021/12/22/us-treasury-yields-tick-lower-ahead-of-us-data-release-markets-watch-for-new-covid-19-restrictions.html
 https://www.cnbc.com/2021/12/21/watch-biden-speech-on-us-fight-in-covid-pandemic-amid-omicron-surge.html
 https://www.cnbc.com/2021/12/21/gop-rep-scott-perry-says-he-wont-cooperate-with-house-probe-of-jan-6-riot.html
 https://www.cnbc.com/2021/12/21/net-neutrality-to-return-as-senate-weighs-confirming-gigi-sohn-for-fcc.html
@@ -436,4 +437,3 @@ https://www.cnbc.com/2021/12/20/home-flipping-more-competitive-less-profitable.h
 https://www.cnbc.com/2021/12/20/amazon-warehouse-in-illinois-hit-by-tornado-killing-6.html
 https://www.cnbc.com/2021/12/20/senate-to-vote-on-build-back-better-act-despite-joe-manchin-opposition.html
 https://www.cnbc.com/2021/12/20/oracle-to-buy-medical-records-company-cerner.html
-https://www.cnbc.com/2021/12/20/us-treasury-yields-tick-lower-as-omicron-triggers-covid-19-restrictions.html
