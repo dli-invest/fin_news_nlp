@@ -403,8 +403,11 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2021/12/23/ev-stocks-soared-in-2021-investors-betting-revenue-to-follow-in-2022.html
 https://www.cnbc.com/2021/12/22/stock-market-futures-open-to-close-news.html
-https://www.cnbc.com/2021/12/23/stocks-making-the-biggest-moves-midday-nikola-las-vegas-sands-stitch-fix-crocs-and-more.html
+https://www.cnbc.com/2021/12/23/new-york-will-require-masks-and-social-distancing-at-times-square-new-years-celebration.html
+https://www.cnbc.com/2021/12/23/santa-claus-may-be-on-his-way-to-stock-investors-in-the-week-ahead.html
 https://www.cnbc.com/2021/12/23/jack-dorsey-blocked-by-marc-andreessen-on-twitter-after-web3-comments.html
+https://www.cnbc.com/2021/12/23/sen-chris-coons-and-pentagon-staffers-have-covid-kamala-harris-is-negative.html
+https://www.cnbc.com/2021/12/23/stocks-making-the-biggest-moves-midday-nikola-las-vegas-sands-stitch-fix-crocs-and-more.html
 https://www.cnbc.com/2021/12/23/us-bans-imports-from-chinas-xinjiang-region-citing-uyghur-forced-labor.html
 https://www.cnbc.com/2021/12/23/omicron-variant-has-lower-risk-of-hospitalization-studies-suggest.html
 https://www.cnbc.com/2021/12/23/huawei-joins-chinas-electric-car-race-in-competition-with-tesla.html
@@ -416,8 +419,6 @@ https://www.cnbc.com/2021/12/23/heres-what-some-of-the-the-biggest-crypto-ceos-a
 https://www.cnbc.com/2021/12/23/investing-club-what-jim-cramer-is-watching-thursday-our-no-1-holiday-pick.html
 https://www.cnbc.com/2021/12/23/20percent-of-americans-couldnt-pay-their-energy-bill-in-the-last-year.html
 https://www.cnbc.com/2021/12/23/omicron-schools-struggle-as-officials-push-for-in-person-learning-after-winter-break.html
-https://www.cnbc.com/2021/12/23/store-closures-slowed-in-2021-as-retailers-got-creative-seized-cheaper-rents.html
-https://www.cnbc.com/2021/12/23/huge-floating-wind-farms-are-being-planned-off-the-coast-of-australia.html
 https://www.cnbc.com/2021/12/23/omicron-traumatized-and-exhausted-hospital-staff-face-new-wave-of-covid-cases.html
 https://www.cnbc.com/2021/12/23/treasury-yields-flat-as-investors-digest-omicron-data-and-look-to-holiday-weekend.html
 https://www.cnbc.com/2021/12/22/us-covid-cases-booster-shots-on-the-rise-as-country-nears-christmas.html
@@ -433,4 +434,3 @@ https://www.cnbc.com/2021/12/22/nyc-weighs-new-restrictions-for-times-square-new
 https://www.cnbc.com/2021/12/22/travelers-scramble-for-covid-tests-ahead-of-holiday-rush.html
 https://www.cnbc.com/2021/12/22/mortgage-rates-fall-to-a-four-week-low-but-buyers-still-pull-back-.html
 https://www.cnbc.com/2021/12/22/us-treasury-yields-tick-lower-ahead-of-us-data-release-markets-watch-for-new-covid-19-restrictions.html
-https://www.cnbc.com/2021/12/21/delta-asks-cdc-to-cut-quarantine-guidelines-for-breakthrough-covid-citing-workforce-impact-.html
