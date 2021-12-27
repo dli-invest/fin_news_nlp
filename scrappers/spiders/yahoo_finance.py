@@ -112,6 +112,7 @@ class ScraperForYahoo(scrapy.Spider):
             }
             embeds.append(embed)
             data["embeds"] = embeds
+            data["username"] = "fin_news_nlp/yahoo_finance"
             self.post_webhook_content(data)
             self.read_article_urls.append(url)
 
@@ -133,6 +134,8 @@ class ScraperForYahoo(scrapy.Spider):
             with open(output_file, 'w') as txt_file:
                 for article_url in clean_list:
                     txt_file.write(article_url +"\n")
+        if os.getenv("EXIT_ON_ERROR") == "true":
+           exit(1)
 
     def post_webhook_content(self, data: dict):
         url = self.webhook
@@ -145,5 +148,7 @@ class ScraperForYahoo(scrapy.Spider):
             result.raise_for_status()
         except requests.exceptions.HTTPError as err:
             print(err)
+            os.environ["EXIT_ON_ERROR"] = "true"
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
+            os.environ["EXIT_ON_ERROR"] = "true"
