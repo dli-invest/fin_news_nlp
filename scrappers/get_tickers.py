@@ -28,21 +28,12 @@ class TickerControllerV2:
             industries = tickers_config.get("industries")
             if industries != None:
                 ticker_df = ticker_df[ticker_df["industry"].isin(industries)]
-
-            us_cfg = tickers_config.get("us_tickers")
-            if us_cfg != None:
-                # apply filters
-                # same format as above
-                us_tickers_url = us_cfg.get("url")
-                us_df =  pd.read_csv(us_tickers_url)
-                # redo filtering if I need more filters,
-                # iterate across object property
-                price_filter = us_cfg.get("price")
-                us_df = us_df[us_df["price"] < price_filter]
-                market_cap_filter = us_cfg.get("market_cap")
-                us_df = us_df[us_df["MarketCap"] < price_filter]
-                if industries != None:
-                    us_df = us_df[us_df["industry"].isin(industries)]
+            price_filter = tickers_config.get("price", 5E5)
+            us_df = us_df[us_df["price"] < price_filter]
+            market_cap_filter = tickers_config.get("market_cap", 1E15)
+            us_df = us_df[us_df["MarketCap"] < market_cap_filter]
+            if industries != None:
+                us_df = us_df[us_df["industry"].isin(industries)]
 
         # get symbols from tickers
         ytickers_series = ticker_df.apply(self.ex_to_yahoo_ex, axis=1)

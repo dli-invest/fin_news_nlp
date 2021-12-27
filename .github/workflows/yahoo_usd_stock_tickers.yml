@@ -1,16 +1,14 @@
-name: CNBC Data
+name: Scrapy Yahoo Data
 on:
   push:
     branches:
       - 'main'
-      - "feature/*"
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '10 8-20 * * 1-5'
+    - cron:  '15 8-20 * * 1-5'
 
 env:
-  DISCORD_WEBHOOK: ${{ secrets.DISCORD_NEWS_WEBHOOK }}
-  DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_STOCK_NEW_RELEASE_WEBHOOK }}
 # Add cron job to ensure external webpages + apis have no changed
 jobs:
   scrap_data:
@@ -34,7 +32,7 @@ jobs:
 
       - name: Crawl
         run:  |
-         python -m scrappers.parse_rss_cli
+         scrapy crawl cad_stock_news
 
       - name: Commit files
         run: |
