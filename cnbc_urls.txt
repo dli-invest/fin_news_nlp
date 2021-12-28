@@ -404,13 +404,13 @@ https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-th
 https://www.cnbc.com/2021/12/28/nasdaq-is-poised-to-underperform-sp-500-for-first-time-since-2016.html
 https://www.cnbc.com/2021/12/28/covid-omicron-appears-to-protect-against-delta-could-displace-it-study.html
 https://www.cnbc.com/2021/12/27/stock-market-news-futures-open-to-close.html
-https://www.cnbc.com/2021/12/28/stocks-making-the-biggest-moves-midday-coinbase-boeing-carnival-and-more.html
 https://www.cnbc.com/2021/12/28/michael-farr-names-his-top-ten-stock-picks-for-2022.html
-https://www.cnbc.com/2021/12/28/elon-musk-business-savant-with-limited-empathy-says-brother-kimbal.html
+https://www.cnbc.com/2021/12/28/stocks-making-the-biggest-moves-midday-coinbase-boeing-carnival-and-more.html
 https://www.cnbc.com/2021/12/28/us-and-russia-security-talks-on-jan-10-amid-ukraine-tensions.html
 https://www.cnbc.com/2021/12/27/fauci-says-us-should-consider-vaccine-mandate-for-domestic-air-travel.html
 https://www.cnbc.com/2021/12/28/how-to-invest-your-money-based-on-the-goals-you-want-to-reach.html
 https://www.cnbc.com/2021/12/27/apple-closes-stores-to-customers-in-new-york-city-due-to-surge-in-covid-cases.html
+https://www.cnbc.com/2021/12/28/dr-fauci-cdcs-reduced-isolation-time-will-get-people-back-to-jobs.html
 https://www.cnbc.com/2021/12/28/top-us-vc-firms-are-struggling-to-find-the-right-staff-in-europe.html
 https://www.cnbc.com/2021/12/28/investment-strategist-david-roche-on-china-easing-monetary-policy-.html
 https://www.cnbc.com/2021/12/28/why-investors-remain-bullish-on-indias-start-up-outlook-for-2022.html
@@ -420,7 +420,6 @@ https://www.cnbc.com/2021/12/27/metas-oculus-virtual-reality-headsets-were-a-pop
 https://www.cnbc.com/2021/12/27/holiday-shopping-fuels-the-return-of-credit-card-debt.html
 https://www.cnbc.com/2021/12/27/holiday-sales-jumped-8point5percent-as-shoppers-shrugged-off-higher-prices.html
 https://www.cnbc.com/2021/12/26/omicron-drives-christmas-weekend-flight-cancellations-above-1500.html
-https://www.cnbc.com/2021/12/28/fitch-ratings-on-liquidity-of-china-real-estate-developers-debt-crisis.html
 https://www.cnbc.com/2021/12/28/why-the-pentagon-failed-another-audit.html
 https://www.cnbc.com/2021/12/28/us-treasury-yields-dip-as-omicrons-impact-on-growth-is-assessed.html
 https://www.cnbc.com/2021/12/27/treasury-yields-slide-as-investors-digest-omicron-data.html
@@ -435,4 +434,3 @@ https://www.cnbc.com/2021/12/23/us-bans-imports-from-chinas-xinjiang-region-citi
 https://www.cnbc.com/2021/12/23/jack-dorsey-blocked-by-marc-andreessen-on-twitter-after-web3-comments.html
 https://www.cnbc.com/2021/12/23/omicron-schools-struggle-as-officials-push-for-in-person-learning-after-winter-break.html
 https://www.cnbc.com/2021/12/23/ev-stocks-soared-in-2021-investors-betting-revenue-to-follow-in-2022.html
-https://www.cnbc.com/2021/12/23/omicron-traumatized-and-exhausted-hospital-staff-face-new-wave-of-covid-cases.html
