@@ -32,7 +32,7 @@ jobs:
 
       - name: Crawl
         run:  |
-         scrapy crawl cad_stock_news
+         scrapy crawl usd_stock_news
 
       - name: Commit files
         run: |
