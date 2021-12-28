@@ -402,12 +402,16 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2021/12/28/nasdaq-is-poised-to-underperform-sp-500-for-first-time-since-2016.html
+https://www.cnbc.com/2021/12/28/covid-omicron-appears-to-protect-against-delta-could-displace-it-study.html
 https://www.cnbc.com/2021/12/27/stock-market-news-futures-open-to-close.html
-https://www.cnbc.com/2021/12/27/apple-closes-stores-to-customers-in-new-york-city-due-to-surge-in-covid-cases.html
-https://www.cnbc.com/2021/12/27/fauci-says-us-should-consider-vaccine-mandate-for-domestic-air-travel.html
-https://www.cnbc.com/2021/12/28/why-the-pentagon-failed-another-audit.html
+https://www.cnbc.com/2021/12/28/stocks-making-the-biggest-moves-midday-coinbase-boeing-carnival-and-more.html
+https://www.cnbc.com/2021/12/28/michael-farr-names-his-top-ten-stock-picks-for-2022.html
 https://www.cnbc.com/2021/12/28/elon-musk-business-savant-with-limited-empathy-says-brother-kimbal.html
+https://www.cnbc.com/2021/12/28/us-and-russia-security-talks-on-jan-10-amid-ukraine-tensions.html
+https://www.cnbc.com/2021/12/27/fauci-says-us-should-consider-vaccine-mandate-for-domestic-air-travel.html
+https://www.cnbc.com/2021/12/27/apple-closes-stores-to-customers-in-new-york-city-due-to-surge-in-covid-cases.html
 https://www.cnbc.com/2021/12/28/top-us-vc-firms-are-struggling-to-find-the-right-staff-in-europe.html
+https://www.cnbc.com/2021/12/28/why-the-pentagon-failed-another-audit.html
 https://www.cnbc.com/2021/12/28/investment-strategist-david-roche-on-china-easing-monetary-policy-.html
 https://www.cnbc.com/2021/12/28/why-investors-remain-bullish-on-indias-start-up-outlook-for-2022.html
 https://www.cnbc.com/2021/12/27/alphabet-was-the-top-big-tech-stock-of-the-year-heres-why.html
@@ -419,10 +423,6 @@ https://www.cnbc.com/2021/12/26/omicron-drives-christmas-weekend-flight-cancella
 https://www.cnbc.com/2021/12/28/fitch-ratings-on-liquidity-of-china-real-estate-developers-debt-crisis.html
 https://www.cnbc.com/2021/12/26/west-side-story-is-officially-a-box-office-bomb.html
 https://www.cnbc.com/2021/12/27/starboard-value-builds-6point5percent-stake-in-godaddy-sending-shares-up-9percent.html
-https://www.cnbc.com/2021/12/27/another-great-resignation-save-is-coming-in-january-muse-ceo-says.html
-https://www.cnbc.com/2021/12/27/12-key-moments-that-fueled-cryptos-record-growth-in-2021.html
-https://www.cnbc.com/2021/12/27/how-much-the-biggest-companies-grew-in-2021.html
-https://www.cnbc.com/2021/12/27/crucial-crypto-predictions-for-2022-from-a-fintech-expert.html
 https://www.cnbc.com/2021/12/28/us-treasury-yields-dip-as-omicrons-impact-on-growth-is-assessed.html
 https://www.cnbc.com/2021/12/27/treasury-yields-slide-as-investors-digest-omicron-data.html
 https://www.cnbc.com/2021/12/24/teslas-german-gigafactory-faces-local-hurdles-as-it-nears-completion.html
@@ -437,4 +437,3 @@ https://www.cnbc.com/2021/12/23/jack-dorsey-blocked-by-marc-andreessen-on-twitte
 https://www.cnbc.com/2021/12/23/omicron-schools-struggle-as-officials-push-for-in-person-learning-after-winter-break.html
 https://www.cnbc.com/2021/12/23/ev-stocks-soared-in-2021-investors-betting-revenue-to-follow-in-2022.html
 https://www.cnbc.com/2021/12/23/omicron-traumatized-and-exhausted-hospital-staff-face-new-wave-of-covid-cases.html
-https://www.cnbc.com/2021/12/23/treasury-yields-flat-as-investors-digest-omicron-data-and-look-to-holiday-weekend.html
