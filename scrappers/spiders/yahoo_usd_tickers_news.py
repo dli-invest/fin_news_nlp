@@ -173,7 +173,7 @@ class YahooUSDStockSpider(scrapy.Spider):
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
-        spider = super(YahooCadStockSpider, cls).from_crawler(crawler, *args, **kwargs)
+        spider = super(YahooUSDStockSpider, cls).from_crawler(crawler, *args, **kwargs)
         crawler.signals.connect(spider.spider_opened, signals.spider_opened)
         crawler.signals.connect(spider.spider_closed, signals.spider_closed)
         return spider
