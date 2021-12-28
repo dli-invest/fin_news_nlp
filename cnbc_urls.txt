@@ -406,11 +406,15 @@ https://www.cnbc.com/2021/12/27/alphabet-was-the-top-big-tech-stock-of-the-year-
 https://www.cnbc.com/2021/12/27/apple-closes-stores-to-customers-in-new-york-city-due-to-surge-in-covid-cases.html
 https://www.cnbc.com/2021/12/27/fauci-says-us-should-consider-vaccine-mandate-for-domestic-air-travel.html
 https://www.cnbc.com/2021/12/27/roth-401k-availability-grows-rapidly.html
+https://www.cnbc.com/2021/12/28/top-us-vc-firms-are-struggling-to-find-the-right-staff-in-europe.html
+https://www.cnbc.com/2021/12/26/west-side-story-is-officially-a-box-office-bomb.html
+https://www.cnbc.com/2021/12/28/investment-strategist-david-roche-on-china-easing-monetary-policy-.html
+https://www.cnbc.com/2021/12/28/fitch-ratings-on-liquidity-of-china-real-estate-developers-debt-crisis.html
+https://www.cnbc.com/2021/12/28/why-investors-remain-bullish-on-indias-start-up-outlook-for-2022.html
+https://www.cnbc.com/2021/12/26/bubblicious-used-car-prices-rising-faster-than-bitcoin-jim-bianco-warns-.html
 https://www.cnbc.com/2021/12/27/holiday-sales-jumped-8point5percent-as-shoppers-shrugged-off-higher-prices.html
 https://www.cnbc.com/2021/12/27/metas-oculus-virtual-reality-headsets-were-a-popular-holiday-gift.html
-https://www.cnbc.com/2021/12/26/west-side-story-is-officially-a-box-office-bomb.html
 https://www.cnbc.com/2021/12/27/starboard-value-builds-6point5percent-stake-in-godaddy-sending-shares-up-9percent.html
-https://www.cnbc.com/2021/12/26/bubblicious-used-car-prices-rising-faster-than-bitcoin-jim-bianco-warns-.html
 https://www.cnbc.com/2021/12/27/another-great-resignation-save-is-coming-in-january-muse-ceo-says.html
 https://www.cnbc.com/2021/12/27/12-key-moments-that-fueled-cryptos-record-growth-in-2021.html
 https://www.cnbc.com/2021/12/27/how-much-the-biggest-companies-grew-in-2021.html
@@ -420,8 +424,6 @@ https://www.cnbc.com/2021/12/26/fauci-says-covid-cases-will-go-much-higher-as-om
 https://www.cnbc.com/2021/12/27/what-investors-should-know-about-terra-and-its-token-luna.html
 https://www.cnbc.com/2021/12/27/covid-uk-pm-boris-johnson-to-assess-latest-omicron-data.html
 https://www.cnbc.com/2021/12/26/spider-man-no-way-home-tops-1-billion-at-global-box-office.html
-https://www.cnbc.com/2021/12/27/philippine-president-dutertes-china-pivot-hasnt-reduced-south-china-sea-tensions.html
-https://www.cnbc.com/2021/12/27/china-is-clarifying-rules-for-overseas-ipos-us-what-we-dont-know.html
 https://www.cnbc.com/2021/12/27/treasury-yields-slide-as-investors-digest-omicron-data.html
 https://www.cnbc.com/2021/12/26/omicron-drives-christmas-weekend-flight-cancellations-above-1500.html
 https://www.cnbc.com/2021/12/24/teslas-german-gigafactory-faces-local-hurdles-as-it-nears-completion.html
@@ -439,4 +441,3 @@ https://www.cnbc.com/2021/12/23/omicron-traumatized-and-exhausted-hospital-staff
 https://www.cnbc.com/2021/12/23/treasury-yields-flat-as-investors-digest-omicron-data-and-look-to-holiday-weekend.html
 https://www.cnbc.com/2021/12/22/us-covid-cases-booster-shots-on-the-rise-as-country-nears-christmas.html
 https://www.cnbc.com/2021/12/22/aviation-telecom-groups-agree-to-share-data-to-help-resolve-5g-safety-concerns.html
-https://www.cnbc.com/2021/12/22/former-trump-advisor-michael-flynn-loses-jan-6-capitol-subpoena-request-.html
