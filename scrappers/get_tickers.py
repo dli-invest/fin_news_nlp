@@ -22,18 +22,18 @@ class TickerControllerV2:
         # searchfor = [".WT", ".UN"]
         # ticker_df = ticker_df[~ticker_df.symbol.str.contains('|'.join(searchfor))]
         # purge tickers with .WT
-        tickers_config = cfg.get("tickers_config")
+        tickers_config = cfg.get("tickers_config", None)
         us_df = pd.DataFrame()
         if tickers_config != None:
             industries = tickers_config.get("industries")
             if industries != None:
                 ticker_df = ticker_df[ticker_df["industry"].isin(industries)]
             price_filter = tickers_config.get("price", 5E5)
-            us_df = us_df[us_df["price"] < price_filter]
+            ticker_df = ticker_df[ticker_df["price"] < price_filter]
             market_cap_filter = tickers_config.get("market_cap", 1E15)
-            us_df = us_df[us_df["MarketCap"] < market_cap_filter]
+            ticker_df = ticker_df[ticker_df["MarketCap"] < market_cap_filter]
             if industries != None:
-                us_df = us_df[us_df["industry"].isin(industries)]
+                ticker_df = ticker_df[ticker_df["industry"].isin(industries)]
 
         # get symbols from tickers
         ytickers_series = ticker_df.apply(self.ex_to_yahoo_ex, axis=1)
