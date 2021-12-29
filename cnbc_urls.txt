@@ -403,16 +403,15 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2021/12/29/minimum-wage-employers-moving-faster-than-states-to-raise-hourly-pay.html
 https://www.cnbc.com/2021/12/29/apple-ditched-intel-and-it-paid-off.html
-https://www.cnbc.com/2021/12/29/victorias-secret-shares-rise-on-share-buyback-plans-holiday-sales-growth.html
-https://www.cnbc.com/2021/12/29/omicron-not-the-same-disease-as-earlier-covid-strains-oxford-scientist.html
 https://www.cnbc.com/2021/12/28/stock-market-news-futures-open-to-close.html
+https://www.cnbc.com/2021/12/29/omicron-not-the-same-disease-as-earlier-covid-strains-oxford-scientist.html
+https://www.cnbc.com/2021/12/29/victorias-secret-shares-rise-on-share-buyback-plans-holiday-sales-growth.html
 https://www.cnbc.com/2021/12/29/-northvolt-europes-tesla-battery-rival-produces-lithium-ion-cell-.html
 https://www.cnbc.com/2021/12/29/climate-activists-push-for-an-abrupt-end-to-global-fossil-fuel-use.html
 https://www.cnbc.com/2021/12/29/elon-musk-sells-another-1-billion-in-tesla-shares-nearing-10percent-target.html
-https://www.cnbc.com/2021/12/28/covid-omicron-appears-to-protect-against-delta-could-displace-it-study.html
+https://www.cnbc.com/2021/12/29/bls-estimates-that-13-us-workers-die-on-the-job-per-day-on-average.html
 https://www.cnbc.com/2021/12/29/how-to-start-investing.html
 https://www.cnbc.com/2021/12/29/morgan-stanley-picks-stocks-amid-supply-chain-crisis.html
-https://www.cnbc.com/2021/12/29/stocks-making-the-biggest-moves-premarket-cal-maine-tesla-alibaba-and-others.html
 https://www.cnbc.com/2021/12/28/us-and-russia-security-talks-on-jan-10-amid-ukraine-tensions.html
 https://www.cnbc.com/2021/12/29/ubs-chinese-stock-valuations-attractive-dont-expect-quick-rebound.html
 https://www.cnbc.com/2021/12/28/michael-farr-names-his-top-ten-stock-picks-for-2022.html
@@ -420,6 +419,7 @@ https://www.cnbc.com/2021/12/28/nasdaq-is-poised-to-underperform-sp-500-for-firs
 https://www.cnbc.com/2021/12/29/rapid-delivery-arms-race-drives-up-london-commercial-property-rents.html
 https://www.cnbc.com/2021/12/27/fauci-says-us-should-consider-vaccine-mandate-for-domestic-air-travel.html
 https://www.cnbc.com/2021/12/29/us-treasury-yields-omicron-in-focus.html
+https://www.cnbc.com/2021/12/28/covid-omicron-appears-to-protect-against-delta-could-displace-it-study.html
 https://www.cnbc.com/2021/12/28/why-the-pentagon-failed-another-audit.html
 https://www.cnbc.com/2021/12/28/us-treasury-yields-dip-as-omicrons-impact-on-growth-is-assessed.html
 https://www.cnbc.com/2021/12/28/top-us-vc-firms-are-struggling-to-find-the-right-staff-in-europe.html
