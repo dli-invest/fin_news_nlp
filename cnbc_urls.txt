@@ -421,7 +421,6 @@ https://www.cnbc.com/2021/12/29/apple-ditched-intel-and-it-paid-off.html
 https://www.cnbc.com/2021/12/30/cryptocurrency-exchange-binance-is-trying-to-woo-france.html
 https://www.cnbc.com/2021/12/29/omicron-not-the-same-disease-as-earlier-covid-strains-oxford-scientist.html
 https://www.cnbc.com/2021/12/29/minimum-wage-employers-moving-faster-than-states-to-raise-hourly-pay.html
-https://www.cnbc.com/2021/12/29/cryptocurrency-prices-fall-in-december-and-investors-blame-omicron-climate-change.html
 https://www.cnbc.com/2021/12/30/weekly-jobless-claims-total-198000-less-than-expected.html
 https://www.cnbc.com/2021/12/30/us-10-year-treasury-yield-holds-above-1point5percent.html
 https://www.cnbc.com/2021/12/29/ghislaine-maxwell-trial-ends-jeffrey-epstein-sex-crime-case.html
@@ -436,4 +435,3 @@ https://www.cnbc.com/2021/12/28/us-and-russia-security-talks-on-jan-10-amid-ukra
 https://www.cnbc.com/2021/12/28/why-the-pentagon-failed-another-audit.html
 https://www.cnbc.com/2021/12/28/nasdaq-is-poised-to-underperform-sp-500-for-first-time-since-2016.html
 https://www.cnbc.com/2021/12/28/us-treasury-yields-dip-as-omicrons-impact-on-growth-is-assessed.html
-https://www.cnbc.com/2021/12/28/top-us-vc-firms-are-struggling-to-find-the-right-staff-in-europe.html
