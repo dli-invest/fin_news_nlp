@@ -405,11 +405,11 @@ https://www.cnbc.com/2021/12/30/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2021/12/31/2022-will-be-the-do-or-die-moment-for-congress-to-take-action-against-big-tech.html
 https://www.cnbc.com/2021/12/31/five-ways-2021-may-have-forever-changed-the-auto-industry.html
 https://www.cnbc.com/2021/12/31/bought-your-kid-a-vr-headset-for-christmas-you-might-regret-it.html
-https://www.cnbc.com/2021/12/31/omicron-travel-airline-cancellation-refunds.html
 https://www.cnbc.com/2021/12/31/santander-accidentally-put-millions-into-random-accounts-on-christmas-day.html
+https://www.cnbc.com/2021/12/31/omicron-travel-airline-cancellation-refunds.html
 https://www.cnbc.com/2021/12/31/stocks-making-the-biggest-moves-midday-pfizer-peloton-carnival-and-more.html
-https://www.cnbc.com/2021/12/30/warren-buffett-tells-bernie-sanders-he-wont-intervene-in-special-metals-strike.html
 https://www.cnbc.com/2021/12/31/where-americans-want-to-travel-abroad-and-where-theyve-lost-interest.html
+https://www.cnbc.com/2021/12/30/warren-buffett-tells-bernie-sanders-he-wont-intervene-in-special-metals-strike.html
 https://www.cnbc.com/2021/12/31/bitcoin-slump-offers-tax-benefit-to-investors-for-now.html
 https://www.cnbc.com/2021/12/30/congress-news-democrats-to-take-up-build-back-better-fed-picks-in-2022.html
 https://www.cnbc.com/2021/12/30/apples-new-fix-it-policy-is-not-the-end-for-right-to-repair.html
@@ -434,4 +434,3 @@ https://www.cnbc.com/2021/12/29/us-covid-cases-rise-to-pandemic-high-as-delta-an
 https://www.cnbc.com/2021/12/29/apple-ditched-intel-and-it-paid-off.html
 https://www.cnbc.com/2021/12/29/minimum-wage-employers-moving-faster-than-states-to-raise-hourly-pay.html
 https://www.cnbc.com/2021/12/29/us-treasury-yields-omicron-in-focus.html
-https://www.cnbc.com/2021/12/29/elon-musk-sells-another-1-billion-in-tesla-shares-nearing-10percent-target.html
