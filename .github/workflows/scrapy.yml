@@ -46,6 +46,7 @@ jobs:
             echo "tree is dirty, please commit changes before running this"
             echo "PUSH_FILES=true" >> $GITHUB_ENV
             git commit -m "Add changes" -a
+            git pull origin main --strategy=theirs || true
           fi
       - name: Test
         run: echo ${{ env.PUSH_FILES }}
