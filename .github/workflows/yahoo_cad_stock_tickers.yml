@@ -48,7 +48,7 @@ jobs:
             echo "PUSH_FILES=true" >> $GITHUB_ENV
             git config pull.rebase false
             git commit -m "Add changes" -a
-            git pull origin main --strategy=theirs || true
+            git pull origin main --strategy=ours || true
           fi
       - name: Test
         run: echo ${{ env.PUSH_FILES }}
