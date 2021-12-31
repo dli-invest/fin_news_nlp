@@ -28,7 +28,7 @@ mishits = ["z", "x", "tuesday", "family", "funding",
            "for", "help", "card", "financial",
            "consensus", "critical",
            "Partners", "climate", "boomer",
-           "Investor"
+           "Investor", "Growth", "Dividend"
         ]
 # search for S3 partners
 stop_terms = [

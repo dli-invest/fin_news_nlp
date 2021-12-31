@@ -1,4 +1,4 @@
-name: Scrapy Yahoo Data
+name: Scrapy Yahoo Data Cad
 on:
   push:
     branches:

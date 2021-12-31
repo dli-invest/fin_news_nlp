@@ -23,6 +23,9 @@ class YahooCadStockSpider(scrapy.Spider):
     current_date = datetime.now()
     embeds_in_queue = []
     webhook = os.environ.get('DISCORD_WEBHOOK')
+    if webhook == None:
+        print("REQUIRE DISCORD WEBHOOK")
+        exit(1)
     # redirect urls, need to clean up in data
     redirect_urls = []
 
@@ -69,15 +72,17 @@ class YahooCadStockSpider(scrapy.Spider):
                     if embed_url not in self.df["url"]:
                         self.embeds_in_queue.append(embed_item)
                         # add row to dataframe
-                        self.df.append({"url": embed_url, "stock": ticker}, ignore_index=True)
+                        self.df = self.df.append({"url": embed_url, "stock": ticker}, ignore_index=True)
                     # if len(self.embeds_in_queue) >= 9:
                     #     data = {}
                     #     data["embeds"] = self.embeds_in_queue
                     #     self.embeds_in_queue = []
                     #     self.post_webhook_content(data)
+
         except Exception as e:
-            os.environ["EXIT_ON_ERROR"] = "true"
-            pass
+            print(e)
+            # os.environ["EXIT_ON_ERROR"] = "true"
+            # pass
 
     @staticmethod      
     def upper_case(str):
@@ -102,11 +107,24 @@ class YahooCadStockSpider(scrapy.Spider):
         url = link["href"]
         href_merged = response.urljoin(url)
         description = item.find("p").text
-        return {
-            "url": href_merged,
-            "title": f"{provider} - {url_text}",
-            "description": description
-        }
+        # apply nlp to both url_text and description
+        url_text_doc = nlp(url_text)
+        description_doc = nlp(description)
+        entities = description_doc.ents + url_text_doc.ents
+        # count number of entities in the description and title
+        entity_hits = len(entities)
+        # make fields for the embed from ents
+        fields = [description_doc.ents, url_text_doc.ents]
+        # make a list of all the entities
+        if entity_hits >= 5:
+            fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
+            return {
+                "url": href_merged,
+                "title": f"{provider} - {url_text}",
+                "description": description,
+                "fields": fields
+            }
+        return None
 
     def handle_article(self, response):
         url = response.url
@@ -176,6 +194,7 @@ class YahooCadStockSpider(scrapy.Spider):
         print("spider opened")
 
     def spider_closed(self, spider):
+        print("spider closed")
         self.df.to_csv(output_file, index=False)
 
         # exit if os env is set
@@ -185,11 +204,10 @@ class YahooCadStockSpider(scrapy.Spider):
     def post_webhook_content(self, data: dict):
         url = self.webhook
 
-        result = requests.post(
-            url, data=json.dumps(data), headers={"Content-Type": "application/json"}
-        )
-
         try:
+            result = requests.post(
+                url, data=json.dumps(data), headers={"Content-Type": "application/json"}
+            )
             result.raise_for_status()
         except requests.exceptions.HTTPError as err:
             print(err)

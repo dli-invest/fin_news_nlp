@@ -29,6 +29,9 @@ class YahooUSDStockSpider(scrapy.Spider):
     current_date = datetime.now()
     embeds_in_queue = []
     webhook = os.environ.get('DISCORD_WEBHOOK')
+    if webhook == None:
+        print("REQUIRE DISCORD WEBHOOK")
+        exit(1)
     # redirect urls, need to clean up in data
     redirect_urls = []
 
@@ -75,7 +78,7 @@ class YahooUSDStockSpider(scrapy.Spider):
                     if embed_url not in self.df["url"]:
                         self.embeds_in_queue.append(embed_item)
                         # add row to dataframe
-                        self.df.append({"url": embed_url, "stock": ticker}, ignore_index=True)
+                        self.df = self.df.append({"url": embed_url, "stock": ticker}, ignore_index=True)
                     # if len(self.embeds_in_queue) >= 9:
                     #     data = {}
                     #     data["embeds"] = self.embeds_in_queue
@@ -108,11 +111,24 @@ class YahooUSDStockSpider(scrapy.Spider):
         url = link["href"]
         href_merged = response.urljoin(url)
         description = item.find("p").text
-        return {
-            "url": href_merged,
-            "title": f"{provider} - {url_text}",
-            "description": description
-        }
+        # apply nlp to both url_text and description
+        url_text_doc = nlp(url_text)
+        description_doc = nlp(description)
+        entities = description_doc.ents + url_text_doc.ents
+        # count number of entities in the description and title
+        entity_hits = len(entities)
+        # make fields for the embed from ents
+        fields = [description_doc.ents, url_text_doc.ents]
+        # make a list of all the entities
+        if entity_hits >= 5:
+            fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
+            return {
+                "url": href_merged,
+                "title": f"{provider} - {url_text}",
+                "description": description,
+                "fields": fields
+            }
+        return None
 
     def handle_article(self, response):
         url = response.url
