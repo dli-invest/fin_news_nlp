@@ -410,8 +410,8 @@ https://www.cnbc.com/2021/12/31/omicron-travel-airline-cancellation-refunds.html
 https://www.cnbc.com/2021/12/31/where-americans-want-to-travel-abroad-and-where-theyve-lost-interest.html
 https://www.cnbc.com/2021/12/31/stocks-making-the-biggest-moves-midday-pfizer-peloton-carnival-and-more.html
 https://www.cnbc.com/2021/12/30/warren-buffett-tells-bernie-sanders-he-wont-intervene-in-special-metals-strike.html
-https://www.cnbc.com/2021/12/31/bitcoin-slump-offers-tax-benefit-to-investors-for-now.html
 https://www.cnbc.com/2021/12/30/apples-new-fix-it-policy-is-not-the-end-for-right-to-repair.html
+https://www.cnbc.com/2021/12/31/bitcoin-slump-offers-tax-benefit-to-investors-for-now.html
 https://www.cnbc.com/2021/12/30/congress-news-democrats-to-take-up-build-back-better-fed-picks-in-2022.html
 https://www.cnbc.com/2021/12/31/the-power-of-habit-author-how-to-make-new-years-resolutions-for-2022.html
 https://www.cnbc.com/2021/12/30/pro-trump-lawyer-says-his-plantations-were-go-to-spots-for-election-conspiracy-theorists.html
@@ -420,6 +420,8 @@ https://www.cnbc.com/2021/12/31/shanghai-releases-five-year-plans-for-metaverse-
 https://www.cnbc.com/2021/12/30/exec-who-grew-espn-and-launched-nfl-redzone-chats-future-of-sports-tv.html
 https://www.cnbc.com/2021/12/30/walmart-drew-one-in-four-dollars-on-click-and-collect-market-researcher.html
 https://www.cnbc.com/2021/12/31/chinas-big-challenge-for-2022-getting-people-to-spend-money.html
+https://www.cnbc.com/2021/12/31/biden-zelenskyy-to-speak-as-russia-builds-up-military-at-ukraine-border.html
+https://www.cnbc.com/2021/12/31/tesla-asks-employees-to-fight-california-plan-to-cut-solar-incentives.html
 https://www.cnbc.com/2021/12/31/us-treasury-yields-dip-in-final-trading-session-of-2021.html
 https://www.cnbc.com/2021/12/30/weekly-jobless-claims-total-198000-less-than-expected.html
 https://www.cnbc.com/2021/12/30/jetblue-cuts-flights-through-mid-january-expecting-more-omicron-covid-sick-calls.html
@@ -431,5 +433,3 @@ https://www.cnbc.com/2021/12/29/fauci-warns-against-large-new-years-eve-parties-
 https://www.cnbc.com/2021/12/29/jimmy-cayne-who-led-bear-stearns-through-its-rise-and-fall-has-died.html
 https://www.cnbc.com/2021/12/29/us-covid-cases-rise-to-pandemic-high-as-delta-and-omicron-circulate.html
 https://www.cnbc.com/2021/12/29/apple-ditched-intel-and-it-paid-off.html
-https://www.cnbc.com/2021/12/29/minimum-wage-employers-moving-faster-than-states-to-raise-hourly-pay.html
-https://www.cnbc.com/2021/12/29/us-treasury-yields-omicron-in-focus.html
