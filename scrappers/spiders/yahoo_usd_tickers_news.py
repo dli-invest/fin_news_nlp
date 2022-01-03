@@ -11,7 +11,7 @@ from scrappers.get_tickers import TickerControllerV2
 from bs4 import BeautifulSoup
 from nlp_articles.app.nlp import init_nlp
 
-output_file = "data/yahoo_cad_tickers.csv"
+output_file = "data/yahoo_usd_tickers.csv"
 
 nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
 
