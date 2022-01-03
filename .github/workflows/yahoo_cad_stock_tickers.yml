@@ -49,6 +49,7 @@ jobs:
             git config pull.rebase true || true
             git pull origin main --strategy=ours || true
             git pull origin main || true
+            git merge origin main || true
             git commit -m "Add changes" -a
           fi
       - name: Test
