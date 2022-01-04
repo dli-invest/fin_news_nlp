@@ -406,13 +406,13 @@ https://www.cnbc.com/2022/01/04/biden-disapproval-rating-high-voters-blame-him-o
 https://www.cnbc.com/2022/01/03/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/01/04/fanatics-acquires-topps-trading-cards.html
 https://www.cnbc.com/2022/01/04/apple-stock-will-continue-to-grow-faster-than-economy-investor-says.html
-https://www.cnbc.com/2022/01/04/stocks-making-the-biggest-moves-in-the-premarket-foot-locker-under-armour-and-more.html
+https://www.cnbc.com/2022/01/03/ford-beats-tesla-to-become-auto-industrys-top-growth-stock-in-2021.html
 https://www.cnbc.com/2022/01/03/apples-3-trillion-market-cap-shows-value-of-share-buybacks-dividend.html
 https://www.cnbc.com/2022/01/04/founder-of-crypto-lender-nexo-says-bitcoin-could-hit-100000-in-2022-.html
-https://www.cnbc.com/2022/01/03/ford-beats-tesla-to-become-auto-industrys-top-growth-stock-in-2021.html
-https://www.cnbc.com/2022/01/04/china-evergrande-says-contracted-sales-dropped-38point7percent-in-2021.html
-https://www.cnbc.com/2022/01/03/gaf-energy-taking-on-tesla-to-make-solar-shingles-cheaper.html
+https://www.cnbc.com/2022/01/04/stocks-making-the-biggest-moves-in-the-premarket-foot-locker-under-armour-and-more.html
 https://www.cnbc.com/2022/01/04/opec-meeting-to-decide-on-oil-supply-as-omicron-covid-cases-soar.html
+https://www.cnbc.com/2022/01/03/gaf-energy-taking-on-tesla-to-make-solar-shingles-cheaper.html
+https://www.cnbc.com/2022/01/04/china-evergrande-says-contracted-sales-dropped-38point7percent-in-2021.html
 https://www.cnbc.com/2022/01/03/tesla-opens-dealership-in-xinjiang-china.html
 https://www.cnbc.com/2022/01/04/china-to-require-data-security-review-on-some-firms-before-ipo-abroad.html
 https://www.cnbc.com/2022/01/03/markets-and-the-economy-brace-as-the-feds-first-hike-could-come-in-two-months.html
@@ -438,4 +438,3 @@ https://www.cnbc.com/2022/01/02/tesla-tsla-q4-2021-vehicle-delivery-and-producti
 https://www.cnbc.com/2022/01/01/severe-weather-omicron-infections-drive-thousands-more-us-flight-cancellations.html
 https://www.cnbc.com/2022/01/01/meta-apple-google-microsoft-gear-up-for-big-augmented-reality-year.html
 https://www.cnbc.com/2021/12/31/united-airlines-offers-pilots-triple-pay-to-ease-omicron-flight-disruptions.html
-https://www.cnbc.com/2021/12/31/omicron-hospitalization-risk-upside-vaccine-protection-good-uk-study-.html
