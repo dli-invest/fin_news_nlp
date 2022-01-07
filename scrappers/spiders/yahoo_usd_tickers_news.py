@@ -49,7 +49,7 @@ class YahooUSDStockSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
             if len(self.embeds_in_queue) >= 8:
                 data = {
-                    "username": "fin_news_nlp/yahoo_cad_tickers_news",
+                    "username": "fin_news_nlp/yahoo_usd_tickers_news",
                 }
                 data["embeds"] = self.embeds_in_queue
                 self.embeds_in_queue = []
