@@ -1,7 +1,6 @@
 from nlp_articles.app.nlp import init_nlp
-
+nlp = init_nlp("core/data/exchanges.tsv","core/data/indicies.tsv")
 def test_parsing_article():
-    nlp = init_nlp("core/data/exchanges.tsv","core/data/indicies.tsv")
     text = '''
     Sept 10 (Reuters) - Wall Street's main indexes were subdued on Friday as signs of higher inflation and a drop in Apple shares following an unfavorable court ruling offset expectations of an easing in U.S.-China tensions.
 
@@ -61,3 +60,17 @@ def test_parsing_article():
     assert labels_hit > 20
 
         
+def test_special_dividend():
+    text = '''Dorel Completes Sale of Sports Segment to Pon Holdings for US $810 Million and Declares Special Dividend of US $12.00 Per Share
+    '''
+    doc = nlp(text)
+
+    # make sure special dividend is in doc.ents
+    for entity in doc.ents:
+        if entity.label_ == 'DIVIDENDS':
+            assert entity.text == 'Special Dividend'
+            break
+    else:
+        print('no special dividend found')
+        print(doc.ents)
+        assert False

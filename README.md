@@ -1,10 +1,15 @@
 # fin_news_nlp
 Financial nlp project to scan news sites for information built using spacy, fastapi, scrapy, cookercutter and various news sources.
 
-
 ## NLP
 
 Use spacy to analyze financial articles
+
+To test run:
+```
+cd nlp_articles
+pytest
+```
 
 ## Scrapy
 
