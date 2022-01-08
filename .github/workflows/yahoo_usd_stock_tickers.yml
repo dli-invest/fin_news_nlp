@@ -47,6 +47,7 @@ jobs:
             echo "tree is dirty, please commit changes before running this"
             echo "PUSH_FILES=true" >> $GITHUB_ENV
             git commit -m "Add changes" -a || true
+            git config pull.rebase false || true
             git merge -Xours main || true
             git pull origin main --strategy=ours || true
             git pull origin main || true
