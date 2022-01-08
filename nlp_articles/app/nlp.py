@@ -104,5 +104,18 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
 
     for ec in ["ENVIRONMENT", "INTEREST", "RATES", "TAXPAYERS", "TRUMP", "SUPPLY"]:
         patterns.append({"label": "MAYBE", "pattern": ec})
+
+    DIVIDEND_PATTERNS = [
+        {
+            "label": "DIVIDENDS",
+            "pattern": [{"LOWER": "special"}, {"LOWER": "dividend"}]
+        },
+        {
+            "label": "DIVIDENDS",
+            "pattern": [{"LOWER": "cash"}, {"LOWER": "dividend"}]
+        }
+    ]
+    for pattern in DIVIDEND_PATTERNS:
+        patterns.append(pattern)
     ruler.add_patterns(patterns)
     return nlp
