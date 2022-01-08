@@ -252,6 +252,5 @@ class YahooUSDStockSpider(scrapy.Spider):
                 )
             except requests.exceptions.HTTPError as err:
                 print(err)
-                pass
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
