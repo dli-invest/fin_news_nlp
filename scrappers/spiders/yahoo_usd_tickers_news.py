@@ -58,8 +58,9 @@ class YahooUSDStockSpider(scrapy.Spider):
             if len(self.embeds_in_queue) >= 8:
                 data = {
                     "username": "fin_news_nlp/yahoo_usd_tickers_news",
+                    'embeds': self.embeds_in_queue,
                 }
-                data["embeds"] = self.embeds_in_queue
+
                 self.embeds_in_queue = []
                 self.post_webhook_content(data)
 
@@ -79,7 +80,7 @@ class YahooUSDStockSpider(scrapy.Spider):
             # rework this scrapping logic to only use BeautifulSoup
             full_soup = BeautifulSoup(response.body, features="lxml")
             news_items = full_soup.find_all("li", {"class": "js-stream-content"})
-            for item in news_items[0:2]:
+            for item in news_items[:2]:
                 embed_item = self.parse_news_item(item, response)
                 if embed_item is not None:
                     embed_url = embed_item.get("url")
@@ -92,15 +93,13 @@ class YahooUSDStockSpider(scrapy.Spider):
                     else:
                         print("ALREADY EXISTS")
                         print(embed_url)
-                        pass
-                    # if len(self.embeds_in_queue) >= 9:
-                    #     data = {}
-                    #     data["embeds"] = self.embeds_in_queue
-                    #     self.embeds_in_queue = []
-                    #     self.post_webhook_content(data)
+                                # if len(self.embeds_in_queue) >= 9:
+                                #     data = {}
+                                #     data["embeds"] = self.embeds_in_queue
+                                #     self.embeds_in_queue = []
+                                #     self.post_webhook_content(data)
         except Exception as e:
             os.environ["EXIT_ON_ERROR"] = "true"
-            pass
 
     @staticmethod
     def upper_case(str):
@@ -174,17 +173,16 @@ class YahooUSDStockSpider(scrapy.Spider):
             entities.append({"text": ent.text, "label": ent.label_})
         entities = [dict(t) for t in {tuple(d.items()) for d in entities}]
         diff_date = current_date - article_date
-        # map entities to fields
-        embeds = []
-        fields = []
-        data = {}
         if diff_date.seconds // 3600 < 24:
-            # send article to discord
-            # map data to embeds
-            for ent in entities[:24]:
-                fields.append(
-                    {"name": ent.get("text"), "value": ent.get("label"), "inline": True}
-                )
+            fields = [
+                {
+                    "name": ent.get("text"),
+                    "value": ent.get("label"),
+                    "inline": True,
+                }
+                for ent in entities[:24]
+            ]
+
             first_sentence = article_data[:100]
             # MAP type to color
             embed = {
@@ -195,8 +193,9 @@ class YahooUSDStockSpider(scrapy.Spider):
                 "fields": fields,
                 "description": first_sentence,
             }
-            embeds.append(embed)
-            data["embeds"] = embeds
+                # map entities to fields
+            embeds = [embed]
+            data = {'embeds': embeds}
             self.post_webhook_content(data)
 
     @classmethod
