@@ -35,19 +35,25 @@ class YahooCadStockSpider(scrapy.Spider):
     else: 
         df = pd.DataFrame(columns=["url", "stock"])
 
+    def send_data(self):
+        data = {
+            "username": "fin_news_nlp/yahoo_cad_tickers_news",
+        }
+        data["embeds"] = self.embeds_in_queue
+        self.embeds_in_queue = []
+        self.post_webhook_content(data)
+
     def start_requests(self):
-        tickers = self.ticker_controller.get_ytickers()
+        tickers = self.ticker_controller.get_ytickers()[0:3]
         yahoo_urls = [f"{self.base_yahoo_url}/{ticker}" for ticker in tickers]
         urls = yahoo_urls
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
             if len(self.embeds_in_queue) >= 8:
-                data = {
-                    "username": "fin_news_nlp/yahoo_cad_tickers_news",
-                }
-                data["embeds"] = self.embeds_in_queue
-                self.embeds_in_queue = []
-                self.post_webhook_content(data)
+              self.send_data()
+
+        if len(self.embeds_in_queue) >= 1:
+            self.send_data()
 
     def parse(self, response):
         try:
@@ -69,7 +75,11 @@ class YahooCadStockSpider(scrapy.Spider):
                 embed_item = self.parse_news_item(item, response)
                 if embed_item is not None:
                     embed_url = embed_item.get('url')
-                    if embed_url not in self.df["url"]:
+                    print("TESTING NEW MESSAGE")
+                    print(embed_url)
+                    if embed_url in self.df["url"]:
+                        pass
+                    else:
                         self.embeds_in_queue.append(embed_item)
                         # add row to dataframe
                         self.df = self.df.append({"url": embed_url, "stock": ticker}, ignore_index=True)
@@ -195,6 +205,7 @@ class YahooCadStockSpider(scrapy.Spider):
 
     def spider_closed(self, spider):
         print("spider closed")
+        self.df = self.df.drop_duplicates(subset="url", keep="first")
         self.df.to_csv(output_file, index=False)
 
         # exit if os env is set
