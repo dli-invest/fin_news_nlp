@@ -50,7 +50,7 @@ class YahooCadStockSpider(scrapy.Spider):
         self.sent_embeds += len(data["embeds"])
 
     def start_requests(self):
-        tickers = self.ticker_controller.get_ytickers()[0:5]
+        tickers = self.ticker_controller.get_ytickers()
         yahoo_urls = [f"{self.base_yahoo_url}/{ticker}" for ticker in tickers]
         urls = yahoo_urls
         for url in urls:
