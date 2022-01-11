@@ -9,7 +9,9 @@ import dateparser
 import json
 from scrappers.get_tickers import TickerControllerV2
 from bs4 import BeautifulSoup
+from nlp_articles.app.utils import DIVIDEND_LABEL
 from nlp_articles.app.nlp import init_nlp
+from nlp_articles.app.webhook import post_webhook_content
 
 output_file = "data/yahoo_usd_tickers.csv"
 
@@ -81,11 +83,22 @@ class YahooUSDStockSpider(scrapy.Spider):
             full_soup = BeautifulSoup(response.body, features="lxml")
             news_items = full_soup.find_all("li", {"class": "js-stream-content"})
             for item in news_items[:2]:
-                embed_item = self.parse_news_item(item, response)
-                if embed_item is not None:
+                embed_data = self.parse_news_item(item, response)
+                if embed_data is not None:
+                    embed_item = embed_data["embed"]
                     embed_url = embed_item.get("url")
                     if embed_url not in self.df["url"].values:
+                        metadata = embed_data["metadata"]
                         self.embeds_in_queue.append(embed_item)
+                        if metadata.get(DIVIDEND_LABEL):
+                            dividend_data = {
+                                'username': 'fin_news_nlp/yahoo_cad_tickers_news',
+                                'embeds': [embed_item],
+                            }
+                            post_webhook_content(
+                                self.dividend_webhook,
+                                dividend_data
+                            )
                         # add row to dataframe
                         self.df = self.df.append(
                             {"url": embed_url, "stock": ticker}, ignore_index=True
@@ -138,11 +151,19 @@ class YahooUSDStockSpider(scrapy.Spider):
                 {"name": entity.label_, "value": entity.text, "inline": True}
                 for entity in entities
             ]
-            return {
+            embed = {
                 "url": href_merged,
                 "title": f"{provider} - {url_text}",
                 "description": description,
                 "fields": fields,
+            }
+            metadata = {}
+            # check if dividends is in the entities list
+            if DIVIDEND_LABEL in [entity.label_ for entity in entities]:
+                metadata[DIVIDEND_LABEL] = True
+            return {
+                "embed": embed,
+                "metadata": metadata,
             }
         return None
 
@@ -228,29 +249,3 @@ class YahooUSDStockSpider(scrapy.Spider):
         # exit if os env is set
         if os.environ.get("EXIT_ON_ERROR") == "true":
             exit(1)
-
-    def post_webhook_content(self, data: dict):
-        url = self.webhook
-
-        result = requests.post(
-            url, data=json.dumps(data), headers={"Content-Type": "application/json"}
-        )
-
-        try:
-            result.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            # convert data to raw bytes
-            # send raw bytes to discord as file
-            try:
-                requests.post(
-                    url,
-                    files={"file": ("file.json", json.dumps(data).encode("utf-8"))},
-                    headers={
-                        "Content-Type": "multipart/form-data",
-                    }
-                )
-            except requests.exceptions.HTTPError as err:
-                print(err)
-        else:
-            print("Payload delivered successfully, code {}.".format(result.status_code))
