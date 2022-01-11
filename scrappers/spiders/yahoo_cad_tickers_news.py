@@ -2,11 +2,11 @@ import pandas as pd
 import scrapy
 from scrapy import signals
 import re
-import requests
 import os
 from datetime import datetime
 import dateparser
-import json
+from nlp_articles.app.utils import DIVIDEND_LABEL
+from nlp_articles.app.webhook import post_webhook_content
 from scrappers.get_tickers import TickerControllerV2
 from bs4 import BeautifulSoup
 from nlp_articles.app.nlp import init_nlp
@@ -30,6 +30,7 @@ class YahooCadStockSpider(scrapy.Spider):
     if webhook == None:
         print("REQUIRE DISCORD WEBHOOK")
         exit(1)
+    dividend_webhook = os.environ.get("DISCORD_DIVIDEND_WEBHOOK")
     # redirect urls, need to clean up in data
     redirect_urls = []
     # if output file exists
@@ -47,7 +48,7 @@ class YahooCadStockSpider(scrapy.Spider):
         }
 
         self.embeds_in_queue = []
-        self.post_webhook_content(data)
+        post_webhook_content(self.webhook, data)
         self.sent_embeds += len(data["embeds"])
 
     def start_requests(self):
@@ -79,11 +80,23 @@ class YahooCadStockSpider(scrapy.Spider):
             full_soup = BeautifulSoup(response.body, features="lxml")
             news_items = full_soup.find_all("li", {"class": "js-stream-content"})
             for item in news_items[:2]:
-                embed_item = self.parse_news_item(item, response)
-                if embed_item is not None:
+                embed_data = self.parse_news_item(item, response)
+                if embed_data is not None:
+                    embed_item = embed_data["embed"]
                     embed_url = embed_item.get("url")
                     if embed_url not in self.df["url"].values:
+                        metadata = embed_data["metadata"]
                         self.embeds_in_queue.append(embed_item)
+                        # if dividends is in metadata send to discord
+                        if metadata.get(DIVIDEND_LABEL):
+                            dividend_data = {
+                                'username': 'fin_news_nlp/yahoo_cad_tickers_news',
+                                'embeds': [embed_item],
+                            }
+                            post_webhook_content(
+                                self.dividend_webhook,
+                                dividend_data
+                            )
                         # add row to dataframe
                         self.df = self.df.append(
                             {"url": embed_url, "stock": ticker}, ignore_index=True
@@ -139,11 +152,19 @@ class YahooCadStockSpider(scrapy.Spider):
                 {"name": entity.label_, "value": entity.text, "inline": True}
                 for entity in entities
             ]
-            return {
+            embed = {
                 "url": href_merged,
                 "title": f"{provider} - {url_text}",
                 "description": description,
                 "fields": fields,
+            }
+            metadata = {}
+            # check if dividends is in the entities list
+            if DIVIDEND_LABEL in [entity.label_ for entity in entities]:
+                metadata[DIVIDEND_LABEL] = True
+            return {
+                "embed": embed,
+                "metadata": metadata,
             }
         return None
 
@@ -214,7 +235,7 @@ class YahooCadStockSpider(scrapy.Spider):
         self.df = self.df.drop_duplicates(subset="url", keep="first")
         self.df.to_csv(output_file, index=False)
         previous_articles = len(self.df)
-        self.webhook = os.environ.get("DISCORD_STATS_WEBHOOK")
+        stats_webhook = os.environ.get("DISCORD_STATS_WEBHOOK")
         new_hits = len(self.df) - previous_articles
         data = {
             "embeds": [
@@ -225,32 +246,7 @@ class YahooCadStockSpider(scrapy.Spider):
                 }
             ]
         }
-        self.post_webhook_content(data)
+        post_webhook_content(stats_webhook, data)
         # exit if os env is set
         if os.environ.get("EXIT_ON_ERROR") == "true":
             exit(1)
-
-    def post_webhook_content(self, data: dict):
-        url = self.webhook
-
-        try:
-            result = requests.post(
-                url, data=json.dumps(data), headers={"Content-Type": "application/json"}
-            )
-            result.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            # convert data to raw bytes
-            # send raw bytes to discord as file
-            try:
-                requests.post(
-                    url,
-                    files={"file": ("file.json", json.dumps(data).encode("utf-8"))},
-                    headers={
-                        "Content-Type": "multipart/form-data",
-                    }
-                )
-            except requests.exceptions.HTTPError as err:
-                print(err)
-        else:
-            print("Payload delivered successfully, code {}.".format(result.status_code))

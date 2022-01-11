@@ -44,3 +44,5 @@ S3_PARTNERS = [
     {"LOWER": "s3"},
     {"TEXT": {"REGEX": "^[Pp](\.?|artner)?"}}
 ]
+
+DIVIDEND_LABEL = "DIVIDENDS"

@@ -1,6 +1,6 @@
 import spacy
 import pandas as pd
-from nlp_articles.app.utils import stop_terms as stop_terms
+from nlp_articles.app.utils import stop_terms as stop_terms, DIVIDEND_LABEL
 # rewrite this to load based on patternl files.
 # https://spacy.io/usage/rule-based-matching#entityruler-files
 def init_nlp(exchange_data_path: str, indicies_data_path: str):
@@ -107,11 +107,11 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
 
     DIVIDEND_PATTERNS = [
         {
-            "label": "DIVIDENDS",
+            "label": DIVIDEND_LABEL,
             "pattern": [{"LOWER": "special"}, {"LOWER": "dividend"}]
         },
         {
-            "label": "DIVIDENDS",
+            "label": DIVIDEND_LABEL,
             "pattern": [{"LOWER": "cash"}, {"LOWER": "dividend"}]
         }
     ]
