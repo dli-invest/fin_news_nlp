@@ -405,13 +405,14 @@ https://www.cnbc.com/2022/01/12/cpi-december-2021-.html
 https://www.cnbc.com/2022/01/12/apple-potential-bid-for-mlb-package-could-bring-big-player-into-sports.html
 https://www.cnbc.com/2022/01/12/russia-is-risking-all-out-war-to-prevent-ukraine-from-joining-nato.html
 https://www.cnbc.com/2022/01/12/bitcoin-could-rise-to-75000-this-year-to-top-record-high-seba-ceo.html
-https://www.cnbc.com/2022/01/12/stocks-making-the-biggest-moves-premarket-doordash-didi-philips-and-others-.html
-https://www.cnbc.com/2022/01/11/powell-says-rate-hikes-tighter-policy-will-be-needed-to-control-inflation.html
-https://www.cnbc.com/2022/01/11/facebook-owner-meta-falls-on-glassdoor-annual-best-places-to-work-list.html
-https://www.cnbc.com/2022/01/12/uk-could-be-first-country-to-emerge-from-pandemic-expert-says.html
 https://www.cnbc.com/2022/01/12/uk-pm-boris-johnson-apologizes-over-anger-at-lockdown-drinks-party.html
+https://www.cnbc.com/2022/01/11/powell-says-rate-hikes-tighter-policy-will-be-needed-to-control-inflation.html
+https://www.cnbc.com/2022/01/12/the-10-best-us-places-to-work-in-2022-according-to-glassdoor.html
 https://www.cnbc.com/2022/01/11/who-says-omicron-is-life-threatening-for-unvaccinated-elderly-underlying-conditions.html
 https://www.cnbc.com/2022/01/12/china-economy-goldman-cuts-china-gdp-for-2022-amid-lockdowns-omicron.html
+https://www.cnbc.com/2022/01/12/uk-could-be-first-country-to-emerge-from-pandemic-expert-says.html
+https://www.cnbc.com/2022/01/12/stocks-making-the-biggest-moves-premarket-doordash-didi-philips-and-others-.html
+https://www.cnbc.com/2022/01/11/facebook-owner-meta-falls-on-glassdoor-annual-best-places-to-work-list.html
 https://www.cnbc.com/2022/01/11/cramer-too-much-good-news-to-ignore-drove-tuesdays-market-rally.html
 https://www.cnbc.com/2022/01/12/travel-is-roaring-back-thats-good-and-bad-for-travelers.html
 https://www.cnbc.com/2022/01/11/empty-grocery-shelves-return-as-sick-employees-supply-chain-delays-collide.html
@@ -424,7 +425,6 @@ https://www.cnbc.com/2022/01/11/united-cuts-flights-as-about-3000-workers-call-o
 https://www.cnbc.com/2022/01/11/weather-disasters-cost-145-billion-last-year-in-the-us-says-noaa.html
 https://www.cnbc.com/2022/01/11/paul-tudor-jones-says-the-most-important-stock-metric-isnt-profit.html
 https://www.cnbc.com/2022/01/11/ray-epps-january-6-capitol-riot-probe-dismisses-claims-of-fbi-involvement.html
-https://www.cnbc.com/2022/01/11/walgreens-ceo-weighing-strategic-options-for-uk-based-boots.html
 https://www.cnbc.com/2022/01/12/us-bonds-treasury-yields-dip-slightly-ahead-of-inflation-data.html
 https://www.cnbc.com/2022/01/11/faa-briefly-grounded-planes-in-western-us-as-precaution.html
 https://www.cnbc.com/2022/01/11/amazon-union-election-in-alabama-to-begin-in-february.html
@@ -439,4 +439,3 @@ https://www.cnbc.com/2022/01/11/watch-fed-chair-jerome-powell-testify-live-at-hi
 https://www.cnbc.com/2022/01/11/zyngas-mark-pincus-cashes-in-after-15-years-of-boom-bust-cycle.html
 https://www.cnbc.com/2022/01/11/stocks-making-the-biggest-moves-in-the-premarket-illumina-rivian-juniper-networks-and-more.html
 https://www.cnbc.com/2022/01/11/us-bonds-treasury-yields-fall-ahead-of-powells-nomination-hearing.html
-https://www.cnbc.com/2022/01/10/rivian-shares-decline-on-2021-production-and-executive-departure.html
