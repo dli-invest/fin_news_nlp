@@ -1,3 +1,4 @@
+# DEPRECIATED - USE yahoo_tickers_news.py
 import pandas as pd
 import scrapy
 from scrapy import signals

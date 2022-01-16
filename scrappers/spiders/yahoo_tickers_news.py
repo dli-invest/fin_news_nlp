@@ -1,3 +1,4 @@
+from enum import Enum
 import pandas as pd
 import scrapy
 from scrapy import signals
@@ -11,7 +12,24 @@ from scrappers.get_tickers import TickerControllerV2
 from bs4 import BeautifulSoup
 from nlp_articles.app.nlp import init_nlp
 
-output_file = "data/yahoo_cad_tickers.csv"
+class Modes(Enum):
+    CAD = "CAD"
+    USD = "USD"
+
+SCRAP_MODE = os.environ.get("SCRAP_MODE")
+username = "dli-invest"
+scrap_name = "yahoo_cad_tickers_news"
+if Modes(SCRAP_MODE) == Modes.CAD:
+    output_file = "data/yahoo_cad_tickers.csv"
+    scrap_name = "yahoo_cad_tickers_news"
+    username = f"fin_news_nlp/{scrap_name}"
+elif Modes(SCRAP_MODE) == Modes.USD:
+    output_file = "data/yahoo_usd_tickers.csv"
+    scrap_name = "yahoo_usd_tickers_news"
+    username = f"fin_news_nlp/{scrap_name}"
+else:
+    print("REQUIRE SCRAP_MODE")
+    exit(1)
 
 nlp = init_nlp(
     "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv",
@@ -19,10 +37,24 @@ nlp = init_nlp(
 )
 
 
-class YahooCadStockSpider(scrapy.Spider):
-    name = "cad_stock_news"
+class YahooStockSpider(scrapy.Spider):
+    name = "stock_news"
     base_yahoo_url = "https://ca.finance.yahoo.com/quote"
-    ticker_controller = TickerControllerV2({})
+    if Modes(SCRAP_MODE) == Modes.CAD:
+        ticker_controller = TickerControllerV2({})
+    elif Modes(SCRAP_MODE) == Modes.USD:
+        ticker_controller = TickerControllerV2(
+            {
+                "default_url": "https://raw.githubusercontent.com/dli-invest/eod_tickers/main/data/us_stock_data.csv",
+                "tickers_config": {
+                    "price": 5e4,
+                    "market_cap": 1e13,
+                },
+            }
+        )
+    else:
+        print("REQUIRE SCRAP_MODE")
+        exit(1)
     should_visit_news_articles = False
     current_date = datetime.now()
     embeds_in_queue = []
@@ -43,7 +75,7 @@ class YahooCadStockSpider(scrapy.Spider):
 
     def send_data(self):
         data = {
-            'username': 'fin_news_nlp/yahoo_cad_tickers_news',
+            'username': username,
             'embeds': self.embeds_in_queue,
         }
 
@@ -90,7 +122,7 @@ class YahooCadStockSpider(scrapy.Spider):
                         # if dividends is in metadata send to discord
                         if metadata.get(DIVIDEND_LABEL):
                             dividend_data = {
-                                'username': 'fin_news_nlp/yahoo_cad_tickers_news',
+                                'username': username,
                                 'embeds': [embed_item],
                             }
                             post_webhook_content(
@@ -222,7 +254,7 @@ class YahooCadStockSpider(scrapy.Spider):
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
-        spider = super(YahooCadStockSpider, cls).from_crawler(crawler, *args, **kwargs)
+        spider = super(YahooStockSpider, cls).from_crawler(crawler, *args, **kwargs)
         crawler.signals.connect(spider.spider_opened, signals.spider_opened)
         crawler.signals.connect(spider.spider_closed, signals.spider_closed)
         return spider
@@ -237,12 +269,16 @@ class YahooCadStockSpider(scrapy.Spider):
         previous_articles = len(self.df)
         stats_webhook = os.environ.get("DISCORD_STATS_WEBHOOK")
         new_hits = len(self.df) - previous_articles
+        GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")
+        GITHUB_RUN_ID = os.environ.get("GITHUB_RUN_ID")
+        run_url = f"https://github.com/{GITHUB_REPOSITORY}/actions/runs/{GITHUB_RUN_ID}"
         data = {
             "embeds": [
                 {
-                    "title": "fin_news_nlp | yahoo_cad_tickers_news",
+                    "title": f"fin_news_nlp | {scrap_name}",
                     "description": f"New Hits {new_hits} \n Total Hits: {self.sent_embeds}",
                     "color": 0x00F0F0,
+                    "url": run_url,
                 }
             ]
         }
