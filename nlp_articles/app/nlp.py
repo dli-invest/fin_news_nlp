@@ -1,16 +1,20 @@
 import spacy
 import pandas as pd
-from nlp_articles.app.utils import stop_terms as stop_terms, DIVIDEND_LABEL
+from nlp_articles.app.utils import stop_terms as stop_terms, \
+    DIVIDEND_LABEL, cse_pattern, tsx_pattern
 # rewrite this to load based on patternl files.
 # https://spacy.io/usage/rule-based-matching#entityruler-files
+
+
 def init_nlp(exchange_data_path: str, indicies_data_path: str):
     nlp = spacy.load("en_core_web_sm")
     ticker_df = pd.read_csv(
-                "https://raw.githubusercontent.com/dli-invest/eod_tickers/main/data/us.csv"
-            )
+        "https://raw.githubusercontent.com/dli-invest/eod_tickers/main/data/us.csv"
+    )
 
     ticker_df = ticker_df.dropna(subset=['Code', 'Name'])
-    ticker_df = ticker_df[~ticker_df.Name.str.contains("Wall Street", na=False)]
+    ticker_df = ticker_df[~ticker_df.Name.str.contains(
+        "Wall Street", na=False)]
     # remove exact matches
     ticker_df = ticker_df[~ticker_df['Name'].isin(['Wall Street'])]
     # remove bad symbols
@@ -24,7 +28,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     indexes = ind_df.IndexName.tolist()
     index_symbols = ind_df.IndexSymbol.tolist()
 
-    exchanges = ex_df.ISOMIC.tolist()+ ex_df["Google Prefix"].tolist()
+    exchanges = ex_df.ISOMIC.tolist() + ex_df["Google Prefix"].tolist()
     descriptions = ex_df.Description.tolist()
 
     # split stops into other arrays
@@ -37,15 +41,14 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
 
     first_words_added = []
     endings = [".TO", ".V", ".CN", ".HK"]
-    #List of Entities and Patterns
+    # List of Entities and Patterns
     for symbol in symbols:
         if len(symbol) > 1:
             patterns.append({"label": "STOCK", "pattern": symbol})
             patterns.append({"label": "STOCK", "pattern": f"${symbol}"})
             for ending in endings:
-                patterns.append({"label": "STOCK", "pattern": symbol+f".{ending}"})
-
-
+                patterns.append(
+                    {"label": "STOCK", "pattern": symbol+f".{ending}"})
 
     for company in companies:
         if company not in stops and len(company) > 1:
@@ -84,8 +87,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
                 patterns.append({"label": "INDEX", "pattern": version})
 
     for symbol in index_symbols:
-        patterns.append({"label": "INDEX", "pattern": symbol})    
-
+        patterns.append({"label": "INDEX", "pattern": symbol})
 
     for d in descriptions:
         patterns.append({"label": "STOCK_EXCHANGE", "pattern": d})
@@ -93,14 +95,14 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         patterns.append({"label": "STOCK_EXCHANGE", "pattern": e})
 
     for crit in ["evergrande", "climate", "recession", "depression", "FED"]:
-         patterns.append({"label": "CRITICAL", "pattern": crit})
+        patterns.append({"label": "CRITICAL", "pattern": crit})
 
     for term in ["COP", "BIDEN"]:
         patterns.append({"label": "EVENT", "pattern": term})
 
     for country in ["USA", "US", "United States", "U.S.", "U.S.A.", "CANADA", "CHINA"]:
         patterns.append({"label": "COUNTRY", "pattern": country})
-    # might be of interest 
+    # might be of interest
 
     for ec in ["ENVIRONMENT", "INTEREST", "RATES", "TAXPAYERS", "TRUMP", "SUPPLY"]:
         patterns.append({"label": "MAYBE", "pattern": ec})
@@ -116,6 +118,19 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         }
     ]
     for pattern in DIVIDEND_PATTERNS:
+        patterns.append(pattern)
+
+    STOCK_PATTERNS = [
+        {
+            "label": "EX_STOCK",
+            "pattern": cse_pattern
+        },
+        {
+            "label": "EX_STOCK",
+            "pattern": tsx_pattern
+        }
+    ]
+    for pattern in STOCK_PATTERNS:
         patterns.append(pattern)
     ruler.add_patterns(patterns)
     return nlp

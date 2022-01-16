@@ -74,3 +74,17 @@ def test_special_dividend():
         print('no special dividend found')
         print(doc.ents)
         assert False
+
+def test_ex_stock():
+    text = '''Airdrie, Alberta--(Newsfile Corp. - January 14, 2022) - Vitreous Glass Inc. (TSXV: VCI) (the "Corporation") is pleased to announce that the Corporation declared a cash dividend (the "Dividend") today of $0.09 per common share to be paid on February 15, 2022 to the shareholders of record as of the close of business on February 1, 2022. Although this is a special Dividend, depending on the results of business, the Corporation hopes to be able to pay the dividend on a regular basis.'''
+    doc = nlp(text)
+
+    # check for TSXV: VCI in EX_STOCK
+    for entity in doc.ents:
+        if entity.label_ == 'EX_STOCK':
+            assert entity.text == 'TSXV: VCI'
+            break
+    else:
+        print('no EX_STOCK found')
+        print(doc.label_)
+        assert False

@@ -42,7 +42,19 @@ stop_terms = [
 
 S3_PARTNERS = [
     {"LOWER": "s3"},
-    {"TEXT": {"REGEX": "^[Pp](\.?|artner)?"}}
+    {"TEXT": {"REGEX": "^[Pp](.?|artner)?"}}
 ]
 
 DIVIDEND_LABEL = "DIVIDENDS"
+
+cse_pattern = [
+    {"TEXT": {"REGEX": "(?i)CSE|CVE"}},
+    {"IS_PUNCT": True, "OP": "?"}
+]
+
+tsx_pattern = [
+    {"TEXT": {"REGEX": "TSX|TSXV"}},
+    {"TEXT": ":", "OP": "?"},
+    {"IS_PUNCT": True, "OP": "?"},
+    {"TEXT": {"REGEX": "\w"}},
+]
