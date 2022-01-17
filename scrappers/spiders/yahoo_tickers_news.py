@@ -19,6 +19,9 @@ class Modes(Enum):
 SCRAP_MODE = os.environ.get("SCRAP_MODE")
 username = "dli-invest"
 scrap_name = "yahoo_cad_tickers_news"
+if SCRAP_MODE == None:
+    print("REQUIRE SCRAP_MODE")
+    exit(1)
 if Modes(SCRAP_MODE) == Modes.CAD:
     output_file = "data/yahoo_cad_tickers.csv"
     scrap_name = "yahoo_cad_tickers_news"
@@ -27,9 +30,6 @@ elif Modes(SCRAP_MODE) == Modes.USD:
     output_file = "data/yahoo_usd_tickers.csv"
     scrap_name = "yahoo_usd_tickers_news"
     username = f"fin_news_nlp/{scrap_name}"
-else:
-    print("REQUIRE SCRAP_MODE")
-    exit(1)
 
 nlp = init_nlp(
     "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv",
@@ -74,6 +74,8 @@ class YahooStockSpider(scrapy.Spider):
     sent_embeds = 0
 
     def send_data(self):
+        if os.environ.get('SCRAPY_CHECK') != "true":
+            pass
         data = {
             'username': username,
             'embeds': self.embeds_in_queue,
@@ -96,6 +98,15 @@ class YahooStockSpider(scrapy.Spider):
             self.send_data()
 
     def parse(self, response):
+        """
+        @url https://ca.finance.yahoo.com/quote/HPK?p=HPK
+        @returns items 1 16
+        @returns requests 0 0
+        @scrapes embed
+        """
+        # figure out how to add basic dividend contract to the data 
+        # https://docs.scrapy.org/en/latest/topics/contracts.html
+        
         try:
             url = response.url
             if response.status == 302:
@@ -111,8 +122,11 @@ class YahooStockSpider(scrapy.Spider):
             # rework this scrapping logic to only use BeautifulSoup
             full_soup = BeautifulSoup(response.body, features="lxml")
             news_items = full_soup.find_all("li", {"class": "js-stream-content"})
-            for item in news_items[:2]:
+            first_item = None
+            for count, item in enumerate(news_items[:2]):
                 embed_data = self.parse_news_item(item, response)
+                if count == 0:
+                    first_item = embed_data
                 if embed_data is not None:
                     embed_item = embed_data["embed"]
                     embed_url = embed_item.get("url")
@@ -125,10 +139,11 @@ class YahooStockSpider(scrapy.Spider):
                                 'username': username,
                                 'embeds': [embed_item],
                             }
-                            post_webhook_content(
-                                self.dividend_webhook,
-                                dividend_data
-                            )
+                            if os.environ.get('SCRAPY_CHECK') != 'true':
+                                post_webhook_content(
+                                    self.dividend_webhook,
+                                    dividend_data
+                                )
                         # add row to dataframe
                         self.df = self.df.append(
                             {"url": embed_url, "stock": ticker}, ignore_index=True
@@ -141,7 +156,7 @@ class YahooStockSpider(scrapy.Spider):
                                 #     data["embeds"] = self.embeds_in_queue
                                 #     self.embeds_in_queue = []
                                 #     self.post_webhook_content(data)
-
+            return first_item
         except Exception as e:
             print(e)
             # os.environ["EXIT_ON_ERROR"] = "true"

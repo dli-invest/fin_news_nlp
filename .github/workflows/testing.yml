@@ -7,6 +7,12 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron:  '30 13 * * 5'
 
+env:
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_STOCK_NEW_RELEASE_WEBHOOK }}
+  DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
+  DISCORD_DIVIDEND_WEBHOOK: ${{ secrets.DISCORD_DIVIDEND_WEBHOOK }}
+  SCRAP_MODE: CAD
+
 # Add cron job to ensure external webpages + apis have no changed
 jobs:
   run_tests:
@@ -45,3 +51,8 @@ jobs:
           flags: ga_ci
           env_vars: PYTHON,OS
           fail_ci_if_error: true
+
+      - name: scrapy crawl check
+        run: 
+          |
+          scrapy check stock_news

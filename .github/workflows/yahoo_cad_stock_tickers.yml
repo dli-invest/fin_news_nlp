@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - 'main'
-      - 'feature/*'
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '15 8-20/2 * * 1-5'
@@ -17,7 +16,7 @@ env:
 jobs:
   scrap_data:
     runs-on: ubuntu-latest
-    name: coverage
+    name: cad stock scrapping
     env:
       PYTHON: ${{ matrix.python-version }}
       OS: ${{ matrix.os }}
