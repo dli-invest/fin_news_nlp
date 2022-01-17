@@ -9,6 +9,7 @@ on:
 
 env:
   DISCORD_WEBHOOK: ${{ secrets.DISCORD_NEWS_WEBHOOK}}
+  SCRAP_MODE: "CAD"
 # Add cron job to ensure external webpages + apis have no changed
 jobs:
   scrap_data:
