@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - '**'
+    paths-ignore:
+      - '.github/workflows/*.yml'
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '30 13 * * 5'
