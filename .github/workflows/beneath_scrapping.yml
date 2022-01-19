@@ -4,6 +4,8 @@ on:
     branches:
       - 'main'
       - "feature/*"
+    paths-ignore:
+      - ".github/workflows/*.yml"
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '10 */1 * * *'
@@ -16,7 +18,7 @@ env:
 jobs:
   scrap_data:
     runs-on: ubuntu-latest
-    name: coverage
+    name: beneath
     env:
       PYTHON: ${{ matrix.python-version }}
       OS: ${{ matrix.os }}
@@ -45,6 +47,7 @@ jobs:
             echo "tree is clean"
           else
             git add *.txt || true
+            git update-index --assume-unchanged .github/workflows/*.yml || true
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             echo "tree is dirty, please commit changes before running this"

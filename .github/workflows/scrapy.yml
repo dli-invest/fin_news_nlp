@@ -3,17 +3,20 @@ on:
   push:
     branches:
       - 'main'
+    paths-ignore:
+      - ".github/workflows/*.yml"
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '2 8-20 * * 1-5'
 
 env:
   DISCORD_WEBHOOK: ${{ secrets.DISCORD_NEWS_WEBHOOK}}
+  SCRAP_MODE: CAD
 # Add cron job to ensure external webpages + apis have no changed
 jobs:
   scrap_data:
     runs-on: ubuntu-latest
-    name: coverage
+    name: Yahoo Finance HomePage
     env:
       PYTHON: ${{ matrix.python-version }}
       OS: ${{ matrix.os }}
@@ -43,6 +46,7 @@ jobs:
             git add *.txt || true
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
+            git update-index --assume-unchanged .github/workflows/*.yml || true
             echo "tree is dirty, please commit changes before running this"
             echo "PUSH_FILES=true" >> $GITHUB_ENV
             git config pull.rebase true || true

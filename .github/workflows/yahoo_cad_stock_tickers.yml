@@ -4,6 +4,8 @@ on:
     branches:
       - 'main'
       - 'feature/*'
+    paths-ignore:
+      - ".github/workflows/*.yml"
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '15 8-20/2 * * 1-5'
@@ -46,6 +48,7 @@ jobs:
           else
             git add *.txt || true
             git add *.csv || true
+            git update-index --assume-unchanged .github/workflows/*.yml || true
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             echo "tree is dirty, please commit changes before running this"
