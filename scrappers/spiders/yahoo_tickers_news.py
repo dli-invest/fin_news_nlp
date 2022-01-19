@@ -16,7 +16,7 @@ class Modes(Enum):
     CAD = "CAD"
     USD = "USD"
 
-SCRAP_MODE = os.environ.get("SCRAP_MODE")
+SCRAP_MODE = os.environ.get("SCRAP_MODE", "CAD")
 username = "dli-invest"
 scrap_name = "yahoo_cad_tickers_news"
 if Modes(SCRAP_MODE) == Modes.CAD:
@@ -27,9 +27,6 @@ elif Modes(SCRAP_MODE) == Modes.USD:
     output_file = "data/yahoo_usd_tickers.csv"
     scrap_name = "yahoo_usd_tickers_news"
     username = f"fin_news_nlp/{scrap_name}"
-else:
-    print("REQUIRE SCRAP_MODE")
-    exit(1)
 
 nlp = init_nlp(
     "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv",
@@ -52,9 +49,6 @@ class YahooStockSpider(scrapy.Spider):
                 },
             }
         )
-    else:
-        print("REQUIRE SCRAP_MODE")
-        exit(1)
     should_visit_news_articles = False
     current_date = datetime.now()
     embeds_in_queue = []
