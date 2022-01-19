@@ -4,6 +4,8 @@ on:
     branches:
       - 'main'
       - "feature/*"
+    path-ignore:
+      - "*.yml"
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '10 */1 * * *'
@@ -16,7 +18,7 @@ env:
 jobs:
   scrap_data:
     runs-on: ubuntu-latest
-    name: coverage
+    name: beneath
     env:
       PYTHON: ${{ matrix.python-version }}
       OS: ${{ matrix.os }}
