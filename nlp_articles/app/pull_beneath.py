@@ -63,7 +63,10 @@ async def main():
             beneath_hits += len(discord_embeds)
             time.sleep(2)
 
-        embeds = {"embeds": [{"title": "fin_news_nlp | Beneath /r/wsb", "description": f"Total Reddit Posts: {beneath_hits}", "color": 0x0000ff}]}
+        GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")
+        GITHUB_RUN_ID = os.environ.get("GITHUB_RUN_ID")
+        run_url = f"https://github.com/{GITHUB_REPOSITORY}/actions/runs/{GITHUB_RUN_ID}"
+        embeds = {"embeds": [{"title": "fin_news_nlp | Beneath /r/wsb", "description": f"Total Reddit Posts: {beneath_hits}", "color": 0x0000ff, "url": run_url}]}
         post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
         # exit on error based on environment variable EXIT_ON_ERROR
         if os.getenv("EXIT_ON_ERROR") == "true":

@@ -43,6 +43,7 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
             status_code = err.response.status_code
             if status_code == 429:
                 print("Rate limited by discord")
+                # wait for a minute
                 time.sleep(60)
                 post_webhook_content(data, webhook_env)
             else:
@@ -114,7 +115,10 @@ def main():
             discord_embeds = []
 
     save_list_of_strs_to_file(cnbc_read_articles)
-    embeds = {"embeds": [{"title": "fin_news_nlp | parse_rss_cli - cnbc", "description": f"Total Hits {total_hits}", "color": 0x00ff00}]}
+    GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")
+    GITHUB_RUN_ID = os.environ.get("GITHUB_RUN_ID")
+    run_url = f"https://github.com/{GITHUB_REPOSITORY}/actions/runs/{GITHUB_RUN_ID}"
+    embeds = {"embeds": [{"title": "fin_news_nlp | parse_rss_cli - cnbc", "description": f"Total Hits {total_hits}", "color": 0x00ff00, "url": run_url}]}
     post_webhook_content(embeds, "DISCORD_STATS_WEBHOOK")
 if __name__ == '__main__':
     main()
