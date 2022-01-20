@@ -68,10 +68,6 @@ async def main():
         # exit on error based on environment variable EXIT_ON_ERROR
         if os.getenv("EXIT_ON_ERROR") == "true":
             exit(1)
-            
-            
-
-    
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()

@@ -40,11 +40,17 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
         try:
             result.raise_for_status()
         except requests.exceptions.HTTPError as err:
-            print(err)
-            dumps = json.dumps(data)
-            print(dumps)
-            # raise error and end of excecution
-            os.environ["EXIT_ON_ERROR"] = "true"
+            status_code = err.response.status_code
+            if status_code == 429:
+                print("Rate limited by discord")
+                time.sleep(60)
+                post_webhook_content(data, webhook_env)
+            else:
+                print(err)
+                dumps = json.dumps(data)
+                print(dumps)
+                # raise error and end of excecution
+                os.environ["EXIT_ON_ERROR"] = "true"
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
