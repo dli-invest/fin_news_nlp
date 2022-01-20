@@ -51,8 +51,9 @@ jobs:
             git config --local user.name "GitHub Action"
             echo "tree is dirty, please commit changes before running this"
             echo "PUSH_FILES=true" >> $GITHUB_ENV
-            git config pull.rebase true || true
+            git config pull.rebase false || true
             git commit -m "Add changes" -a
+            git merge -Xours main || true
             git pull origin main --strategy=ours || true
             git pull origin main || true
           fi
