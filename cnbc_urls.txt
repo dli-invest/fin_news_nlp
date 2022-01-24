@@ -405,9 +405,9 @@ https://www.cnbc.com/2022/01/23/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/01/24/bitcoin-ether-fall-as-130-billion-wiped-off-cryptocurrency-markets-.html
 https://www.cnbc.com/2022/01/24/kohls-shares-surge-as-takeover-offers-emerge-suitors-include-sycamore.html
 https://www.cnbc.com/2022/01/24/ex-goldman-ceo-lloyd-blankfein-says-crypto-is-happening-despite-plunge-in-digital-assets.html
+https://www.cnbc.com/2022/01/24/-unvaccinated-sarah-palin-positive-for-covid-before-ny-times-defamation-trial.html
 https://www.cnbc.com/2022/01/24/google-sued-by-4-attorneys-general-over-location-tracking.html
 https://www.cnbc.com/2022/01/24/supreme-court-takes-up-cases-challenging-affirmative-action-in-college-admissions.html
-https://www.cnbc.com/2022/01/24/morning-meeting-jim-cramer-discusses-his-next-moves-for-the-investing-club.html
 https://www.cnbc.com/2022/01/24/national-restaurant-association-asks-congress-for-aid-amid-omicron.html
 https://www.cnbc.com/2022/01/24/ballistic-missiles-intercepted-over-abu-dhabi-us-state-department-issues-alert.html
 https://www.cnbc.com/2022/01/24/can-the-us-and-europe-stop-russia-from-attacking-ukraine.html
@@ -425,7 +425,6 @@ https://www.cnbc.com/2022/01/24/russian-stocks-sink-ruble-plunges-as-conflict-fe
 https://www.cnbc.com/2022/01/24/chinas-zero-covid-policy-could-be-weighing-on-currencies-across-the-globe.html
 https://www.cnbc.com/2022/01/24/china-zero-covid-lockdowns-cny-holiday-impact-supply-chains-ports.html
 https://www.cnbc.com/2022/01/23/look-inside-these-cool-new-apple-stores-in-rome-istanbul-los-angeles.html
-https://www.cnbc.com/2022/01/23/secretary-of-state-blinken-warns-of-severe-response-if-a-single-russian-force-enters-ukraine-in-an-aggressive-way.html
 https://www.cnbc.com/2022/01/24/shell-ccs-facility-in-canada-emits-more-than-it-captures-study-says.html
 https://www.cnbc.com/2022/01/24/stocks-making-the-biggest-moves-in-the-premarket-kohls-snap-peloton-and-more.html
 https://www.cnbc.com/2022/01/24/us-bonds-treasury-yields-mixed-as-investors-brace-for-fed-meeting.html
@@ -444,5 +443,3 @@ https://www.cnbc.com/2022/01/21/cadillac-escalade-v-gm-unveils-new-high-performa
 https://www.cnbc.com/2022/01/21/russia-ukraine-crisis-blinken-urges-lavrov-to-pull-troops-from-border.html
 https://www.cnbc.com/2022/01/21/netflix-stock-down-20percent-after-earnings-show-growth-slowdown.html
 https://www.cnbc.com/2022/01/21/kids-covid-hospitalizations-hit-pandemic-high-worrying-doctors-and-parents-.html
-https://www.cnbc.com/2022/01/21/us-bonds-treasury-yields-retreat-as-rate-hike-concerns-ease.html
-https://www.cnbc.com/2022/01/20/judge-blasts-pge-as-continuing-menace-over-wildfires.html
