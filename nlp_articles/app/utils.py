@@ -14,7 +14,7 @@ common_words = ["the", "two", "free", "family", "no", "z",
                 "give", "me", "find", "call", "good", "very", "still",
                 "am", "here", "work", "last", "own", "too",
                 "even", "back", "any", "good", "gen", "all",
-                "hi"
+                "hi", "my", "net", "red"
                 ]
 
 geolocation_words = ["america", "u.s", "canadian", "chinese",
@@ -29,7 +29,7 @@ mishits = ["z", "x", "tuesday", "family", "funding",
            "consensus", "critical",
            "Partners", "climate", "boomer",
            "Investor", "Growth", "Dividend",
-           "Treasury", "Bell", "Eve", "Big", "Tech", "Five", "Bank"
+           "Treasury", "Bell", "Eve", "Big", "Tech", "Five", "Bank", "Gain", "capital"
         ]
 # search for S3 partners
 stop_terms = [
@@ -46,3 +46,4 @@ S3_PARTNERS = [
 ]
 
 DIVIDEND_LABEL = "DIVIDENDS"
+CRITICAL_LABEL = "CRITICAL"

@@ -14,6 +14,7 @@ env:
   DISCORD_WEBHOOK: ${{ secrets.DISCORD_STOCK_NEW_RELEASE_WEBHOOK }}
   DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
   DISCORD_DIVIDEND_WEBHOOK: ${{ secrets.DISCORD_DIVIDEND_WEBHOOK }}
+  DISCORD_CRITICAL_WEBHOOK: ${{ secrets.DISCORD_CRITICAL_WEBHOOK }}
   SCRAP_MODE: USD
 # Add cron job to ensure external webpages + apis have no changed
 jobs:

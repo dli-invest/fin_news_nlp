@@ -6,7 +6,7 @@ import re
 import os
 from datetime import datetime
 import dateparser
-from nlp_articles.app.utils import DIVIDEND_LABEL
+from nlp_articles.app.utils import DIVIDEND_LABEL, CRITICAL_LABEL
 from nlp_articles.app.webhook import post_webhook_content
 from scrappers.get_tickers import TickerControllerV2
 from bs4 import BeautifulSoup
@@ -62,7 +62,10 @@ class YahooStockSpider(scrapy.Spider):
     if webhook == None:
         print("REQUIRE DISCORD WEBHOOK")
         exit(1)
+    # iterate across array of object with name and value for webhooks like these
+    # dont need this logic right away
     dividend_webhook = os.environ.get("DISCORD_DIVIDEND_WEBHOOK")
+    critical_webhook = os.environ.get("DISCORD_CRITICAL_WEBHOOK")
     # redirect urls, need to clean up in data
     redirect_urls = []
     # if output file exists
@@ -120,15 +123,20 @@ class YahooStockSpider(scrapy.Spider):
                         metadata = embed_data["metadata"]
                         self.embeds_in_queue.append(embed_item)
                         # if dividends is in metadata send to discord
-                        if metadata.get(DIVIDEND_LABEL):
-                            dividend_data = {
-                                'username': username,
-                                'embeds': [embed_item],
-                            }
-                            post_webhook_content(
-                                self.dividend_webhook,
-                                dividend_data
-                            )
+                        for label in [DIVIDEND_LABEL, CRITICAL_LABEL]:
+                            if metadata.get(label):
+                                dividend_data = {
+                                    'username': username,
+                                    'embeds': [embed_item],
+                                }
+                                if label == DIVIDEND_LABEL:
+                                    special_webhook = self.dividend_webhook
+                                elif label == CRITICAL_LABEL:
+                                    special_webhook = self.critical_webhook
+                                post_webhook_content(
+                                    special_webhook,
+                                    dividend_data
+                                )
                         # add row to dataframe
                         self.df = self.df.append(
                             {"url": embed_url, "stock": ticker}, ignore_index=True
@@ -191,9 +199,10 @@ class YahooStockSpider(scrapy.Spider):
                 "fields": fields,
             }
             metadata = {}
-            # check if dividends is in the entities list
-            if DIVIDEND_LABEL in [entity.label_ for entity in entities]:
-                metadata[DIVIDEND_LABEL] = True
+            for label in [DIVIDEND_LABEL, CRITICAL_LABEL]:
+                # check if dividends is in the entities list
+                if label in [entity.label_ for entity in entities]:
+                    metadata[label] = True
             return {
                 "embed": embed,
                 "metadata": metadata,

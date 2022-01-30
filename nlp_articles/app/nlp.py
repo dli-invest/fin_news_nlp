@@ -92,11 +92,11 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     for e in exchanges:
         patterns.append({"label": "STOCK_EXCHANGE", "pattern": e})
 
-    for crit in ["evergrande", "climate", "recession", "depression", "FED"]:
+    for crit in ["acquisition", "buyout", "takeover"]:
          patterns.append({"label": "CRITICAL", "pattern": crit})
 
-    for term in ["COP", "BIDEN"]:
-        patterns.append({"label": "EVENT", "pattern": term})
+    for term in ["COP", "BIDEN", "recession", "depression", "FED"]:
+        patterns.append({"label": "THINGS", "pattern": term})
 
     for country in ["USA", "US", "United States", "U.S.", "U.S.A.", "CANADA", "CHINA"]:
         patterns.append({"label": "COUNTRY", "pattern": country})
