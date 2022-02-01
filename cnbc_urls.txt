@@ -405,15 +405,17 @@ https://www.cnbc.com/2022/02/01/us-covid-fatalities-reach-highest-level-in-a-yea
 https://www.cnbc.com/2022/02/01/att-to-spin-off-warnermedia-in-43-billion-discovery-media-merger.html
 https://www.cnbc.com/2022/01/31/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/02/01/tom-brady-announces-retirement-in-instagram-post-following-days-of-confusion.html
-https://www.cnbc.com/2022/02/01/how-to-quit-spotify-and-what-you-give-up-if-you-do.html
 https://www.cnbc.com/2022/02/01/cramers-investing-club-strong-ups-earnings-show-ceos-better-not-bigger-strategy-is-working.html
-https://www.cnbc.com/2022/02/01/investors-speak-out-on-tech-worker-union-battle-at-the-new-york-times.html
+https://www.cnbc.com/2022/02/01/how-to-quit-spotify-and-what-you-give-up-if-you-do.html
 https://www.cnbc.com/2022/02/01/aston-martin-launches-luxury-suv-dbx707.html
+https://www.cnbc.com/2022/02/01/astra-expects-to-receive-faa-license-for-florida-launch-by-friday.html
+https://www.cnbc.com/2022/02/01/investors-speak-out-on-tech-worker-union-battle-at-the-new-york-times.html
 https://www.cnbc.com/2022/02/01/there-were-4point6-million-more-job-openings-than-unemployed-workers-in-december.html
 https://www.cnbc.com/2022/02/01/microsoft-shell-invest-in-lanzajet-sustainable-jet-fuel-start-up.html
-https://www.cnbc.com/2022/02/01/cedar-fair-stock-jumps-is-halted-after-report-of-seaworld-takeover-bid.html
-https://www.cnbc.com/2022/02/01/fedex-partners-with-hbcus-to-increase-the-pipeline-of-black-supply-chain-professionals.html
 https://www.cnbc.com/2022/02/01/how-suburban-sprawls-single-family-home-zoning-limits-housing-supply.html
+https://www.cnbc.com/2022/02/01/cedar-fair-stock-jumps-is-halted-after-report-of-seaworld-takeover-bid.html
+https://www.cnbc.com/2022/02/01/tesla-to-recall-fsd-beta-software-that-let-drivers-roll-past-stop-signs-.html
+https://www.cnbc.com/2022/02/01/fedex-partners-with-hbcus-to-increase-the-pipeline-of-black-supply-chain-professionals.html
 https://www.cnbc.com/2022/02/01/2022-winter-olympic-paralympic-athletes-on-how-to-chase-your-dreams.html
 https://www.cnbc.com/2022/02/01/putin-the-west-has-ignored-russian-security-concerns-on-nato-ukraine.html
 https://www.cnbc.com/2022/02/01/roughly-47-million-people-quit-their-job-last-year.html
@@ -424,8 +426,6 @@ https://www.cnbc.com/2022/02/01/what-to-do-if-you-got-an-incorrect-child-tax-cre
 https://www.cnbc.com/2022/02/01/moderna-cmo-why-you-might-need-an-omicron-specific-covid-vaccine-shot.html
 https://www.cnbc.com/2022/02/01/bud-light-seltzers-super-bowl-ad-spotlights-new-line-stars-guy-fieri.html
 https://www.cnbc.com/2022/02/01/metaverse-real-estate-sales-top-500-million-metametric-solutions-says.html
-https://www.cnbc.com/2022/02/01/small-business-owners-optimistic-but-still-face-challenges-amid-covid.html
-https://www.cnbc.com/2022/02/01/why-early-retirement-is-one-of-the-worst-money-mistakes-youll-regret-says-harvard-economist.html
 https://www.cnbc.com/2022/02/01/pepsico-to-launch-hemp-seed-infused-drink-under-rockstar-energy.html
 https://www.cnbc.com/2022/02/01/gm-what-investors-should-know-before-tuesdays-fourth-quarter-earnings.html
 https://www.cnbc.com/2022/02/01/stocks-making-the-biggest-moves-in-the-premarket-att-amc-entertainment-ups-and-more.html
@@ -446,4 +446,3 @@ https://www.cnbc.com/2022/01/31/stocks-making-the-biggest-moves-in-the-premarket
 https://www.cnbc.com/2022/01/31/us-bonds-treasury-yields-flat-as-investors-look-ahead-to-jobs-data.html
 https://www.cnbc.com/2022/01/30/entain-looks-to-compete-in-gambling-in-metaverse-immersive-gambling.html
 https://www.cnbc.com/2022/01/30/white-house-working-to-expedite-afghan-resettlement-as-at-least-12500-remain-on-military-bases.html
-https://www.cnbc.com/2022/01/30/feds-bostic-tells-the-ft-the-central-bank-could-hike-rates-by-a-half-point-if-needed.html
