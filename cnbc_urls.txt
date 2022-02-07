@@ -402,14 +402,16 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/02/07/peloton-shares-up-on-takeover-talks-heres-why-a-deal-might-not-work.html
+https://www.cnbc.com/2022/02/07/seven-hikes-fast-rising-wages-could-cause-the-fed-to-raise-interest-rates-even-higher-this-year.html
 https://www.cnbc.com/2022/02/07/aging-homes-with-higher-values-could-help-home-depot-and-lowes-this-spring.html
 https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html
+https://www.cnbc.com/2022/02/07/tesla-got-sec-subpoena-over-prior-settlement-agreement.html
 https://www.cnbc.com/2022/02/07/spotify-ceo-apologizes-to-staff-for-joe-rogan-issue-episodes-get-removed.html
 https://www.cnbc.com/2022/02/07/record-low-number-of-consumers-say-now-is-a-good-time-to-buy-a-home.html
-https://www.cnbc.com/2022/02/07/stocks-making-the-biggest-moves-midday-spirit-airlines-peloton-snowflake-netflix-and-more.html
-https://www.cnbc.com/2022/02/07/softbank-backed-fintech-drivewealth-is-adding-crypto-to-take-on-coinbases-unsustainable-fees.html
 https://www.cnbc.com/2022/02/07/watch-rocket-builder-astra-launch-first-florida-mission-for-nasa.html
 https://www.cnbc.com/2022/02/07/matrix-co-producer-sues-warner-bros-over-hbo-max-streaming-release.html
+https://www.cnbc.com/2022/02/07/stocks-making-the-biggest-moves-midday-spirit-airlines-peloton-snowflake-netflix-and-more.html
+https://www.cnbc.com/2022/02/07/softbank-backed-fintech-drivewealth-is-adding-crypto-to-take-on-coinbases-unsustainable-fees.html
 https://www.cnbc.com/2022/02/07/tesla-held-nearly-2-billion-worth-of-bitcoin-at-the-end-of-2021.html
 https://www.cnbc.com/2022/02/07/sequoia-leads-450-million-investment-in-polygon-blockchain.html
 https://www.cnbc.com/2022/02/07/70-percent-plus-of-black-americans-dont-have-wills-why-estate-plans-are-key.html
@@ -425,8 +427,8 @@ https://www.cnbc.com/2022/02/07/social-security-may-be-a-treasure-trove-of-wealt
 https://www.cnbc.com/2022/02/06/black-leaders-advice-for-the-next-generation-on-overcoming-inequity.html
 https://www.cnbc.com/2022/02/06/bitcoin-family-moves-to-portugal-crypto-tax-haven.html
 https://www.cnbc.com/2022/02/06/new-guaranteed-income-experiments-inspired-by-martin-luther-king-jr-.html
-https://www.cnbc.com/2022/02/07/treasury-yields-slip-back-after-strong-surge-on-us-jobs-data.html
 https://www.cnbc.com/2022/02/07/stocks-making-the-biggest-moves-in-the-premarket-spirit-airlines-peloton-energizer-and-more.html
+https://www.cnbc.com/2022/02/07/treasury-yields-slip-back-after-strong-surge-on-us-jobs-data.html
 https://www.cnbc.com/2022/02/06/biden-security-adviser-sullivan-says-russian-invasion-could-come-any-day-now.html
 https://www.cnbc.com/2022/02/05/delta-asks-the-justice-department-to-put-unruly-travelers-on-a-no-fly-list.html
 https://www.cnbc.com/2022/02/05/sen-ted-cruz-discloses-a-bitcoin-purchase-worth-up-to-50000.html
@@ -446,5 +448,3 @@ https://www.cnbc.com/2022/02/04/heres-where-the-jobs-are-for-january-2022-in-one
 https://www.cnbc.com/2022/02/04/snap-shares-rise-more-than-after-strong-q4-earnings-report.html
 https://www.cnbc.com/2022/02/04/jobs-report-january-2020-.html
 https://www.cnbc.com/2022/02/04/facebook-is-the-big-loser-of-the-fourth-quarters-advertising-wars.html
-https://www.cnbc.com/2022/02/04/us-bonds-treasury-yields-inch-higher-as-investors-monitor-jobs-report.html
-https://www.cnbc.com/2022/02/03/southwest-will-bring-booze-back-on-board-feb-16-after-nearly-two-years.html
