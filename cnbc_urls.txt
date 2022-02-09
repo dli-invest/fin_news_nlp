@@ -402,17 +402,19 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/02/08/stock-market-futures-open-to-close-news.html
-https://www.cnbc.com/2022/02/09/cvs-faces-next-challenge-growing-sales-as-covid-vaccine-demand-fades.html
 https://www.cnbc.com/2022/02/09/small-towns-fuel-chipotles-ambitious-north-american-expansion-plans.html
+https://www.cnbc.com/2022/02/09/cvs-faces-next-challenge-growing-sales-as-covid-vaccine-demand-fades.html
 https://www.cnbc.com/2022/02/09/feds-mester-says-each-meeting-is-going-to-be-in-play-for-rate-hikes-this-year.html
 https://www.cnbc.com/2022/02/09/investing-club-jim-cramer-previews-disney-earnings-reacts-to-amd-upgrade.html
 https://www.cnbc.com/2022/02/09/cdc-tells-health-officials-to-expect-first-shipments-of-young-kids-covid-shots-by-feb-21.html
-https://www.cnbc.com/2022/02/09/microsoft-issues-app-principles-ahead-of-activision-acquisition.html
+https://www.cnbc.com/2022/02/09/texas-governor-primary-trump-allies-want-to-reverse-greg-abbott-endorsement.html
 https://www.cnbc.com/2022/02/09/read-the-email-that-pelotons-new-ceo-barry-mccarthy-sent-to-staff.html
+https://www.cnbc.com/2022/02/09/microsoft-issues-app-principles-ahead-of-activision-acquisition.html
 https://www.cnbc.com/2022/02/09/trump-lawyer-rudy-giuliani-sought-voting-machines-from-gop-michigan-prosecutor.html
 https://www.cnbc.com/2022/02/09/4-scams-that-may-cost-you-this-tax-season.html
 https://www.cnbc.com/2022/02/09/stocks-making-the-biggest-moves-midday-cvs-enphase-energy-chipotle-lyft-and-more.html
 https://www.cnbc.com/2022/02/09/new-york-state-lifts-indoor-mask-mandate-as-surge-in-omicron-cases-subside.html
+https://www.cnbc.com/2022/02/09/2022-super-bowl-ads-bookingcom-taps-idris-elba-in-its-first-super-bowl-ad.html
 https://www.cnbc.com/2022/02/09/rockies-blue-ridge-mountains-are-top-outdoors-vacation-spots-worldwide.html
 https://www.cnbc.com/2022/02/09/spacex-losing-starlink-satellites-due-to-geomagnetic-space-storm.html
 https://www.cnbc.com/2022/02/09/cvs-fourth-quarter-earnings-top-expectations-as-covid-tests-lift-overall-store-sales.html
@@ -421,8 +423,6 @@ https://www.cnbc.com/2022/02/09/yum-brands-yum-q4-2021-earnings.html
 https://www.cnbc.com/2022/02/09/tesla-recalls-over-26600-vehicles-over-windshield-defroster-software.html
 https://www.cnbc.com/2022/02/09/jeopardy-champ-amy-schneider-quit-her-jobwhat-shes-up-to-next.html
 https://www.cnbc.com/2022/02/09/why-nissan-is-moving-from-the-internal-combustion-engine-in-europe-.html
-https://www.cnbc.com/2022/02/09/these-sisters-launched-quickhire-app-to-help-service-workers-find-good-jobs.html
-https://www.cnbc.com/2022/02/09/2022-super-bowl-ads-serena-williams-to-star-in-tonal-ad-targeting-women.html
 https://www.cnbc.com/2022/02/09/homebuyer-demand-for-mortgages-drops-10percent.html
 https://www.cnbc.com/2022/02/09/arm-ipo-softbank-to-list-chip-firm-in-new-york-after-nvidia-deal-fails.html
 https://www.cnbc.com/2022/02/09/us-bonds-treasury-yields-retreat-ahead-of-inflation-data.html
@@ -440,4 +440,3 @@ https://www.cnbc.com/2022/02/08/apple-to-double-sick-days-boost-other-benefits-f
 https://www.cnbc.com/2022/02/08/johnson-johnson-plant-pauses-covid-vaccine-production-report-says.html
 https://www.cnbc.com/2022/02/08/probes-executive-upheaval-continue-to-tank-spac-backed-ev-start-ups.html
 https://www.cnbc.com/2022/02/08/feds-seize-3point6-billion-stolen-from-bitfinex-hack.html
-https://www.cnbc.com/2022/02/08/consumer-debt-totals-15point6-trillion-after-a-record-breaking-increase-in-2021.html
