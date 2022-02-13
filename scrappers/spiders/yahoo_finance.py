@@ -48,15 +48,13 @@ class ScraperForYahoo(scrapy.Spider):
             href = a_tag.attrib["href"]
             if href is not None:
                 # ignore mailto and tel linkst
-                if href[0:3] == "tel":
-                    continue
-                elif href[0:6] == "mailto":
+                if href[:3] == "tel" or href[:6] == "mailto":
                     continue
                 href_merged = response.urljoin(href)
                 if href_merged not in self.read_article_urls:
                     yield scrapy.Request(href_merged, callback=self.handle_article, dont_filter=True)
                 else:
-                    print("visited: " + href_merged)
+                    print(f'visited: {href_merged}')
             # save list to file, append csv file
 
     def handle_article(self, response):
@@ -75,7 +73,7 @@ class ScraperForYahoo(scrapy.Spider):
         article_data.\
             replace("Story continues.", "").\
             replace("Download the Yahoo Finance app, available for Apple and Android.", "")
-        
+
         doc = nlp(article_data)
         entities = []
         has_critical_term = False
@@ -88,19 +86,12 @@ class ScraperForYahoo(scrapy.Spider):
             })
         entities = [dict(t) for t in {tuple(d.items()) for d in entities}]
         diff_date = current_date - article_date
-        # map entities to fields
-        embeds = []
-        fields = []
-        data = {}
         if diff_date.seconds // 3600 < 24:
-            # send article to discord
-            # map data to embeds
-            for ent in entities[:24]:
-                fields.append({
+            fields = [{
                     "name": ent.get("text"),
                     "value": ent.get("label"),
                     "inline": True
-                })
+                } for ent in entities[:24]]
             first_sentence = article_data[:100]
             # MAP type to color
             embed = {
@@ -111,9 +102,9 @@ class ScraperForYahoo(scrapy.Spider):
                 "fields": fields,
                 "description": first_sentence
             }
-            embeds.append(embed)
-            data["embeds"] = embeds
-            data["username"] = "fin_news_nlp/yahoo_finance"
+                # map entities to fields
+            embeds = [embed]
+            data = {'embeds': embeds, 'username': 'fin_news_nlp/yahoo_finance'}
             self.post_webhook_content(data)
             self.read_article_urls.append(url)
 
@@ -130,8 +121,7 @@ class ScraperForYahoo(scrapy.Spider):
         print("spider opened")
 
     def spider_closed(self, spider):
-        clean_list = list( dict.fromkeys(self.read_article_urls) )
-        if len(clean_list) > 0:
+        if clean_list := list(dict.fromkeys(self.read_article_urls)):
             with open(output_file, 'w') as txt_file:
                 for article_url in clean_list:
                     txt_file.write(article_url +"\n")
