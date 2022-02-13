@@ -16,6 +16,7 @@ env:
   DISCORD_DIVIDEND_WEBHOOK: ${{ secrets.DISCORD_DIVIDEND_WEBHOOK }}
   DISCORD_CRITICAL_WEBHOOK: ${{ secrets.DISCORD_CRITICAL_WEBHOOK }}
   SCRAP_MODE: USD
+  FAUNA_URL: ${{ secrets.FAUNA_AI_TRAINING_DATA_URL }}
 # Add cron job to ensure external webpages + apis have no changed
 jobs:
   scrap_data:
