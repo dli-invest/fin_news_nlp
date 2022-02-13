@@ -203,11 +203,12 @@ class YahooStockSpider(scrapy.Spider):
                 "description": description,
                 "fields": fields,
             }
-            metadata = {}
-            for label in [DIVIDEND_LABEL, CRITICAL_LABEL]:
-                # check if dividends is in the entities list
-                if label in [entity.label_ for entity in entities]:
-                    metadata[label] = True
+            metadata = {
+                label: True
+                for label in [DIVIDEND_LABEL, CRITICAL_LABEL]
+                if label in [entity.label_ for entity in entities]
+            }
+
             return {
                 "embed": embed,
                 "metadata": metadata,

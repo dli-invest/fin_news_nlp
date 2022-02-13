@@ -24,7 +24,7 @@ def map_embed_to_article(articleData: dict)-> dict:
     return article
 
 # send data to https://dli-fauna-gql.deno.dev/articles
-def send_data_to_fauna(article: dict)-> None:
+def send_data_to_fauna(article: dict) -> None:
     """
     Take ArticleData and send it to 
     """
@@ -32,7 +32,7 @@ def send_data_to_fauna(article: dict)-> None:
     url = f"{base_url}/articles"
     r = requests.post(url, json=article)
     # check if the request was successful
-    if r.status_code == 201 or r.status_code == 200:
+    if r.status_code in [201, 200]:
         print("Successfully sent to fauna")
     else:
         print(f"Error sending to fauna: {r.status_code}")
