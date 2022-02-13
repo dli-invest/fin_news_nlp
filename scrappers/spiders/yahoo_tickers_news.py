@@ -11,6 +11,7 @@ from nlp_articles.app.webhook import post_webhook_content
 from scrappers.get_tickers import TickerControllerV2
 from bs4 import BeautifulSoup
 from nlp_articles.app.nlp import init_nlp
+from nlp_articles.app.data_collection import map_and_send_embeds_to_fauna, map_embed_to_article, send_data_to_fauna
 
 class Modes(Enum):
     CAD = "CAD"
@@ -82,6 +83,10 @@ class YahooStockSpider(scrapy.Spider):
             'embeds': self.embeds_in_queue,
         }
 
+        try:
+            map_and_send_embeds_to_fauna(self.embeds_in_queue, username=username, country=SCRAP_MODE)
+        except Exception as e:
+            print(e)
         self.embeds_in_queue = []
         post_webhook_content(self.webhook, data)
         self.sent_embeds += len(data["embeds"])

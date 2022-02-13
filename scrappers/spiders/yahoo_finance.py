@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 # to next function
 # this doesn't work thanks seeking alpha, would need selenium
 from nlp_articles.app.nlp import init_nlp
+
 settings = {}
 
 nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")
