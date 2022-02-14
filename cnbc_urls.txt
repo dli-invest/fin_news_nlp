@@ -405,8 +405,11 @@ https://www.cnbc.com/2022/02/14/bullard-say-the-fed-needs-to-front-load-tighteni
 https://www.cnbc.com/2022/02/14/ukraine-asks-for-meeting-with-russia-as-us-warns-invasion-imminent.html
 https://www.cnbc.com/2022/02/14/pfizer-director-dr-scott-gottlieb-shots-for-kids-under-5-delayed-due-to-low-covid-cases-in-trial.html
 https://www.cnbc.com/2022/02/14/uk-hmrc-seizes-nfts-for-first-time-in-tax-fraud-probe.html
+https://www.cnbc.com/2022/02/14/heres-the-outlook-for-bitcoin-as-geopolitical-tensions-heat-up-and-interest-rates-rise.html
+https://www.cnbc.com/2022/02/14/bp-ceo-bernard-looney-commits-to-russia-operations-amid-ukraine-crisis.html
 https://www.cnbc.com/2022/02/14/nfl-sponsors-nike-pepsi-dominate-2022-super-bowl-exposure.html
 https://www.cnbc.com/2022/02/14/jared-isaacman-buys-private-spacex-flights-for-polaris-program.html
+https://www.cnbc.com/2022/02/14/ukrainian-airline-moves-some-jets-to-spain-after-insurance-bans-coverage-amid-russia-crisis.html
 https://www.cnbc.com/2022/02/14/avoid-these-words-and-phrases-that-make-you-sound-immature-says-speech-expert.html
 https://www.cnbc.com/2022/02/14/living-only-on-social-security-can-be-difficult-these-resources-can-help.html
 https://www.cnbc.com/2022/02/14/oil-prices-and-russia-ukraine-crisis-ministers-fear-a-return-to-100.html
@@ -422,9 +425,6 @@ https://www.cnbc.com/2022/02/12/black-business-leaders-how-to-build-wealth-and-c
 https://www.cnbc.com/2022/02/13/sen-ben-ray-lujan-will-return-within-weeks-to-vote-on-supreme-court.html
 https://www.cnbc.com/2022/02/14/dbs-ceo-piyush-gupta-on-fourth-quarter-earnings-shareholder-dividends.html
 https://www.cnbc.com/2022/02/14/thailand-economy-central-bank-governor-on-inflation-tourism-recovery.html
-https://www.cnbc.com/2022/02/13/heres-how-much-super-bowl-prize-money-has-increased-since-1967.html
-https://www.cnbc.com/2022/02/14/china-metaverse-tech-giants-latest-moves-regulatory-action.html
-https://www.cnbc.com/2022/02/11/2022-super-bowl-ads-gm-meta-and-frito-lay-are-leaning-into-nostalgic-themes-.html
 https://www.cnbc.com/2022/02/14/stocks-making-the-biggest-moves-in-the-premarket-splunk-blackstone-aerojet-rocketdyne-and-more.html
 https://www.cnbc.com/2022/02/14/us-treasury-yields-edge-lower-on-russia-ukraine-fears.html
 https://www.cnbc.com/2022/02/13/ev-start-up-polestar-takes-shots-at-teslas-elon-musk-in-super-bowl-ad.html
@@ -434,6 +434,7 @@ https://www.cnbc.com/2022/02/12/heres-why-international-investing-is-making-a-co
 https://www.cnbc.com/2022/02/12/pentagon-orders-departure-of-us-troops-in-ukraine.html
 https://www.cnbc.com/2022/02/11/splunk-shares-spike-on-report-of-cisco-buyout-offer.html
 https://www.cnbc.com/2022/02/11/netflix-will-do-series-on-accused-bitcoin-hack-money-launderers.html
+https://www.cnbc.com/2022/02/11/2022-super-bowl-ads-gm-meta-and-frito-lay-are-leaning-into-nostalgic-themes-.html
 https://www.cnbc.com/2022/02/11/mattress-mack-sets-legal-sports-betting-record-with-5-million-on-cincinnati-bengals.html
 https://www.cnbc.com/2022/02/11/canadian-leader-declares-state-of-emergency-over-bridge-blockade-plans-to-arrest-protesters.html
 https://www.cnbc.com/2022/02/11/elon-musk-spacexs-starship-is-solution-to-efficient-space-travel.html
@@ -442,4 +443,3 @@ https://www.cnbc.com/2022/02/11/10-year-treasury-yield-in-focus-after-breaching-
 https://www.cnbc.com/2022/02/10/watch-elon-musk-give-an-update-on-spacexs-massive-starship-rocket.html
 https://www.cnbc.com/2022/02/10/zillow-z-earnings-q4-2021-.html
 https://www.cnbc.com/2022/02/10/tesla-sued-by-california-which-alleges-racist-treatment-of-black-workers.html
-https://www.cnbc.com/2022/02/10/fda-committee-votes-against-eli-lilly-cancer-treatment-over-concerns-trials-conducted-only-in-china.html
