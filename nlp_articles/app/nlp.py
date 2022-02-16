@@ -121,7 +121,7 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         },
         {
             "label": DIVIDEND_LABEL,
-            "pattern": [{{"LOWER": "annual"}, {"LOWER": "dividend"}]
+            "pattern": [{"LOWER": "annual"}, {"LOWER": "dividend"}]
         }
     ]
     for pattern in DIVIDEND_PATTERNS:
