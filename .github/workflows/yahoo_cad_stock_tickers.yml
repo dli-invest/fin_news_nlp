@@ -8,10 +8,10 @@ on:
       - ".github/workflows/*.yml"
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '15 8-20/2 * * 1-5'
+    - cron:  '15 4-21/2 * * 1-5'
 
 env:
-  DISCORD_WEBHOOK: ${{ secrets.DISCORD_STOCK_NEW_RELEASE_WEBHOOK }}
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_CAD_STOCK_NEW_RELEASE_WEBHOOK }}
   DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
   DISCORD_DIVIDEND_WEBHOOK: ${{ secrets.DISCORD_DIVIDEND_WEBHOOK }}
   DISCORD_CRITICAL_WEBHOOK: ${{ secrets.DISCORD_CRITICAL_WEBHOOK }}
