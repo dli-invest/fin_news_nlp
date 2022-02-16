@@ -405,11 +405,12 @@ https://www.cnbc.com/2022/02/16/retail-sales-january-2022.html
 https://www.cnbc.com/2022/02/16/google-plans-android-privacy-change-similar-to-apples.html
 https://www.cnbc.com/2022/02/16/walmarts-earnings-may-signal-if-shoppers-getting-spooked-by-inflation.html
 https://www.cnbc.com/2022/02/16/roblox-shares-down-q4-earnings-miss-expectations.html
+https://www.cnbc.com/2022/02/16/investing-club-what-cramer-is-watching-wednesday-wynns-mixed-quarter-teslas-big-bet-airbnbs-growing-moat.html
 https://www.cnbc.com/2022/02/16/the-average-size-of-a-new-mortgage-just-set-a-record.html
 https://www.cnbc.com/2022/02/16/bill-gates-chris-sacca-invest-50-million-in-antora-energy.html
-https://www.cnbc.com/2022/02/16/arctic-summers-could-be-ice-free-by-2035-enabling-faster-shipping.html
-https://www.cnbc.com/2022/02/16/investing-club-what-cramer-is-watching-wednesday-wynns-mixed-quarter-teslas-big-bet-airbnbs-growing-moat.html
+https://www.cnbc.com/2022/02/16/how-to-avoid-escalating-travel-costs.html
 https://www.cnbc.com/2022/02/16/fed-up-with-rise-in-thefts-and-shoplifting-small-biz-owners-take-action.html
+https://www.cnbc.com/2022/02/16/arctic-summers-could-be-ice-free-by-2035-enabling-faster-shipping.html
 https://www.cnbc.com/2022/02/16/inflation-has-slammed-small-businesses.html
 https://www.cnbc.com/2022/02/16/biden-rejects-trump-bid-to-keep-white-house-logs-from-capitol-riot-probe.html
 https://www.cnbc.com/2022/02/16/shopify-stock-slides-after-it-warns-pandemic-boost-will-fade.html
@@ -422,10 +423,9 @@ https://www.cnbc.com/2022/02/16/moderna-ceo-says-its-reasonable-to-think-pandemi
 https://www.cnbc.com/2022/02/16/stocks-making-the-biggest-moves-premarket-generac-shopify-la-z-boy-and-others.html
 https://www.cnbc.com/2022/02/16/big-oil-and-the-climate-crisis-the-fight-to-hold-pr-firms-accountable.html
 https://www.cnbc.com/2022/02/15/babies-are-protected-from-hospitalization-for-covid-if-their-moms-get-vaccinated-study-suggests.html
-https://www.cnbc.com/2022/02/15/elon-musk-unloaded-billions-of-tesla-stockand-still-owns-more-than-last-year.html
-https://www.cnbc.com/2022/02/15/airbnb-abnb-earnings-q4-2021.html
 https://www.cnbc.com/2022/02/16/us-bonds-treasury-yields-are-mixed-amid-geopolitical-tensions.html
 https://www.cnbc.com/2022/02/15/jan-6-capitol-riot-probe-subpoenas-arizona-gop-chair-kelli-ward-5-others-.html
+https://www.cnbc.com/2022/02/15/airbnb-abnb-earnings-q4-2021.html
 https://www.cnbc.com/2022/02/15/watch-live-biden-addresses-nation-on-ukraine-russia-crisis.html
 https://www.cnbc.com/2022/02/15/vote-on-biden-fed-picks-delayed-as-gop-presses-for-answers-on-raskin-ties-to-firm.html
 https://www.cnbc.com/2022/02/15/robert-califf-fda-senate-confirmation.html
@@ -440,4 +440,3 @@ https://www.cnbc.com/2022/02/15/taco-bell-accelerates-international-growth-aims-
 https://www.cnbc.com/2022/02/15/stocks-making-the-biggest-moves-in-the-premarket-monster-beverage-constellation-brands-arista-networks-and-more-.html
 https://www.cnbc.com/2022/02/15/restaurant-brands-international-qsr-q4-2021-earnings.html
 https://www.cnbc.com/2022/02/15/crypto-josh-gottheimer-unveils-stablecoin-bill.html
-https://www.cnbc.com/2022/02/15/bonds-treasury-yields-lower-following-fed-remarks-ukraine-tensions.html
