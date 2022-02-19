@@ -43,7 +43,7 @@ async def main():
                 embed = {
                     "title": f"wsb | {author}",
                     "description": text[:1800],
-                    "url": f"https://reddit.com/{permalink}",
+                    "url": f"https://reddit.com{permalink}",
                     "fields": fields[:3],
                 }
                 # Additionally, the characters in all title, description, field.name, field.value, footer.text, and author.name fields must not exceed 6000 characters in total. Violating any of these constraints will result in a Bad Request response.
