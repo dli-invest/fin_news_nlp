@@ -401,15 +401,16 @@ https://www.cnbc.com/2021/11/19/investing-club-why-we-are-buying-more-morgan-sta
 https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-nasdaq-ipo-plans-for-growth.html
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
-https://www.cnbc.com/2022/02/21/us-says-russia-expected-to-invade-ukraine-very-soon.html
 https://www.cnbc.com/2022/02/21/bitcoin-btc-bull-market-may-not-return-until-2024-huobi-co-founder.html
+https://www.cnbc.com/2022/02/21/us-says-russia-expected-to-invade-ukraine-very-soon.html
 https://www.cnbc.com/2022/02/21/beam-suntory-sales-rise-11percent-in-2021-fueled-by-shift-to-high-end-spirits.html
 https://www.cnbc.com/2022/02/21/russia-may-think-its-better-to-invade-ukraine-than-to-back-down-fpri.html
 https://www.cnbc.com/2022/02/21/uk-pm-boris-johnson-to-lift-all-remaining-covid-restrictions-in-england.html
+https://www.cnbc.com/2022/02/21/covid-uk-to-roll-out-additional-vaccine-shot-for-over-75s-vulnerable-people.html
 https://www.cnbc.com/2022/02/20/nft-marketplace-opensea-is-investigating-a-phishing-hack.html
 https://www.cnbc.com/2022/02/21/rwe-tata-power-to-scope-offshore-wind-projects-in-india.html
-https://www.cnbc.com/2022/02/21/teslas-autopilot-feature-is-reportedly-being-investigated-in-germany.html
 https://www.cnbc.com/2022/02/21/bay-area-entrepreneur-shares-five-golden-rules-for-achieving-success.html
+https://www.cnbc.com/2022/02/21/teslas-autopilot-feature-is-reportedly-being-investigated-in-germany.html
 https://www.cnbc.com/2022/02/21/35-year-old-pays-680-month-for-a-newly-renovated-2-bedroom-apartment-in-croatia-take-a-look.html
 https://www.cnbc.com/2022/02/21/here-are-the-5-most-valuable-airline-and-hotel-rewards-programs.html
 https://www.cnbc.com/2022/02/21/warby-parker-plans-to-take-on-glasses-giant-essilorluxottica.html
@@ -424,7 +425,6 @@ https://www.cnbc.com/2022/02/20/how-olympic-speed-skater-apolo-ohno-learned-to-c
 https://www.cnbc.com/2022/02/20/top-analysts-are-bullish-on-stocks-like-intel-solaredge.html
 https://www.cnbc.com/2022/02/20/olaf-scholz-the-west-has-to-reduce-energy-dependency-on-russia.html
 https://www.cnbc.com/2022/02/20/the-chip-shortage-is-so-bad-gm-dropped-heated-seats-in-winter.html
-https://www.cnbc.com/2022/02/20/euphoria-star-sydney-sweeney-wrote-a-5-year-career-plan-when-she-was-12.html
 https://www.cnbc.com/2022/02/20/biden-convenes-national-security-council-on-ukraine-crisis.html
 https://www.cnbc.com/2022/02/19/rodent-infestation-leads-to-recalls-at-more-than-400-family-dollar-stores.html
 https://www.cnbc.com/2022/02/19/lufthansa-group-to-suspend-kyiv-odessa-flights.html
@@ -445,4 +445,3 @@ https://www.cnbc.com/2022/02/18/whats-behind-the-congestion-at-us-ports.html
 https://www.cnbc.com/2022/02/18/draftkings-dkng-q4-2021-earnings.html
 https://www.cnbc.com/2022/02/18/roku-stock-plunges-25percent.html
 https://www.cnbc.com/2022/02/18/museums-are-in-a-race-to-save-americas-treasures-from-climate-change.html
-https://www.cnbc.com/2022/02/18/chamath-palihapitiya-steps-down-from-virgin-galactic-board.html
