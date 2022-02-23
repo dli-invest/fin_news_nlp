@@ -403,11 +403,15 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/02/22/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/02/23/elon-musk-cheers-on-justice-department-probe-of-short-sellers.html
-https://www.cnbc.com/2022/02/23/investing-club-what-cramer-is-watching-wednesday-russia-sanctions-goldmans-consumer-press-caesars-waves-flag.html
+https://www.cnbc.com/2022/02/23/cdc-says-waiting-longer-between-pfizer-moderna-doses-may-reduce-myocarditis-risk.html
+https://www.cnbc.com/2022/02/23/investors-pull-billions-from-bond-money-market-funds-at-fastest-pace-in-years.html
+https://www.cnbc.com/2022/02/23/supreme-court-hears-dispute-over-bidens-rejection-of-trump-era-immigration-rule.html
+https://www.cnbc.com/2022/02/23/molson-coors-tap-q4-2021-earnings.html
 https://www.cnbc.com/2022/02/23/lowes-low-q4-2021-earnings.html
 https://www.cnbc.com/2022/02/23/goldmans-david-solomon-says-our-strategy-is-working-even-as-stock-lags-peers.html
 https://www.cnbc.com/2022/02/23/target-to-test-starbucks-order-pickup-returns-from-the-parking-lot.html
 https://www.cnbc.com/2022/02/23/need-a-business-loan-inflation-leads-main-street-into-more-debt-.html
+https://www.cnbc.com/2022/02/23/investing-club-what-cramer-is-watching-wednesday-russia-sanctions-goldmans-consumer-press-caesars-waves-flag.html
 https://www.cnbc.com/2022/02/23/lawmakers-ask-biden-to-tell-eu-to-stop-unfairly-targeting-us-tech-companies.html
 https://www.cnbc.com/2022/02/23/a-stanford-phds-plan-to-graduate-10000-black-engineers-by-2025.html
 https://www.cnbc.com/2022/02/23/cities-with-an-average-home-price-of-1-million-dollars-tripled-last-year.html
@@ -419,10 +423,6 @@ https://www.cnbc.com/2022/02/22/covid-infections-plummet-90percent-from-us-pande
 https://www.cnbc.com/2022/02/23/uk-could-ban-students-who-fail-math-and-english-from-college-loans.html
 https://www.cnbc.com/2022/02/23/betterment-adds-student-loan-529-savings-features-to-401k-business.html
 https://www.cnbc.com/2022/02/22/russias-ukraine-incursion-could-complicate-the-federal-reserves-interest-rate-decisions.html
-https://www.cnbc.com/2022/02/23/crypto-companies-tempt-top-talent-away-from-big-tech-to-build-web3.html
-https://www.cnbc.com/2022/02/23/what-to-do-if-you-regret-quitting-your-old-job-according-to-career-expert-and-ceo.html
-https://www.cnbc.com/2022/02/22/jack-nicklaus-justin-thomas-team-up-to-launch-ultra-luxury-florida-golf-community-.html
-https://www.cnbc.com/2022/02/22/jim-cramers-playbook-for-investing-during-geopolitical-uncertainty.html
 https://www.cnbc.com/2022/02/23/us-bonds-treasury-yields-rise-despite-russia-ukraine-crisis.html
 https://www.cnbc.com/2022/02/22/tesla-and-epa-reach-a-settlement-after-clean-air-act-violations.html
 https://www.cnbc.com/2022/02/22/commodity-etfs-to-hedge-against-russia-ukraine-tensions-john-davi.html
@@ -440,6 +440,3 @@ https://www.cnbc.com/2022/02/22/chinese-cryptocurrency-exchange-huobi-plans-us-r
 https://www.cnbc.com/2022/02/21/tesla-ceo-elon-musk-accuses-sec-of-leaking-information.html
 https://www.cnbc.com/2022/02/21/beam-suntory-sales-rise-11percent-in-2021-fueled-by-shift-to-high-end-spirits.html
 https://www.cnbc.com/2022/02/21/warby-parker-plans-to-take-on-glasses-giant-essilorluxottica.html
-https://www.cnbc.com/2022/02/20/biden-abruptly-cancels-delaware-trip-after-top-level-calls-on-ukraine.html
-https://www.cnbc.com/2022/02/20/nft-marketplace-opensea-is-investigating-a-phishing-hack.html
-https://www.cnbc.com/2022/02/20/biden-convenes-national-security-council-on-ukraine-crisis.html
