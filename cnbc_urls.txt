@@ -404,14 +404,18 @@ https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-th
 https://www.cnbc.com/2022/02/27/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/02/28/biden-administration-expands-russia-sanctions-cuts-off-us-transactions-with-central-bank.html
 https://www.cnbc.com/2022/02/28/jpmorgan-project-will-push-bank-further-into-market-serving-private-firms.html
-https://www.cnbc.com/2022/02/28/derek-jeter-steps-down-as-miami-marlins-ceo-sells-stake-in-the-team.html
-https://www.cnbc.com/2022/02/28/investing-club-what-cramer-is-watching-monday-oil-stocks-make-headlines-as-russia-ukraine-war-enters-second-week.html
+https://www.cnbc.com/2022/02/28/russian-oligarchs-move-yachts-as-us-moves-to-hunt-down-and-freeze-assets.html
+https://www.cnbc.com/2022/02/28/investing-club-buy-marvell-ahead-of-this-weeks-earnings-heres-why.html
 https://www.cnbc.com/2022/02/28/cnn-hires-turnaround-expert-chris-licht-to-replace-jeff-zucker.html
+https://www.cnbc.com/2022/02/28/long-lines-at-russias-atms-as-bank-run-begins-ruble-hit-by-sanctions.html
 https://www.cnbc.com/2022/02/28/russia-suspended-from-international-soccer-over-ukraine-invasion.html
+https://www.cnbc.com/2022/02/28/derek-jeter-steps-down-as-miami-marlins-ceo-sells-stake-in-the-team.html
+https://www.cnbc.com/2022/02/28/nasa-iss-partnership-with-russia-working-despite-ukraine-conflict.html
 https://www.cnbc.com/2022/02/28/airbnb-to-offer-free-housing-to-100000-ukrainian-refugees.html
+https://www.cnbc.com/2022/02/28/investing-club-what-cramer-is-watching-monday-oil-stocks-make-headlines-as-russia-ukraine-war-enters-second-week.html
+https://www.cnbc.com/2022/02/28/why-health-care-costs-are-rising-in-the-us-more-than-anywhere-else-.html
 https://www.cnbc.com/2022/02/28/stocks-making-the-biggest-moves-midday-raytheon-block-tesla-foot-locker-and-more.html
 https://www.cnbc.com/2022/02/28/estee-lauder-fires-john-demsey-after-over-racist-instagram-meme.html
-https://www.cnbc.com/2022/02/28/why-health-care-costs-are-rising-in-the-us-more-than-anywhere-else-.html
 https://www.cnbc.com/2022/02/28/should-you-consider-a-roth-ira-conversion-when-the-market-drops-.html
 https://www.cnbc.com/2022/02/28/what-to-know-before-filing-business-taxes-for-the-first-time.html
 https://www.cnbc.com/2022/02/28/27-year-old-earns-650000-dollars-a-year-in-la-is-on-her-way-to-1-million-dollars.html
@@ -420,9 +424,8 @@ https://www.cnbc.com/2022/02/28/climate-un-report-on-adaptation-warns-of-grave-a
 https://www.cnbc.com/2022/02/28/russia-gets-the-cold-shoulder-at-mwc-amid-ukraine-conflict.html
 https://www.cnbc.com/2022/02/28/amazon-makes-masks-optional-for-us-warehouse-workers.html
 https://www.cnbc.com/2022/02/28/ukraine-updates-viasat-says-cyber-event-disrupting-satellite-internet-service.html
-https://www.cnbc.com/2022/02/28/goldman-sachs-russian-assets-becoming-uninvestable-as-sanctions-bite.html
+https://www.cnbc.com/2022/02/28/microsoft-says-it-informed-the-ukrainian-government-about-cyberattacks.html
 https://www.cnbc.com/2022/02/28/russia-ukraine-news-us-suspends-operations-at-belarus-embassy-oks-exits-from-moscow.html
-https://www.cnbc.com/2022/02/28/next-24-hours-are-crucial-in-ukraine-as-resistance-faces-pressure.html
 https://www.cnbc.com/2022/02/28/stocks-making-the-biggest-moves-in-the-premarket-bp-first-horizon-defense-stocks-and-more-.html
 https://www.cnbc.com/2022/02/28/us-bonds-treasury-yields-slide-as-fresh-sanctions-imposed-on-russia.html
 https://www.cnbc.com/2022/02/26/ukraine-fight-isnt-going-as-russia-expected-us-defense-says.html
@@ -434,4 +437,3 @@ https://www.cnbc.com/2022/02/25/what-the-blockbuster-microsoft-and-sony-deals-me
 https://www.cnbc.com/2022/02/25/why-capital-groups-first-foray-into-the-etf-space-wont-be-its-last.html
 https://www.cnbc.com/2022/02/25/delta-air-lines-cuts-ties-with-aeroflot-after-russia-attacks-ukraine.html
 https://www.cnbc.com/2022/02/25/nasa-and-space-partnerships-with-russia-face-ukraine-challenge.html
-https://www.cnbc.com/2022/02/25/renault-hyundai-and-vw-have-most-exposure-to-russian-car-market.html
