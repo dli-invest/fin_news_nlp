@@ -402,12 +402,13 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/02/28/stock-market-futures-open-to-close-news.html
-https://www.cnbc.com/2022/03/01/mortgage-rates-plunge-just-as-home-prices-set-another-record.html
 https://www.cnbc.com/2022/03/01/with-inflation-and-ukraine-powell-must-thread-a-needle-on-capitol-hill-this-week-to-calm-markets.html
+https://www.cnbc.com/2022/03/01/gm-sells-its-stake-in-embattled-ev-start-up-lordstown-motors.html
+https://www.cnbc.com/2022/03/01/mortgage-rates-plunge-just-as-home-prices-set-another-record.html
 https://www.cnbc.com/2022/03/01/russian-backed-investment-fund-tied-to-influential-us-corporate-consulting-firm.html
 https://www.cnbc.com/2022/03/01/stocks-making-the-biggest-moves-midday-target-kroger-foot-locker-and-more.html
-https://www.cnbc.com/2022/03/01/ukraine-blinken-warns-of-mounting-russian-human-rights-abuses.html
 https://www.cnbc.com/2022/03/01/you-can-watch-the-netflix-marvel-shows-on-disney-starting-march-16.html
+https://www.cnbc.com/2022/03/01/ukraine-blinken-warns-of-mounting-russian-human-rights-abuses.html
 https://www.cnbc.com/2022/02/28/disney-pauses-theatrical-releases-in-russia-condemns-invasion-of-ukraine.html
 https://www.cnbc.com/2022/03/01/workhorse-swings-to-quarterly-loss-on-recalls-outlines-new-product-plan.html
 https://www.cnbc.com/2022/03/01/ukraine-says-russia-has-struck-a-tv-tower-in-kyiv.html
@@ -422,7 +423,6 @@ https://www.cnbc.com/2022/03/01/investing-club-what-cramer-is-watching-tuesday-r
 https://www.cnbc.com/2022/03/01/ubers-new-feature-lets-you-book-dinner-reservations-concerts-tickets.html
 https://www.cnbc.com/2022/03/01/sears-spinoff-seritage-explores-alternatives-eddie-lampert-quits-board.html
 https://www.cnbc.com/2022/03/01/a-blackrock-shareholder-vote-that-may-control-future-proxy-battles.html
-https://www.cnbc.com/2022/03/01/warren-buffett-career-advice-seek-personal-happiness-over-pure-profit.html
 https://www.cnbc.com/2022/03/01/softbank-under-pressure-to-dual-list-arm-in-london-and-new-york.html
 https://www.cnbc.com/2022/03/01/us-bonds-treasury-yields-dip-with-focus-on-russia-ukraine-conflict.html
 https://www.cnbc.com/2022/02/28/pfizer-covid-vaccine-was-just-12percent-effective-against-omicron-in-kids-5-to-11-study-finds.html
@@ -441,4 +441,3 @@ https://www.cnbc.com/2022/02/28/ukraine-updates-viasat-says-cyber-event-disrupti
 https://www.cnbc.com/2022/02/28/lordstown-motors-to-produce-3000-electric-pickups-through-2023.html
 https://www.cnbc.com/2022/02/28/russia-ukraine-news-us-suspends-operations-at-belarus-embassy-oks-exits-from-moscow.html
 https://www.cnbc.com/2022/02/28/stocks-making-the-biggest-moves-in-the-premarket-bp-first-horizon-defense-stocks-and-more-.html
-https://www.cnbc.com/2022/02/28/us-bonds-treasury-yields-slide-as-fresh-sanctions-imposed-on-russia.html
