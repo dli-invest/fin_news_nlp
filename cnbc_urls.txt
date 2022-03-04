@@ -402,12 +402,15 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/03/03/stock-futures-rise-slightly-as-investors-brace-for-february-jobs-report-russia-ukraine-updates.html
+https://www.cnbc.com/2022/03/04/sp-dow-is-removing-all-russia-stocks-from-indices-stripping-country-of-emerging-market-status.html
 https://www.cnbc.com/2022/03/04/february-jobs-report-us-unemployment-rate-falls-ticks-up-for-black-women.html
 https://www.cnbc.com/2022/03/04/chicago-feds-charles-evans-cautions-on-inflations-hit-to-small-businesses.html
+https://www.cnbc.com/2022/03/04/russia-stock-etfs-trading-in-us-plunge-this-week-with-some-halted-for-trading.html
 https://www.cnbc.com/2022/03/04/tesla-factory-in-germany-gains-approval-to-start-commercial-production.html
 https://www.cnbc.com/2022/03/04/the-batman-made-21point6-million-in-thursday-night-previews.html
-https://www.cnbc.com/2022/03/04/kraken-wont-shut-down-russian-accounts-unless-legally-required-ceo.html
 https://www.cnbc.com/2022/03/04/investing-club-honeywell-ceo-on-semiconductors-energy-transition.html
+https://www.cnbc.com/2022/03/04/big-raises-may-be-coming-back-down-to-earth.html
+https://www.cnbc.com/2022/03/04/kraken-wont-shut-down-russian-accounts-unless-legally-required-ceo.html
 https://www.cnbc.com/2022/03/04/apple-workers-set-to-return-to-office-beginning-april-11.html
 https://www.cnbc.com/2022/03/04/supreme-court-reinstates-death-sentence-for-boston-marathon-bomber-dzhokhar-tsarnaev.html
 https://www.cnbc.com/2022/03/04/irs-unveils-taxpayer-experience-office-for-customer-service-.html
@@ -419,10 +422,7 @@ https://www.cnbc.com/2022/03/04/the-metaverse-stole-the-show-at-mobile-world-con
 https://www.cnbc.com/2022/03/04/new-jersey-governor-floats-property-tax-relief-for-homeowners-renters.html
 https://www.cnbc.com/2022/03/04/apple-folding-phone-could-come-soon-after-samsung-galaxy-z-fold.html
 https://www.cnbc.com/2022/03/04/eu-considers-energy-sanctions-on-russia-after-nuclear-power-plant-attack.html
-https://www.cnbc.com/2022/03/04/russia-sanctions-spark-fire-sale-asset-freezes-for-uk-based-oligarch-.html
-https://www.cnbc.com/2022/03/04/ex-unilever-ceo-namechecks-tesla-says-firms-should-focus-on-long-term.html
 https://www.cnbc.com/2022/03/04/energy-etfs-jump-amid-russia-ukraine-conflict-how-to-trade-them.html
-https://www.cnbc.com/2022/03/04/video-game-firms-move-to-cut-off-russia-amid-ukraine-war.html
 https://www.cnbc.com/2022/03/04/microsoft-halts-all-new-product-and-service-sales-in-russia.html
 https://www.cnbc.com/2022/03/04/airbnb-is-suspending-all-operations-in-russia-and-belarus-.html
 https://www.cnbc.com/2022/03/04/us-bonds-treasury-yields-slump-as-russia-seizes-ukraine-power-plant.html
@@ -440,4 +440,3 @@ https://www.cnbc.com/2022/03/03/covid-pfizer-moderna-project-51-billion-in-combi
 https://www.cnbc.com/2022/03/03/supreme-court-lets-gop-kentucky-attorney-general-defend-abortion-law.html
 https://www.cnbc.com/2022/03/03/facebook-says-2021-polar-vortex-brought-higher-energy-costs.html
 https://www.cnbc.com/2022/03/03/watch-federal-reserve-chair-powell-speak-live.html
-https://www.cnbc.com/2022/03/03/snowflake-shares-tumble-18percent-after-it-reports-slowing-revenue-growth.html
