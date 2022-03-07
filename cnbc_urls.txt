@@ -403,12 +403,15 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/03/06/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/03/07/us-will-defend-nato-baltic-states-against-russia-blinken-says.html
+https://www.cnbc.com/2022/03/07/russias-war-on-ukraine-a-defining-moment-of-the-century-says-john-kerry.html
+https://www.cnbc.com/2022/03/07/ukraine-news-mcdonalds-declines-to-comment-on-war-has-exposure-in-russia.html
 https://www.cnbc.com/2022/03/07/kohls-kss-issues-long-term-financial-targets-at-investor-day-2022.html
 https://www.cnbc.com/2022/03/07/bed-bath-beyond-shares-surge-after-gamestop-chairman-reveals-big-stake.html
+https://www.cnbc.com/2022/03/07/stephen-roach-on-russia-china-relations-amid-ukraine-war.html
 https://www.cnbc.com/2022/03/07/moderna-reaches-preliminary-agreement-to-build-covid-vaccine-manufacturing-plant-in-africa.html
 https://www.cnbc.com/2022/03/07/nj-gov-phil-murphy-mulls-state-action-on-russia-linked-lukoil-gas-stations.html
-https://www.cnbc.com/2022/03/07/stephen-roach-on-russia-china-relations-amid-ukraine-war.html
 https://www.cnbc.com/2022/03/07/samsung-hackers-breached-company-data-source-code-for-galaxy-devices.html
+https://www.cnbc.com/2022/03/07/shake-shack-partnering-jack-dorseys-block-to-offer-bitcoin-rewards.html
 https://www.cnbc.com/2022/03/07/capri-holdings-shares-fall-after-michael-kors-parent-ditches-ceo-succession-plan.html
 https://www.cnbc.com/2022/03/07/ukraine-news-levi-strauss-suspends-sales-in-russia.html
 https://www.cnbc.com/2022/03/07/amazon-acquires-e-commerce-software-start-up-veeqo.html
@@ -418,8 +421,6 @@ https://www.cnbc.com/2022/03/07/russia-ukraine-bill-ackman-says-world-war-iii-li
 https://www.cnbc.com/2022/03/07/uber-raises-first-quarter-outlook-on-strong-omicron-rebound.html
 https://www.cnbc.com/2022/03/07/russia-ukraine-crisis-us-should-subsidize-frackers-strategist-says.html
 https://www.cnbc.com/2022/03/07/investing-club-russia-boycott-oil-prices-activist-targets-bed-bath.html
-https://www.cnbc.com/2022/03/07/china-upholds-its-relationship-with-russia-says-negotiations-needed-to-solve-ukraine-conflict.html
-https://www.cnbc.com/2022/03/07/aston-martin-inks-deal-to-develop-batteries-with-britishvolt.html
 https://www.cnbc.com/2022/03/07/tesla-berlin-gigafactory-approval-removes-major-overhang-on-the-stock.html
 https://www.cnbc.com/2022/03/07/us-bonds-treasury-yields-dip-with-focus-on-russia-ukraine-war.html
 https://www.cnbc.com/2022/03/06/icahn-reportedly-sells-off-occidental-petroleum-stake-after-almost-3-years.html
@@ -436,4 +437,3 @@ https://www.cnbc.com/2022/03/04/apple-workers-set-to-return-to-office-beginning-
 https://www.cnbc.com/2022/03/04/chicago-feds-charles-evans-cautions-on-inflations-hit-to-small-businesses.html
 https://www.cnbc.com/2022/03/04/silicon-valley-is-boycotting-russia.html
 https://www.cnbc.com/2022/03/04/energy-etfs-jump-amid-russia-ukraine-conflict-how-to-trade-them.html
-https://www.cnbc.com/2022/03/04/supreme-court-reinstates-death-sentence-for-boston-marathon-bomber-dzhokhar-tsarnaev.html
