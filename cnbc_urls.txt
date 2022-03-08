@@ -404,9 +404,12 @@ https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-th
 https://www.cnbc.com/2022/03/07/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/03/08/us-expected-to-announce-ban-on-russian-oil-as-soon-as-today-nbc-news-reports.html
 https://www.cnbc.com/2022/03/08/russia-warns-of-300-oil-if-ban-goes-ahead-threatens-to-cut-off-european-gas.html
+https://www.cnbc.com/2022/03/08/musk-seeks-to-end-settlement-required-pre-approval-for-some-tweets.html
+https://www.cnbc.com/2022/03/08/new-york-times-staff-leaving-russia-over-ukraine-invasion-censorship.html
 https://www.cnbc.com/2022/03/08/lululemon-footwear-marks-new-product-to-take-on-nike-adidas.html
 https://www.cnbc.com/2022/03/08/prince-andrew-and-jeffrey-epstein-victim-agree-to-dismiss-sex-assault-suit.html
 https://www.cnbc.com/2022/03/08/reid-hoffman-has-set-up-a-new-ai-company-with-deepminds-co-founder.html
+https://www.cnbc.com/2022/03/08/business-bootcamp-spartan-ceo-joe-de-sena-on-his-secrets-to-success.html
 https://www.cnbc.com/2022/03/08/google-plans-to-acquire-mandiant-for-5point4-billion.html
 https://www.cnbc.com/2022/03/08/hess-ceo-says-oil-is-in-the-intensive-care-unit-us-other-nations-need-to-act.html
 https://www.cnbc.com/2022/03/08/jeffrey-epstein-case-ghislaine-maxwell-juror-hearing-begins.html
@@ -418,9 +421,8 @@ https://www.cnbc.com/2022/03/08/gm-electric-vehicles-to-power-homes-in-a-new-cal
 https://www.cnbc.com/2022/03/08/what-cramer-is-watching-apple-event-us-to-ban-russia-oil-mondays-sell-off.html
 https://www.cnbc.com/2022/03/08/online-daters-lost-a-record-547-million-to-scams-in-2021.html
 https://www.cnbc.com/2022/03/08/shell-apologizes-for-buying-russian-oil-announces-phased-withdrawal.html
-https://www.cnbc.com/2022/03/07/us-far-from-normal-with-covid-deaths-10-times-higher-than-flu-rsv-report.html
-https://www.cnbc.com/2022/03/08/preparing-for-challenges-every-entrepreneur-faces-starting-a-company.html
 https://www.cnbc.com/2022/03/08/us-bonds-treasury-yields-jump-as-inflation-fears-rise.html
+https://www.cnbc.com/2022/03/07/us-far-from-normal-with-covid-deaths-10-times-higher-than-flu-rsv-report.html
 https://www.cnbc.com/2022/03/07/what-to-expect-from-apples-event-on-tuesday-a-budget-iphone-and-more.html
 https://www.cnbc.com/2022/03/07/ukraine-news-mcdonalds-declines-to-comment-on-war-has-exposure-in-russia.html
 https://www.cnbc.com/2022/03/07/us-will-defend-nato-baltic-states-against-russia-blinken-says.html
@@ -432,5 +434,3 @@ https://www.cnbc.com/2022/03/07/uber-raises-first-quarter-outlook-on-strong-omic
 https://www.cnbc.com/2022/03/07/tesla-berlin-gigafactory-approval-removes-major-overhang-on-the-stock.html
 https://www.cnbc.com/2022/03/07/us-bonds-treasury-yields-dip-with-focus-on-russia-ukraine-war.html
 https://www.cnbc.com/2022/03/06/icahn-reportedly-sells-off-occidental-petroleum-stake-after-almost-3-years.html
-https://www.cnbc.com/2022/03/06/netflix-suspends-service-in-russia.html
-https://www.cnbc.com/2022/03/06/gold-climbs-to-september-2020-highs-how-etf-investors-are-trading-it.html
