@@ -403,15 +403,16 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/03/08/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/03/09/heres-whats-in-bidens-executive-order-on-crypto.html
-https://www.cnbc.com/2022/03/09/investing-club-good-sign-at-linde-paypal-updates-social-media-headwinds-.html
-https://www.cnbc.com/2022/03/09/barry-diller-denies-insider-trading-on-microsoft-activision-deal.html
-https://www.cnbc.com/2022/03/09/mcdonalds-russian-shutdown-will-cost-fast-food-chain-50-million-a-month.html
-https://www.cnbc.com/2022/03/09/russian-oligarch-yachts-this-is-what-happens-after-theyre-seized-.html
-https://www.cnbc.com/2022/03/09/education-dept-gives-another-sign-student-loan-payments-may-not-restart-in-may-.html
 https://www.cnbc.com/2022/03/09/bitcoin-btc-jumps-after-treasury-statement-on-crypto-executive-order.html
+https://www.cnbc.com/2022/03/09/european-markets-set-to-rise-as-russia-ukraine-volatility-persists.html
+https://www.cnbc.com/2022/03/09/barry-diller-denies-insider-trading-on-microsoft-activision-deal.html
+https://www.cnbc.com/2022/03/09/russian-oligarch-yachts-this-is-what-happens-after-theyre-seized-.html
+https://www.cnbc.com/2022/03/09/mcdonalds-russian-shutdown-will-cost-fast-food-chain-50-million-a-month.html
 https://www.cnbc.com/2022/03/09/macys-cfo-american-consumer-still-healthy-but-lower-income-shoppers-at-risk.html
-https://www.cnbc.com/2022/03/09/russia-ukraine-putin-always-wanted-to-weaken-west-hes-done-the-opposite.html
+https://www.cnbc.com/2022/03/09/house-gop-leader-kevin-mccarthy-warns-against-iran-venezuela-oil-to-offset-russia.html
+https://www.cnbc.com/2022/03/09/education-dept-gives-another-sign-student-loan-payments-may-not-restart-in-may-.html
 https://www.cnbc.com/2022/03/08/online-daters-lost-a-record-547-million-to-scams-in-2021.html
+https://www.cnbc.com/2022/03/09/russia-ukraine-putin-always-wanted-to-weaken-west-hes-done-the-opposite.html
 https://www.cnbc.com/2022/03/09/uber-eats-now-lets-everyone-pay-for-their-own-food-in-a-group-order.html
 https://www.cnbc.com/2022/03/09/the-main-types-of-bosses-and-managers-and-the-best-one-to-work-for-according-to-career-experts.html
 https://www.cnbc.com/2022/03/09/energy-related-co2-emissions-hit-highest-ever-level-in-2021-iea.html
@@ -419,9 +420,6 @@ https://www.cnbc.com/2022/03/09/stitch-fix-stock-heading-to-all-time-low-as-futu
 https://www.cnbc.com/2022/03/09/apples-budget-5g-iphone-se-expected-to-outperform-in-asia.html
 https://www.cnbc.com/2022/03/09/women-are-using-great-resignation-to-negotiate-raises-or-quit.html
 https://www.cnbc.com/2022/03/09/53-percent-of-americans-quit-jobs-last-year-to-make-a-career-change-heres-how-to-do-the-same.html
-https://www.cnbc.com/2022/03/09/analysts-on-inflation-recession-after-russian-oil-bans.html
-https://www.cnbc.com/2022/03/09/stocks-making-the-biggest-moves-premarket-campbell-soup-express-thor-industries-and-others.html
-https://www.cnbc.com/2022/03/09/china-state-backed-hackers-compromised-6-us-state-governments-report.html
 https://www.cnbc.com/2022/03/09/ukraine-war-news-us-companies-on-yale-list-suspend-russia-business.html
 https://www.cnbc.com/2022/03/09/us-bonds-treasury-yields-rise-as-inflation-fears-persist.html
 https://www.cnbc.com/2022/03/08/amazon-turns-grocery-shopping-gig-workers-into-whole-foods-employees.html
@@ -438,4 +436,3 @@ https://www.cnbc.com/2022/03/08/google-plans-to-acquire-mandiant-for-5point4-bil
 https://www.cnbc.com/2022/03/08/jetblue-founders-startup-breeze-airways-plans-to-nearly-double-its-routes.html
 https://www.cnbc.com/2022/03/08/us-bonds-treasury-yields-jump-as-inflation-fears-rise.html
 https://www.cnbc.com/2022/03/07/us-far-from-normal-with-covid-deaths-10-times-higher-than-flu-rsv-report.html
-https://www.cnbc.com/2022/03/07/what-to-expect-from-apples-event-on-tuesday-a-budget-iphone-and-more.html
