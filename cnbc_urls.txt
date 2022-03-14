@@ -407,9 +407,14 @@ https://www.cnbc.com/2022/03/14/netflix-shares-hit-lowest-point-since-march-2020
 https://www.cnbc.com/2022/03/14/us-oil-tumbles-more-than-8percent-dips-below-100-per-barrel.html
 https://www.cnbc.com/2022/03/14/jpmorgan-rolls-back-covid-precautions-as-us-cases-drop.html
 https://www.cnbc.com/2022/03/14/joe-manchin-opposes-sarah-bloom-raskin-federal-reserve-nomination.html
-https://www.cnbc.com/2022/03/14/deutsche-bank-to-wind-down-russia-operations-in-major-u-turn.html
+https://www.cnbc.com/2022/03/14/apple-ios-15point4-update-lets-you-unlock-your-iphone-with-a-mask-on-how-to-set-it-up.html
+https://www.cnbc.com/2022/03/14/stocks-making-the-biggest-moves-midday-alibaba-apple-and-more.html
+https://www.cnbc.com/2022/03/14/electric-last-mile-shares-plummet-to-1-after-company-confirms-sec-probe.html
 https://www.cnbc.com/2022/03/14/pete-davidson-will-go-to-space-on-blue-origins-4th-human-flight.html
 https://www.cnbc.com/2022/03/14/fauci-warns-not-to-forget-pandemics-catastrophic-experience.html
+https://www.cnbc.com/2022/03/14/deutsche-bank-to-wind-down-russia-operations-in-major-u-turn.html
+https://www.cnbc.com/2022/03/14/one-third-of-job-switchers-took-a-pay-cut-for-better-work-life-balance.html
+https://www.cnbc.com/2022/03/14/bipartisan-lawmakers-push-for-irs-answers-on-problems-facing-taxpayers.html
 https://www.cnbc.com/2022/03/14/could-russia-use-chemical-weapons-in-ukraine-the-threat-is-very-real.html
 https://www.cnbc.com/2022/03/14/us-listed-china-shares-are-tumbling-again-with-alibaba-down-5percent.html
 https://www.cnbc.com/2022/03/14/facebook-bans-death-threats-russia-leader-putin-despite-ukraine-war.html
@@ -421,10 +426,6 @@ https://www.cnbc.com/2022/03/14/chinas-silicon-valley-shenzhen-orders-production
 https://www.cnbc.com/2022/03/14/what-cramer-is-watching-monday-rippling-effects-of-russias-invasion-.html
 https://www.cnbc.com/2022/03/14/deripaska-squatters-occupy-london-mansion-thought-to-belong-to-russia-oligarch.html
 https://www.cnbc.com/2022/03/14/apple-supplier-foxconn-pauses-operations-in-shenzhen-amid-covid-outbreak.html
-https://www.cnbc.com/2022/03/14/tencent-shares-plunge-after-report-of-record-fine-for-money-laundering.html
-https://www.cnbc.com/2022/03/14/benedict-cumberbatch-to-take-in-ukrainian-refugees.html
-https://www.cnbc.com/2022/03/14/the-direct-to-consumer-craze-is-slamming-into-reality.html
-https://www.cnbc.com/2022/03/14/columbia-university-on-china-helping-russia-with-impact-of-sanctions.html
 https://www.cnbc.com/2022/03/14/apple-iphone-se-2022-review-speed-5g-only-429-but-old-look.html
 https://www.cnbc.com/2022/03/14/stocks-making-the-biggest-moves-in-the-premarket-alibaba-jdcom-occidental-petroleum-chevron-and-more.html
 https://www.cnbc.com/2022/03/14/us-bonds-treasury-yields-jump-with-focus-on-fed-rate-decision.html
@@ -444,5 +445,3 @@ https://www.cnbc.com/2022/03/11/jones-soda-unveils-cannabis-infused-sodas-under-
 https://www.cnbc.com/2022/03/11/ford-and-pge-partner-on-electric-f-150-powering-homes-grid.html
 https://www.cnbc.com/2022/03/11/us-bonds-treasury-yields-slip-as-investors-digest-inflation-data.html
 https://www.cnbc.com/2022/03/10/rivian-changing-battery-cells-to-lfp-following-tesla-and-high-nickel.html
-https://www.cnbc.com/2022/03/10/treasury-secretary-janet-yellen-says-inflation-could-be-high-for-a-year.html
-https://www.cnbc.com/2022/03/10/rivian-rivn-earnings-q4-2021.html
