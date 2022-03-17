@@ -403,16 +403,17 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/03/16/stock-futures-rise-slightly-as-market-looks-to-build-on-rally-following-fed-rate-hike.html
 https://www.cnbc.com/2022/03/17/moderna-ceo-stephane-bancel-has-sold-more-than-400-million-of-company-stock-during-the-pandemic.html
-https://www.cnbc.com/2022/03/17/biden-names-dr-ashish-jha-new-covid-response-coordinator-as-jeff-zients-leaves.html
+https://www.cnbc.com/2022/03/17/maserati-to-go-all-electric-starting-with-1200-horsepower-granturismo.html
 https://www.cnbc.com/2022/03/17/cramer-fed-fallout-williams-sonoma-fools-bears-starbucks-exit.html
-https://www.cnbc.com/2022/03/17/warby-parker-wrby-reports-q4-2021-losses.html
+https://www.cnbc.com/2022/03/17/biden-names-dr-ashish-jha-new-covid-response-coordinator-as-jeff-zients-leaves.html
 https://www.cnbc.com/2022/03/17/apple-mac-studio-and-studio-display-review.html
 https://www.cnbc.com/2022/03/17/targets-solar-panel-carports-at-california-store-may-be-a-green-model.html
+https://www.cnbc.com/2022/03/17/warby-parker-wrby-reports-q4-2021-losses.html
 https://www.cnbc.com/2022/03/17/the-silicon-valley-fallout-from-waging-economic-war-against-russia.html
 https://www.cnbc.com/2022/03/17/us-jobless-claims-.html
 https://www.cnbc.com/2022/03/17/nickel-falls-8percent-to-hit-limit-down-in-chaotic-trade-on-london-metal-exchange.html
-https://www.cnbc.com/2022/03/17/warren-buffett-scoops-up-another-1-billion-in-occidental-shares-bringing-total-stake-to-7-billion.html
 https://www.cnbc.com/2022/03/17/why-us-bridges-are-in-such-bad-shape.html
+https://www.cnbc.com/2022/03/17/warren-buffett-scoops-up-another-1-billion-in-occidental-shares-bringing-total-stake-to-7-billion.html
 https://www.cnbc.com/2022/03/17/po-ferries-sacks-800-staff-and-suspends-sailing-says-not-sustainable.html
 https://www.cnbc.com/2022/03/17/kanye-west-has-been-suspended-from-instagram.html
 https://www.cnbc.com/2022/03/17/london-insurance-firm-fined-1-million-over-bullying-sexual-harassment.html
@@ -421,7 +422,6 @@ https://www.cnbc.com/2022/03/17/property-booming-in-sanction-free-dubai-as-russi
 https://www.cnbc.com/2022/03/16/russian-ukraine-war-to-lower-car-production-by-millions-of-units.html
 https://www.cnbc.com/2022/03/17/chinas-elevated-covid-cases-may-not-hit-the-economy-as-hard-as-feared.html
 https://www.cnbc.com/2022/03/17/tesla-hikes-china-made-model-y-price-again-by-more-than-2000.html
-https://www.cnbc.com/2022/03/16/cramer-own-companies-built-to-last-instead-of-worrying-about-fed.html
 https://www.cnbc.com/2022/03/17/us-bonds-treasury-yields-fall-as-investors-digest-fed-rate-hike.html
 https://www.cnbc.com/2022/03/16/online-safety-bill-tech-execs-face-jail-time-under-new-uk-rules.html
 https://www.cnbc.com/2022/03/16/heres-what-changed-in-the-new-fed-statement.html
@@ -438,4 +438,3 @@ https://www.cnbc.com/2022/03/16/mortgage-demand-falls-as-interest-rates-surge-to
 https://www.cnbc.com/2022/03/16/apple-supplier-foxconn-resumes-production-in-shenzhen.html
 https://www.cnbc.com/2022/03/16/us-bonds-treasury-yields-rise-ahead-of-fed-decision.html
 https://www.cnbc.com/2022/03/15/tesla-fired-employee-who-posted-fsd-beta-videos-as-ai-addict-on-youtube.html
-https://www.cnbc.com/2022/03/15/cadillac-lyriq-gm-to-begin-production-next-week-brands-first-ev.html
