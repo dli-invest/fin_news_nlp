@@ -404,15 +404,16 @@ https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-th
 https://www.cnbc.com/2022/03/17/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/03/18/nickel-falls-12percent-to-hit-limit-down-again-on-london-metal-exchange.html
 https://www.cnbc.com/2022/03/17/jim-cramer-says-investors-should-buy-these-11-recently-boosted-dividend-stocks.html
-https://www.cnbc.com/2022/03/18/porsche-increases-ev-targets-confirms-911-hybrid-sports-car.html
 https://www.cnbc.com/2022/03/18/investor-behavior-in-europe-is-mirroring-the-markets-worst-crises-new-research-shows.html
 https://www.cnbc.com/2022/03/17/gamestop-gme-q4-2021-earnings.html
-https://www.cnbc.com/2022/03/17/american-airlines-will-resume-alcohol-sales-on-board-april-18.html
-https://www.cnbc.com/2022/03/17/burger-king-moves-to-divest-from-russian-joint-venture.html
 https://www.cnbc.com/2022/03/17/disney-creative-leaders-express-frustration-to-ceo-chapek-over-dont-say-gay-bill-response.html
-https://www.cnbc.com/2022/03/17/why-us-bridges-are-in-such-bad-shape.html
+https://www.cnbc.com/2022/03/17/what-were-watching-thursday-afternoon-two-holdings-hit-52-week-highs.html
+https://www.cnbc.com/2022/03/18/porsche-increases-ev-targets-confirms-911-hybrid-sports-car.html
+https://www.cnbc.com/2022/03/17/burger-king-moves-to-divest-from-russian-joint-venture.html
 https://www.cnbc.com/2022/03/17/amazon-flex-drivers-hit-by-surging-gas-prices-are-demanding-relief-.html
 https://www.cnbc.com/2022/03/17/house-votes-to-strip-russias-most-favored-nation-trade-status.html
+https://www.cnbc.com/2022/03/17/why-us-bridges-are-in-such-bad-shape.html
+https://www.cnbc.com/2022/03/17/american-airlines-will-resume-alcohol-sales-on-board-april-18.html
 https://www.cnbc.com/2022/03/18/how-the-russia-ukraine-crisis-could-hit-chinas-trade.html
 https://www.cnbc.com/2022/03/17/north-carolina-justice-department-investigating-trump-aide-mark-meadows-over-voter-registration.html
 https://www.cnbc.com/2022/03/17/lobbyists-aim-to-connect-ukraine-officials-with-us-leaders-as-russia-wages-war.html
@@ -423,6 +424,7 @@ https://www.cnbc.com/2022/03/17/gramercy-funds-cio-on-emerging-markets-investing
 https://www.cnbc.com/2022/03/17/mercks-keytruda-reduced-risk-of-recurrence-or-death-in-early-lung-cancer-patients-by-24percent.html
 https://www.cnbc.com/2022/03/17/impossible-foods-poaches-chobani-exec-to-be-new-ceo-founder-pat-brown-steps-down.html
 https://www.cnbc.com/2022/03/17/targets-solar-panel-carports-at-california-store-may-be-a-green-model.html
+https://www.cnbc.com/2022/03/18/us-bonds-treasury-yields-dip-with-focus-on-russia-ukraine-talks.html
 https://www.cnbc.com/2022/03/17/delta-gives-staff-4-percent-raises.html
 https://www.cnbc.com/2022/03/17/maserati-to-go-all-electric-starting-with-1200-horsepower-granturismo.html
 https://www.cnbc.com/2022/03/17/biden-names-dr-ashish-jha-new-covid-response-coordinator-as-jeff-zients-leaves.html
@@ -434,4 +436,3 @@ https://www.cnbc.com/2022/03/17/us-bonds-treasury-yields-fall-as-investors-diges
 https://www.cnbc.com/2022/03/16/online-safety-bill-tech-execs-face-jail-time-under-new-uk-rules.html
 https://www.cnbc.com/2022/03/16/russian-ukraine-war-to-lower-car-production-by-millions-of-units.html
 https://www.cnbc.com/2022/03/16/heres-what-changed-in-the-new-fed-statement.html
-https://www.cnbc.com/2022/03/16/federal-reserve-meeting.html
