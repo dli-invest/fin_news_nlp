@@ -16,7 +16,7 @@ def map_embed_to_article(articleData: dict)-> dict:
     if "country" in articleData:
         article["country"] = articleData["country"]
     if "author" in articleData:
-        article["author"] = articleData["author"]
+        article["company"] = articleData.get(", {}").get("name")
 
     if "company" in articleData:
         article["company"] = articleData["company"]

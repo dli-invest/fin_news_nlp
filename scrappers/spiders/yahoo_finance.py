@@ -54,7 +54,7 @@ class ScraperForYahoo(scrapy.Spider):
                     continue
                 href_merged = response.urljoin(href)
                 if href_merged not in self.read_article_urls:
-                    yield scrapy.Request(href_merged, callback=self.handle_article, dont_filter=True)
+                    yield scrapy.Request(href_merged, callback=self.handle_article)
                 else:
                     print("visited: " + href_merged)
             # save list to file, append csv file

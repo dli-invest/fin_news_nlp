@@ -21,8 +21,8 @@ async def main():
     start_date = datetime.today() - timedelta(hours=0, minutes=400)
     start_time_str = start_date.strftime('%Y-%m-%dT%H:%M:%S')
     end_time_str = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
-    filter = json.dumps({"created_on": { "_gte": start_time_str, "_lt": end_time_str}})
-    cursor = await first_instance.query_index(filter=filter)
+    filter_obj = json.dumps({"created_on": { "_gte": start_time_str, "_lt": end_time_str}})
+    cursor = await first_instance.query_index(filter=filter_obj)
     records = await cursor.read_all()
     if len(records) > 0:
         nlp = init_nlp("https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/exchanges.tsv", "https://raw.githubusercontent.com/dli-invest/fin_news_nlp/main/nlp_articles/core/data/indicies.tsv")

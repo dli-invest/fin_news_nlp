@@ -93,17 +93,17 @@ class YahooStockSpider(scrapy.Spider):
 
     def start_requests(self):
         tickers = self.ticker_controller.get_ytickers()
-        yahoo_urls = [f"{self.base_yahoo_url}/{ticker}" for ticker in tickers]
-        urls = yahoo_urls
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+
+        for ticker in tickers:
+            url = f"{self.base_yahoo_url}/{ticker}"
+            yield scrapy.Request(url=url, callback=self.parse, cb_kwargs=dict(ticker=ticker))
             if len(self.embeds_in_queue) >= 8:
                 self.send_data()
 
         if len(self.embeds_in_queue) >= 1:
             self.send_data()
 
-    def parse(self, response):
+    def parse(self, response, ticker: str):
         try:
             url = response.url
             if response.status == 302:
@@ -120,7 +120,7 @@ class YahooStockSpider(scrapy.Spider):
             full_soup = BeautifulSoup(response.body, features="lxml")
             news_items = full_soup.find_all("li", {"class": "js-stream-content"})
             for item in news_items[:2]:
-                embed_data = self.parse_news_item(item, response)
+                embed_data = self.parse_news_item(item, response, ticker)
                 if embed_data is not None:
                     embed_item = embed_data["embed"]
                     embed_url = embed_item.get("url")
@@ -157,7 +157,7 @@ class YahooStockSpider(scrapy.Spider):
 
         except Exception as e:
             print(e)
-            # os.environ["EXIT_ON_ERROR"] = "true"
+            os.environ["EXIT_ON_ERROR"] = "true"
             # pass
 
     @staticmethod
@@ -170,7 +170,7 @@ class YahooStockSpider(scrapy.Spider):
         except Exception as e:
             return "N/A"
 
-    def parse_news_item(self, item: dict, response):
+    def parse_news_item(self, item: dict, response, ticker: str):
         link = item.find("a", {"class": "js-content-viewer"})
         if link is None:
             return None
@@ -197,11 +197,15 @@ class YahooStockSpider(scrapy.Spider):
                 {"name": entity.label_, "value": entity.text, "inline": True}
                 for entity in entities
             ]
+            fields.append({"name": "ticker", "value": ticker, "inline": True})
             embed = {
                 "url": href_merged,
                 "title": f"{provider} - {url_text}",
                 "description": description,
                 "fields": fields,
+                "author": {
+                    "name": ticker
+                }
             }
             metadata = {}
             for label in [DIVIDEND_LABEL, CRITICAL_LABEL]:
