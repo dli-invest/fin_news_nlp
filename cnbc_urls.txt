@@ -402,9 +402,9 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/04/04/twitter-shares-soar-more-than-25percent-after-elon-musk-takes-9percent-stake-in-social-media-company.html
-https://www.cnbc.com/2022/04/04/jamie-dimon-says-inflation-ukraine-war-may-dramatically-increase-risks-for-us.html
 https://www.cnbc.com/2022/04/04/ipcc-report-climate-scientists-issue-ultimatum-on-1point5-degrees-goal.html
 https://www.cnbc.com/2022/04/04/stocks-making-the-biggest-moves-midday-twitter-starbucks-tesla-and-more.html
+https://www.cnbc.com/2022/04/04/jamie-dimon-says-inflation-ukraine-war-may-dramatically-increase-risks-for-us.html
 https://www.cnbc.com/2022/04/04/tiger-woods-turns-up-at-august-national-in-footjoy-golf-shoes-not-nike.html
 https://www.cnbc.com/2022/04/04/senate-panel-votes-on-biden-supreme-court-pick-ketanji-brown-jacksons-nomination.html
 https://www.cnbc.com/2022/04/04/russian-oligarch-viktor-vekselberg-accused-of-bank-fraud-money-laundering-as-yacht-is-seized.html
@@ -434,4 +434,3 @@ https://www.cnbc.com/2022/04/01/new-jersey-deli-owner-hometown-international-to-
 https://www.cnbc.com/2022/04/01/where-the-jobs-are-march-2022-chart.html
 https://www.cnbc.com/2022/04/01/march-jobs-report-unemployment-rate-nears-pre-pandemic-levels.html
 https://www.cnbc.com/2022/04/01/cdc-will-end-title-42-used-to-expel-migrants-during-covid.html
-https://www.cnbc.com/2022/04/01/amazon-workers-in-staten-island-vote-to-unionize.html
