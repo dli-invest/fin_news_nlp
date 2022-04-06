@@ -94,7 +94,8 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
         patterns.append({"label": "STOCK_EXCHANGE", "pattern": e})
 
     for crit in ["acquisition", "buyout", "takeover"]:
-         patterns.append({"label": "CRITICAL", "pattern": crit})
+        pass
+         # patterns.append({"label": "CRITICAL", "pattern": crit})
 
     for term in ["COP", "BIDEN", "recession", "depression", "FED", "Quarter", "Earnings"]:
         patterns.append({"label": "THINGS", "pattern": term})
