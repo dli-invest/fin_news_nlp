@@ -403,12 +403,15 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/04/12/consumer-prices-rose-8point5percent-in-march-slightly-hotter-than-expected.html
 https://www.cnbc.com/2022/04/12/cnn-plus-low-viewership-numbers-warner-bros-discovery.html
+https://www.cnbc.com/2022/04/12/airfare-surged-20percent-over-pre-pandemic-levels-as-inflation-hit-vacations.html
 https://www.cnbc.com/2022/04/11/stock-market-futures-open-to-close-news.html
-https://www.cnbc.com/2022/04/12/stocks-making-the-biggest-moves-midday-chipotle-pge-marathon-oil-and-carmax.html
-https://www.cnbc.com/2022/04/12/iphone-maker-pegatron-suspends-production-in-shanghai-due-to-covid.html
+https://www.cnbc.com/2022/04/12/stripe-alphabet-meta-shopify-mckinsey-spur-carbon-capture-market.html
 https://www.cnbc.com/2022/04/12/investing-club-cramer-is-watching-impact-of-chinas-covid-lockdowns.html
-https://www.cnbc.com/2022/04/12/concerned-about-inflation-heres-why-stock-investors-should-stay-the-course-says-ritholtz-coo.html
+https://www.cnbc.com/2022/04/12/stocks-making-the-biggest-moves-midday-chipotle-pge-marathon-oil-and-carmax.html
 https://www.cnbc.com/2022/04/12/lucid-air-grand-touring-performance-debuts-with-1050-horsepower-446-mile-range.html
+https://www.cnbc.com/2022/04/12/iphone-maker-pegatron-suspends-production-in-shanghai-due-to-covid.html
+https://www.cnbc.com/2022/04/12/concerned-about-inflation-heres-why-stock-investors-should-stay-the-course-says-ritholtz-coo.html
+https://www.cnbc.com/2022/04/12/i-bonds-are-paying-7point12percent-rising-inflation-may-increase-yearly-rates-.html
 https://www.cnbc.com/2022/04/12/crowdstrike-shares-rise-on-goldman-sachs-upgrade.html
 https://www.cnbc.com/2022/04/12/how-much-grocery-prices-increased-as-inflation-reaches-41-year-high.html
 https://www.cnbc.com/2022/04/12/apple-ceo-tim-cook-says-some-new-policies-would-hurt-iphone-security.html
@@ -426,8 +429,6 @@ https://www.cnbc.com/2022/04/12/mark-zuckerberg-says-meta-will-test-horizon-worl
 https://www.cnbc.com/2022/04/12/pakistans-new-government-may-improve-ties-with-us-and-india.html
 https://www.cnbc.com/2022/04/12/new-omicron-xe-variant-detected-in-japan-as-uk-cases-rise-.html
 https://www.cnbc.com/2022/04/12/china-inflation-makes-it-harder-for-pboc-to-cut-interest-rates-us-fed.html
-https://www.cnbc.com/2022/04/12/huge-undersea-cables-to-give-uk-germany-first-ever-energy-link.html
-https://www.cnbc.com/2022/04/12/wunderlist-co-founder-christian-reber-raises-funding-for-superlist.html
 https://www.cnbc.com/2022/04/12/stocks-making-the-biggest-moves-in-the-premarket-pge-hewlett-packard-enterprise-carmax-and-more.html
 https://www.cnbc.com/2022/04/12/us-bonds-treasury-yields-rise-ahead-of-key-inflation-report.html
 https://www.cnbc.com/2022/04/12/want-to-be-paid-in-bitcoin-or-dogecoin-here-are-the-rewards-and-risks.html
@@ -443,4 +444,3 @@ https://www.cnbc.com/2022/04/11/worlds-busiest-airport-rankings-dominated-by-us-
 https://www.cnbc.com/2022/04/11/us-inflation-could-affect-2022-senate-midterms-in-georgia-arizona.html
 https://www.cnbc.com/2022/04/11/esg-etfs-are-experiencing-greeniums-sustainability-expert-says.html
 https://www.cnbc.com/2022/04/11/stocks-making-the-biggest-moves-in-the-premarket-nio-veru-sailpoint-technologies-and-more.html
-https://www.cnbc.com/2022/04/11/twitter-shares-fall-as-elon-musk-abandons-plan-to-join-board.html
