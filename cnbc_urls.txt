@@ -402,17 +402,18 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/04/14/elon-musk-not-sure-hell-be-able-to-buy-twitter.html
+https://www.cnbc.com/2022/04/15/biden-to-nominate-michael-barr-as-fed-bank-regulator.html
 https://www.cnbc.com/2022/04/14/andy-jassy-on-inflation-surcharge-amazon-cant-keep-absorbing-costs.html
 https://www.cnbc.com/2022/04/15/in-an-unexpected-move-china-holds-back-on-cutting-key-rate.html
 https://www.cnbc.com/2022/04/14/investing-club-week-in-review-april-14th-2022.html
-https://www.cnbc.com/2022/04/13/stock-market-futures-open-to-close-news.html
-https://www.cnbc.com/2022/04/15/bernstein-chinas-2022-covid-lockdowns-inflation-risk-bigger-vs-2020.html
 https://www.cnbc.com/2022/04/14/tesla-shares-dip-after-ceo-elon-musk-makes-bid-to-buy-twitter.html
 https://www.cnbc.com/2022/04/14/worlds-largest-yacht-linked-to-russian-billionaire-usmanov-seized-by-germany.html
+https://www.cnbc.com/2022/04/13/stock-market-futures-open-to-close-news.html
+https://www.cnbc.com/2022/04/15/bernstein-chinas-2022-covid-lockdowns-inflation-risk-bigger-vs-2020.html
 https://www.cnbc.com/2022/04/14/peloton-raises-subscription-fees-cuts-prices-for-bikes-treads.html
 https://www.cnbc.com/2022/04/15/why-hiring-individuals-with-disabilities-can-benefit-asias-workforce.html
-https://www.cnbc.com/2022/04/14/biden-pollster-gsg-deeply-sorry-for-amazon-anti-union-work-as-labor-groups-abandon-it.html
 https://www.cnbc.com/2022/04/14/how-companies-like-amazon-nike-and-fedex-avoid-paying-federal-taxes-.html
+https://www.cnbc.com/2022/04/14/biden-pollster-gsg-deeply-sorry-for-amazon-anti-union-work-as-labor-groups-abandon-it.html
 https://www.cnbc.com/2022/04/14/gs-earnings-1q-2022.html
 https://www.cnbc.com/2022/04/14/cramers-week-ahead-watch-bonds-ukraine-as-earnings-season-picks-up.html
 https://www.cnbc.com/2022/04/14/elon-musk-offers-to-buy-twitter-for-54point20-a-share-saying-it-needs-to-be-transformed-as-private-company.html
@@ -444,4 +445,3 @@ https://www.cnbc.com/2022/04/13/kia-unveils-redesigned-niro-ev-and-updated-tellu
 https://www.cnbc.com/2022/04/13/amazon-has-a-new-name-for-its-free-streaming-tv-service.html
 https://www.cnbc.com/2022/04/13/covid-outbreaks-in-new-york-and-dc-infect-senior-officials-as-omicron-bapoint2-variant-sweeps-the-us.html
 https://www.cnbc.com/2022/04/13/soaring-gas-prices-are-forcing-some-uber-lyft-drivers-off-the-road.html
-https://www.cnbc.com/2022/04/13/twitter-investors-sue-elon-musk-for-failing-to-promptly-disclose-stake.html
