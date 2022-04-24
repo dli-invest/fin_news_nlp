@@ -21,11 +21,12 @@ def make_webdriver(build_name="Earnings-stock-calendar"):
         "build": build_name,  # CI/CD job or build name
     }
     options= webdriver.ChromeOptions()
-    options.capabilities.name = desired_cap.get("name", "get-breaking-[Python]")
-    options.capabilities.build = desired_cap.get("build", build_name)
+    # options.capabilities.name = desired_cap.get("name", "get-breaking-[Python]")
+    # options.capabilities.build = desired_cap.get("build", build_name)
     driver = webdriver.Remote(
         command_executor=remote_url,
-        options=options
+        options=options,
+        desired_capabilities=desired_cap,
     )
     return driver
 
