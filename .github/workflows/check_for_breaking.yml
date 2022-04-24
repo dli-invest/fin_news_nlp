@@ -35,10 +35,7 @@ jobs:
           python -m pip install -r nlp_articles/requirements/spacy.txt
           python -m pip install -r scrappers/selenium/requirements.txt
           python -m scrappers.selenium.test_get_breaking
-
-      - name: Crawl
-        run:  |
-         python -m nlp_articles.app.pull_beneath
+          python -m scrapper.selenium.get_breaking
 
       - name: Commit files
         run: |
