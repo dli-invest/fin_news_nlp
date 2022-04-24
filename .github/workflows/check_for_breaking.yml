@@ -33,7 +33,7 @@ jobs:
           python -m pip install -r nlp_articles/requirements/spacy.txt
           python -m pip install -r scrappers/selenium/requirements.txt
           python -m scrappers.selenium.test_get_breaking
-          python -m scrapper.selenium.get_breaking
+          python -m scrappers.selenium.get_breaking
 
       - name: Commit files
         run: |
