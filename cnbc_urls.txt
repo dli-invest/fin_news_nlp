@@ -403,11 +403,12 @@ https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/04/24/stock-market-futures-open-to-close-news.html
 https://www.cnbc.com/2022/04/25/twitter-shares-jump-5percent-on-reports-that-its-ready-to-accept-elon-musks-bid.html
+https://www.cnbc.com/2022/04/25/gm-says-it-will-produce-electric-chevrolet-corvettes.html
 https://www.cnbc.com/2022/04/25/coca-cola-ko-q1-2022-earnings.html
 https://www.cnbc.com/2022/04/25/spacex-signs-hawaiian-airlines-for-free-starlink-wi-fi-on-flights.html
 https://www.cnbc.com/2022/04/24/cnn-plus-what-went-wrong-why-it-was-canceled.html
-https://www.cnbc.com/2022/04/25/man-group-central-banks-to-put-rates-in-pain-zone-to-fight-inflation-.html
 https://www.cnbc.com/2022/04/22/investing-club-the-week-in-review-the-week-ahead-april-22-2022.html
+https://www.cnbc.com/2022/04/25/man-group-central-banks-to-put-rates-in-pain-zone-to-fight-inflation-.html
 https://www.cnbc.com/2022/04/25/ge-hoping-to-3d-print-concrete-components-for-wind-turbines.html
 https://www.cnbc.com/2022/04/25/strategies-for-beginner-investors-buying-the-stock-market-sell-off-.html
 https://www.cnbc.com/2022/04/25/stocks-making-the-biggest-moves-premarket-twitter-coca-cola-warner-bros-discovery-and-more.html
@@ -424,7 +425,6 @@ https://www.cnbc.com/2022/04/24/top-wall-street-analysts-say-buy-alphabet-and-ca
 https://www.cnbc.com/2022/04/24/ceo-how-the-pandemic-can-help-level-the-playing-field-for-women-at-work.html
 https://www.cnbc.com/2022/04/23/us-labor-board-sues-starbucks-over-union-retaliation-claims.html
 https://www.cnbc.com/2022/04/24/what-a-future-without-passwords-would-look-like-when-it-might-happen.html
-https://www.cnbc.com/2022/04/24/ponyai-says-its-first-self-driving-firm-to-get-taxi-license-in-china.html
 https://www.cnbc.com/2022/04/25/us-bonds-treasury-yields-slump-to-start-the-week.html
 https://www.cnbc.com/2022/04/24/twitter-is-reportedly-taking-another-look-at-musk-takeover-bid.html
 https://www.cnbc.com/2022/04/22/jack-dorseys-new-title-block-head.html
@@ -441,4 +441,3 @@ https://www.cnbc.com/2022/04/21/meta-coo-sandberg-reportedly-tried-to-block-news
 https://www.cnbc.com/2022/04/21/cdc-panel-skeptical-of-fourth-covid-shots-for-broader-population-says-us-needs-clear-vaccine-strategy.html
 https://www.cnbc.com/2022/04/21/white-house-sees-strong-gdp-growth-in-2022-despite-additional-economic-risks.html
 https://www.cnbc.com/2022/04/21/carl-icahn-mcdonalds-shareholders-letter-calls-out-wall-street-esg-hypocrisy.html
-https://www.cnbc.com/2022/04/21/apple-spent-more-than-ever-on-lobbying-as-antitrust-threats-loom.html
