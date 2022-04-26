@@ -402,15 +402,18 @@ https://www.cnbc.com/2021/11/19/german-space-lasers-company-mynaric-ceo-talks-na
 https://www.cnbc.com/2021/11/19/house-bill-extends-enhanced-child-tax-credit-for-a-year.html
 https://www.cnbc.com/2021/11/19/inside-ups-boot-camp-for-drivers-about-to-hit-the-road-this-holiday.html
 https://www.cnbc.com/2022/04/25/stock-market-futures-open-to-close-news.html
+https://www.cnbc.com/2022/04/26/tesla-stock-falls-more-than-9percent-after-musks-twitter-deal.html
+https://www.cnbc.com/2022/04/26/at-least-58percent-of-us-population-has-natural-antibodies-from-previous-covid-infection-cdc-says.html
 https://www.cnbc.com/2022/04/26/home-prices-jumped-20percent-in-february-slowdown-may-be-coming-sp-case-shiller.html
 https://www.cnbc.com/2022/04/26/delta-to-pay-flight-attendants-during-boarding-amid-union-push.html
-https://www.cnbc.com/2022/04/26/tesla-stock-falls-more-than-9percent-after-musks-twitter-deal.html
 https://www.cnbc.com/2022/04/26/kamala-harris-tests-positive-for-covid-is-not-exhibiting-symptoms.html
-https://www.cnbc.com/2022/04/26/stocks-making-the-biggest-moves-midday-general-electric-warner-bros-discovery-and-more.html
 https://www.cnbc.com/2022/04/26/cramer-tuesday-analyst-says-stop-worrying-about-disney-beats-for-pepsico-ups.html
+https://www.cnbc.com/2022/04/26/stocks-making-the-biggest-moves-midday-general-electric-warner-bros-discovery-and-more.html
+https://www.cnbc.com/2022/04/26/biden-blocks-sales-of-inefficient-lightbulbs-reversing-trump-policy-.html
 https://www.cnbc.com/2022/04/26/musks-twitter-takeover-may-boost-facebook-google-snap-ad-revenues.html
-https://www.cnbc.com/2022/04/26/worlds-first-floating-city-prototype-busan-south-korea.html
 https://www.cnbc.com/2022/04/26/these-10-colleges-are-giving-out-the-most-financial-aid-this-year.html
+https://www.cnbc.com/2022/04/26/worlds-first-floating-city-prototype-busan-south-korea.html
+https://www.cnbc.com/2022/04/26/why-elon-musk-has-jack-dorseys-trust-to-run-twittera-look-back-at-their-friendship.html
 https://www.cnbc.com/2022/04/26/warner-bros-discovery-wbd-q1-2022-earnings-.html
 https://www.cnbc.com/2022/04/26/scientists-shed-new-light-on-how-early-stage-breast-cancer-spreads-to-other-organs.html
 https://www.cnbc.com/2022/04/26/jetblue-shares-fall-after-airline-cuts-2022-growth-plans.html
@@ -424,10 +427,7 @@ https://www.cnbc.com/2022/04/26/twitter-will-have-hard-time-keeping-trump-off-if
 https://www.cnbc.com/2022/04/26/kevin-oleary-reacts-27-year-old-entrepreneur-making-650k.html
 https://www.cnbc.com/2022/04/26/pepsico-pep-q1-2022-earnings-beat-estimates.html
 https://www.cnbc.com/2022/04/26/fidelity-offers-401k-investors-access-to-bitcoin-a-retirement-plan-first.html
-https://www.cnbc.com/2022/04/26/covid-cases-us-universities-reinstate-mask-mandates.html
 https://www.cnbc.com/2022/04/26/gm-ford-earnings-inflation-supply-issues-threaten-2022-profits.html
-https://www.cnbc.com/2022/04/26/the-soft-skills-you-need-to-prioritize-today-according-to-career-expert.html
-https://www.cnbc.com/2022/04/26/jack-dorsey-elon-musk-is-the-singular-solution-for-twitter.html
 https://www.cnbc.com/2022/04/26/us-bonds-treasury-yields-dip-as-economic-slowdown-fears-mount.html
 https://www.cnbc.com/2022/04/25/biden-reverses-trump-move-to-open-up-more-oil-drilling-in-arctic.html
 https://www.cnbc.com/2022/04/25/elon-musk-and-free-speech-track-record-not-encouraging.html
@@ -441,4 +441,3 @@ https://www.cnbc.com/2022/04/25/judge-holds-donald-trump-in-contempt-for-failing
 https://www.cnbc.com/2022/04/25/nearly-9-in-10-young-americans-support-government-action-on-student-debt.html
 https://www.cnbc.com/2022/04/25/ford-f-150-lightning-electric-pickup-could-win-first-mover-advantage.html
 https://www.cnbc.com/2022/04/25/twitter-may-want-to-close-musk-deal-before-earnings-report-analysts.html
-https://www.cnbc.com/2022/04/25/facebook-is-opening-its-first-showroom-to-sell-vr-headsets.html
