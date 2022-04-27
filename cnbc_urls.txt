@@ -405,13 +405,13 @@ https://www.cnbc.com/2022/04/26/nasdaq-futures-fall-following-tuesdays-sharp-los
 https://www.cnbc.com/2022/04/27/archegos-owner-hwang-former-cfo-halligan-charged-with-fraud.html
 https://www.cnbc.com/2022/04/27/spotify-spot-earnings-q1-2022.html
 https://www.cnbc.com/2022/04/27/apple-now-lets-you-buy-iphone-parts-so-you-can-fix-it-yourself.html
-https://www.cnbc.com/2022/04/27/credit-suisse-document-shredding-not-related-to-russia-oligarch-sanctions.html
 https://www.cnbc.com/2022/04/27/russias-gas-supplies-to-poland-bulgaria-uncertain-as-tensions-rise.html
-https://www.cnbc.com/2022/04/27/cramer-microsoft-flawless-alphabet-strong-chipotle-best-in-show.html
+https://www.cnbc.com/2022/04/27/credit-suisse-document-shredding-not-related-to-russia-oligarch-sanctions.html
 https://www.cnbc.com/2022/04/27/invesco-launches-etf-focused-on-metals-required-for-electric-vehicles-energy-transition.html
 https://www.cnbc.com/2022/04/27/russia-releases-trevor-reed-as-part-of-prisoner-exchange.html
-https://www.cnbc.com/2022/04/27/want-to-lower-next-years-tax-bill-boost-your-401k-contributions.html
+https://www.cnbc.com/2022/04/27/serena-williamsnow-has-a-building-named-after-her-on-nikes-campus.html
 https://www.cnbc.com/2022/04/27/why-a-good-credit-score-matters-and-how-to-improve-your-number.html
+https://www.cnbc.com/2022/04/27/want-to-lower-next-years-tax-bill-boost-your-401k-contributions.html
 https://www.cnbc.com/2022/04/27/euro-falls-on-energy-supply-slowdown-fears-after-gazprom-decision.html
 https://www.cnbc.com/2022/04/26/alphabet-to-report-q1-earnings-after-the-bell-tuesday.html
 https://www.cnbc.com/2022/04/27/walmart-dangles-deeper-gas-discounts-to-attract-retain-subscribers.html
@@ -425,13 +425,13 @@ https://www.cnbc.com/2022/04/26/microsoft-msft-earnings-q3-2022.html
 https://www.cnbc.com/2022/04/26/elon-musk-will-owe-twitter-1-billion-if-he-cant-secure-financing.html
 https://www.cnbc.com/2022/04/26/chipotle-mexican-grill-cmg-q1-2022-earnings.html
 https://www.cnbc.com/2022/04/27/retail-and-consumer-ipos-ma-activity-slowing-amid-inflation-kpmg.html
-https://www.cnbc.com/2022/04/26/general-motors-gm-earnings-q1-2022.html
 https://www.cnbc.com/2022/04/27/us-bonds-treasury-yields-ebb-as-economic-growth-concerns-persist.html
 https://www.cnbc.com/2022/04/27/symptoms-of-mysterious-liver-disease-affecting-children-covid-links.html
 https://www.cnbc.com/2022/04/26/gm-will-start-tying-executive-compensation-to-electric-vehicle-targets.html
 https://www.cnbc.com/2022/04/26/trump-contempt-of-court-fines-start-for-new-york-investigation.html
 https://www.cnbc.com/2022/04/26/pfizer-asks-fda-to-authorize-third-dose-for-children-5-to-11-years-old.html
 https://www.cnbc.com/2022/04/26/amazon-warehouse-collapse-osha-orders-safety-review-no-fines.html
+https://www.cnbc.com/2022/04/26/general-motors-gm-earnings-q1-2022.html
 https://www.cnbc.com/2022/04/26/gop-rep-madison-cawthorn-brought-gun-to-north-carolina-airport.html
 https://www.cnbc.com/2022/04/26/biden-blocks-sales-of-inefficient-lightbulbs-reversing-trump-policy-.html
 https://www.cnbc.com/2022/04/26/at-least-58percent-of-us-population-has-natural-antibodies-from-previous-covid-infection-cdc-says.html
@@ -441,4 +441,3 @@ https://www.cnbc.com/2022/04/26/musks-twitter-takeover-may-boost-facebook-google
 https://www.cnbc.com/2022/04/26/scientists-shed-new-light-on-how-early-stage-breast-cancer-spreads-to-other-organs.html
 https://www.cnbc.com/2022/04/26/united-airlines-ramps-up-flights-for-european-travel-comeback.html
 https://www.cnbc.com/2022/04/26/twitter-will-have-hard-time-keeping-trump-off-if-he-runs-in-2024.html
-https://www.cnbc.com/2022/04/26/home-prices-jumped-20percent-in-february-slowdown-may-be-coming-sp-case-shiller.html
