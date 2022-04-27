@@ -407,9 +407,8 @@ https://www.cnbc.com/2022/04/27/archegos-owner-hwang-former-cfo-halligan-charged
 https://www.cnbc.com/2022/04/27/millionaires-dont-see-big-stock-losses-as-a-buy-the-dip-moment.html
 https://www.cnbc.com/2022/04/27/here-are-the-5-hottest-luxury-real-estate-markets-in-south-florida.html
 https://www.cnbc.com/2022/04/27/stocks-making-the-biggest-moves-midday-microsoft-visa-enphase-energy-boeing-and-more.html
-https://www.cnbc.com/2022/04/27/elon-musk-just-bought-twitter-now-what.html
 https://www.cnbc.com/2022/04/27/why-a-good-credit-score-matters-and-how-to-improve-your-number.html
-https://www.cnbc.com/2022/04/27/strong-quarterly-results-for-health-insurer-humana-deserve-a-bigger-rally-in-its-shares.html
+https://www.cnbc.com/2022/04/27/elon-musk-just-bought-twitter-now-what.html
 https://www.cnbc.com/2022/04/27/spotify-spot-earnings-q1-2022.html
 https://www.cnbc.com/2022/04/27/88percent-of-adults-support-mandating-personal-finance-education-.html
 https://www.cnbc.com/2022/04/27/apple-now-lets-you-buy-iphone-parts-so-you-can-fix-it-yourself.html
@@ -422,6 +421,7 @@ https://www.cnbc.com/2022/04/27/serena-williamsnow-has-a-building-named-after-he
 https://www.cnbc.com/2022/04/27/want-to-lower-next-years-tax-bill-boost-your-401k-contributions.html
 https://www.cnbc.com/2022/04/27/euro-falls-on-energy-supply-slowdown-fears-after-gazprom-decision.html
 https://www.cnbc.com/2022/04/26/alphabet-to-report-q1-earnings-after-the-bell-tuesday.html
+https://www.cnbc.com/2022/04/27/walmart-dangles-deeper-gas-discounts-to-attract-retain-subscribers.html
 https://www.cnbc.com/2022/04/27/elon-musks-spacex-launches-nasa-crew-4-astronaut-mission.html
 https://www.cnbc.com/2022/04/27/us-bonds-treasury-yields-ebb-as-economic-growth-concerns-persist.html
 https://www.cnbc.com/2022/04/27/symptoms-of-mysterious-liver-disease-affecting-children-covid-links.html
@@ -441,4 +441,3 @@ https://www.cnbc.com/2022/04/26/tesla-stock-falls-more-than-9percent-after-musks
 https://www.cnbc.com/2022/04/26/musks-twitter-takeover-may-boost-facebook-google-snap-ad-revenues.html
 https://www.cnbc.com/2022/04/26/scientists-shed-new-light-on-how-early-stage-breast-cancer-spreads-to-other-organs.html
 https://www.cnbc.com/2022/04/26/united-airlines-ramps-up-flights-for-european-travel-comeback.html
-https://www.cnbc.com/2022/04/26/twitter-will-have-hard-time-keeping-trump-off-if-he-runs-in-2024.html
