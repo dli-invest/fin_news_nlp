@@ -71,16 +71,19 @@ def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
             fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
             cnbc_data["fields"] = fields[:10]
             if entity_hits >= 1:
-                discord_embeds.append(cnbc_data)
-                if len(discord_embeds) >= 4:
-                    total_hits += len(discord_embeds)
-                    post_webhook_content({"embeds": discord_embeds})
-                    discord_embeds = []
-                    time.sleep(2)
-                cnbc_read_articles.append(cnbc_article['link'])
+                # only append if entities has label EARNINGS
+                if "EARNINGS" in [entity.label_ for entity in entities]:
+                    discord_embeds.append(cnbc_data)
+                    if len(discord_embeds) >= 4:
+                        total_hits += len(discord_embeds)
+                        post_webhook_content({"embeds": discord_embeds})
+                        discord_embeds = []
+                        time.sleep(2)
+                    cnbc_read_articles.append(cnbc_article['link'])
         except Exception as e:
             print(e)
             continue
+
 def main():
     global total_hits
     # init nlp 

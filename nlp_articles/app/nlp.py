@@ -107,6 +107,9 @@ def init_nlp(exchange_data_path: str, indicies_data_path: str):
     for ec in ["ENVIRONMENT", "INTEREST", "RATES", "TAXPAYERS", "TRUMP", "SUPPLY"]:
         patterns.append({"label": "MAYBE", "pattern": ec})
 
+    for earning in ["EARNINGS", "REVENUE", "QUARTER"]:
+        patterns.append({"label": "EARNINGS", "pattern": earning})
+    
     DIVIDEND_PATTERNS = [
         {
             "label": DIVIDEND_LABEL,
