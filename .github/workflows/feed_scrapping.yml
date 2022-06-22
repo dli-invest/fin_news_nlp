@@ -1,4 +1,4 @@
-name: CNBC Data
+name: Feed Scrapping
 on:
   push:
     branches:
@@ -12,6 +12,7 @@ on:
 
 env:
   DISCORD_WEBHOOK: ${{ secrets.DISCORD_DAILY_REVIEW_WEBHOOK }}
+  DISCORD_GUARDIAN_WEBHOOK: ${{ secrets.DISCORD_NEWS_WEBHOOK }}
   DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
 # Add cron job to ensure external webpages + apis have no changed
 jobs:

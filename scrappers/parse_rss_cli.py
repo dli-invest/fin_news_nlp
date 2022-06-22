@@ -55,6 +55,35 @@ def post_webhook_content(data: dict, webhook_env = "DISCORD_WEBHOOK"):
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
 
+
+def parse_feed(feed, nlp, discord_embeds, read_articles, webhook = "DISCORD_WEBHOOK"):
+    # global total_hits
+    for article in feed:
+        # change the name of this function later
+        data = cnbc_article_to_embed(article)
+        try:
+            description_doc = nlp(article["description"])
+            title_doc = nlp(article["title"])
+            entities = description_doc.ents + title_doc.ents
+            # count number of entities in the description and title
+            entity_hits = len(entities)
+            # make fields for the embed from ents
+            fields = [description_doc.ents, title_doc.ents]
+            # make a list of all the entities
+            fields = [ {"name": entity.label_, "value": entity.text, "inline": True} for entity in entities]
+            data["fields"] = fields[:10]
+            if entity_hits >= 1:
+                discord_embeds.append(data)
+                if len(discord_embeds) >= 4:
+                    # total_hits += len(discord_embeds)
+                    post_webhook_content({"embeds": discord_embeds}, webhook)
+                    discord_embeds = []
+                    time.sleep(2)
+                read_articles.append(article['link'])
+        except Exception as e:
+            print(e)
+            continue
+
 def iterate_cnbc_feed(cnbc_feed, nlp, cnbc_read_articles, discord_embeds):
     global total_hits
     for cnbc_article in cnbc_feed:
@@ -92,11 +121,13 @@ def main():
     with open("data/cnbc_feeds.json") as feeds_file:
         cnbc_feeds = json.load(feeds_file)
     the_guardian_feed_urls = []
-    # the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
+    the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
     stock_feed_list = [*cnbc_feeds.get("feeds"), *the_guardian_feed_urls]
 
     cnbc_output = "data/cnbc_urls.txt"
+    guardian_output = "data/guardian_urls.txt"
     cnbc_read_articles = parse_output_file(cnbc_output)
+    guardian_read_articles = parse_output_file(guardian_output)
     # accumulate all the cnbc and the guardian feeds
     discord_embeds = []
     for feed_data in stock_feed_list:
@@ -109,15 +140,16 @@ def main():
             # check if article is seen before
         # eventually move the guardian article logic to the guardian api
         elif feed_url.startswith("https://www.theguardian.com"):
-            guardian_article = parse_the_guardian_feed(rss_feed)
-            continue
+            guardian_feed = parse_the_guardian_feed(rss_feed)
+            parse_feed(guardian_feed, nlp, guardian_read_articles, discord_embeds, "DISCORD_NEWS_WEBHOOK")
 
         if len(discord_embeds) >= 4:
             post_webhook_content({"embeds": discord_embeds})
             total_hits = total_hits + len(discord_embeds)
             discord_embeds = []
 
-    save_list_of_strs_to_file(cnbc_read_articles)
+    save_list_of_strs_to_file(cnbc_read_articles, cnbc_output)
+    save_list_of_strs_to_file(guardian_read_articles, guardian_output)
     GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")
     GITHUB_RUN_ID = os.environ.get("GITHUB_RUN_ID")
     run_url = f"https://github.com/{GITHUB_REPOSITORY}/actions/runs/{GITHUB_RUN_ID}"
