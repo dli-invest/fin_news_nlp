@@ -1,0 +1,11 @@
+{
+    "name": "Guardians RSS Feeds",
+    "feeds": [
+        {
+            "feed": "Enviroment",
+            "feedUri": "https://www.theguardian.com/environment/rss",
+            "sendWithoutMatch": true,
+            "entityThreshold": 1
+        }
+    ]
+}

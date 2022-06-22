@@ -120,9 +120,10 @@ def main():
     # read json from file "data/cnbc_feeds.json"
     with open("data/cnbc_feeds.json") as feeds_file:
         cnbc_feeds = json.load(feeds_file)
-    the_guardian_feed_urls = []
-    the_guardian_feed_urls = ["https://www.theguardian.com/environment/rss"]
-    stock_feed_list = [*cnbc_feeds.get("feeds"), *the_guardian_feed_urls]
+
+    with open("data/guardian_feeds.json") as feeds_file:
+        the_guardian_feed_urls = json.load(feeds_file)
+    stock_feed_list = [*cnbc_feeds.get("feeds"), *the_guardian_feed_urls.get("feeds")]
 
     cnbc_output = "data/cnbc_urls.txt"
     guardian_output = "data/guardian_urls.txt"
