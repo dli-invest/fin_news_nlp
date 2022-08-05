@@ -1,14 +1,6 @@
 name: Feed Scrapping
 on:
-  push:
-    branches:
-      - 'main'
-      - "feature/*"
-    paths-ignore:
-      - ".github/workflows/*.yml"
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '10 8-20 * * 1-5'
+  workflow_dispatch
 
 env:
   DISCORD_WEBHOOK: ${{ secrets.DISCORD_DAILY_REVIEW_WEBHOOK }}
