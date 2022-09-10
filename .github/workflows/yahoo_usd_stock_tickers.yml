@@ -1,14 +1,15 @@
 name: Scrapy Yahoo Data Usd
 on:
-  push:
-    branches:
-      - 'main'
-      - 'feature/*'
-    paths-ignore:
-      - ".github/workflows/*.yml"
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '15 8-20/4 * * 1-5'
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - 'main'
+  #     - 'feature/*'
+  #   paths-ignore:
+  #     - ".github/workflows/*.yml"
+  # schedule:
+  #   # * is a special character in YAML so you have to quote this string
+  #   - cron:  '15 8-20/4 * * 1-5'
 
 env:
   DISCORD_WEBHOOK: ${{ secrets.DISCORD_STOCK_NEW_RELEASE_WEBHOOK }}
