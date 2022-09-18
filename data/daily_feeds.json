@@ -1,0 +1,40 @@
+{
+    "feeds": [
+        {
+            "name": "US Top News and Analysis",
+            "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114",
+            "type": "rss",
+            "source": "CNBC"
+        },
+        {
+            "name": "DW News",
+            "url": "https://rss.dw.com/xml/rss-en-all",
+            "type": "rss",
+            "source": "dw"
+        }, 
+        {
+            "name": "Farming news",
+            "url": "https://farmpolicynews.illinois.edu/feed/",
+            "type": "rss",
+            "source": "farmpolicynews.illinois.edu"
+        },
+        {
+            "name": "FRB",
+            "url": "https://www.federalreserve.gov/feeds/feds.xml",
+            "type": "rss",
+            "source": "Federal Reserve"
+        },
+        {
+            "name": "cpi",
+            "url": "https://www.bls.gov/feed/cpi.rss",
+            "type": "rss",
+            "source": "BLS: CPI"
+        },
+        {
+            "name": "ppi",
+            "url": "https://www.bls.gov/feed/ppi.rss",
+            "type": "rss",
+            "source": "BLS: PPI"
+        }
+    ]
+}
